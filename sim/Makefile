@@ -10,9 +10,14 @@ RTL_DIR = ../rtl
 DV_DIR = ../dv
 FILELIST = rtl_files.f
 
+# ==== SỬA LỖI TẠI ĐÂY ====
+# Tên thư mục là "scripts" (số nhiều), không phải "script"
+SCRIPT_DIR = ../scripts
+
 # Python verification variables
 PYTHON_CMD = python3
-PYTHON_SCRIPT = check_cordic.py
+# Trỏ đúng vào file
+PYTHON_SCRIPT = $(SCRIPT_DIR)/check_cordic.py
 CHECK_OUTPUT = tb_cordic_check.txt
 
 # Testbench file
@@ -49,7 +54,6 @@ $(OUTPUT): $(DV_SOURCES)
 	$(IVERILOG) -o $@ -c $(FILELIST) $(DV_SOURCES) -s $(DV_FILE) -g2012
 
 # Run target
-# Chạy mô phỏng và lưu log vào TEXT_OUTPUT (tb_cordic.txt)
 run: build
 	$(VVP) $(OUTPUT) | tee $(TEXT_OUTPUT)
 
@@ -59,10 +63,12 @@ run: build
 sim_python: run
 	@echo "------------------------------------------------"
 	@echo "Running Python Verification..."
-	@echo "Reading log from: $(TEXT_OUTPUT)"
+	@echo "Script location: $(PYTHON_SCRIPT)"
+	@echo "Input Log file : $(TEXT_OUTPUT)"
 	@echo "Writing check result to: $(CHECK_OUTPUT)"
 	@echo "------------------------------------------------"
-	$(PYTHON_CMD) $(PYTHON_SCRIPT) > $(CHECK_OUTPUT)
+	# Truyền $(TEXT_OUTPUT) vào làm tham số
+	$(PYTHON_CMD) $(PYTHON_SCRIPT) $(TEXT_OUTPUT) > $(CHECK_OUTPUT)
 	@echo "Verification Complete!"
 	@echo "Results saved in $(CHECK_OUTPUT)"
 	@echo "------------------------------------------------"
@@ -81,7 +87,7 @@ help:
 	@echo " make create_filelist : Find .sv files, PRINT them, and save to $(FILELIST)"
 	@echo " make build           : Compile the design"
 	@echo " make run             : Run simulation and save log to $(TEXT_OUTPUT)"
-	@echo " make sim_python      : Run sim, verify with Python, save to $(CHECK_OUTPUT)"
+	@echo " make sim_python      : Run sim, verify with Python using $(PYTHON_SCRIPT)"
 	@echo " make wave            : Open waveform"
 	@echo " make all             : Update list, build, and run"
 	@echo " make clean           : Remove simulation and log files"
