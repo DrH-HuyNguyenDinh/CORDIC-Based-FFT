@@ -4,11 +4,23 @@ import math
 import sys
 import os
 
-# --- CẤU HÌNH ---
+# ==========================================
+#               CẤU HÌNH KIỂM TRA
+# ==========================================
 DEFAULT_INPUT_FILE = "tb_cordic.txt"
 
+# Ngưỡng sai số cho phép (%): Ví dụ 0.1%
+# Nếu sai số nhỏ hơn mức này -> PASS
+MAX_PERCENT_ERROR = 0.5 
+
+# Ngưỡng xử lý số gần 0 (Absolute Tolerance)
+# Khi giá trị lý thuyết < 1e-6, ta không tính % mà tính sai số tuyệt đối
+ZERO_THRESHOLD = 1e-6 
+ABS_TOLERANCE  = 1e-4 
+
+# ==========================================
+
 # --- XỬ LÝ THAM SỐ DÒNG LỆNH ---
-# Makefile sẽ truyền tên file log vào đây (sys.argv[1])
 if len(sys.argv) > 1:
     INPUT_FILE = sys.argv[1]
 else:
@@ -16,7 +28,6 @@ else:
     INPUT_FILE = DEFAULT_INPUT_FILE
 
 # --- HÀM HỖ TRỢ ---
-# Hàm chuyển đổi Hex string sang Float 32-bit
 def hex_to_float(hex_str):
     try:
         byte_data = bytes.fromhex(hex_str)
@@ -24,30 +35,33 @@ def hex_to_float(hex_str):
     except ValueError:
         return 0.0
 
-# Regex để tìm dòng có chứa Hex
-# Cần Verilog output dạng: "Label: ... (Hex: 3f800000)"
+# Regex tìm dữ liệu
 pattern = re.compile(r"(Angle|Sin\s*|Cos\s*).*\(Hex:\s*([0-9a-fA-F]+)\)")
 
-# Biến lưu trữ góc hiện tại
+# Biến toàn cục
 current_angle_rad = 0.0
+total_checks = 0
+total_pass = 0
+max_error_seen = 0.0
 
-print(f"Processing data from: {INPUT_FILE}")
-print(f"Current Directory   : {os.getcwd()}\n")
+print(f"----------------------------------------------------------------")
+print(f" LOG CHECKER: PERCENTAGE ERROR TEST")
+print(f" File: {INPUT_FILE}")
+print(f" Max Allowed Error: {MAX_PERCENT_ERROR}%")
+print(f"----------------------------------------------------------------\n")
 
 try:
     with open(INPUT_FILE, 'r') as f:
         lines = f.readlines()
 except FileNotFoundError:
     print(f"Error: File '{INPUT_FILE}' not found.")
-    print(f"Make sure you ran the simulation first (make run).")
     sys.exit(1)
 
-# Biến cờ để kiểm tra xem có tìm thấy dữ liệu không
 found_data = False
 
 for line in lines:
     if "==== TEST CASE" in line:
-        print(f"\n{line.strip()}")
+        print(f"\n{'-'*20} {line.strip()} {'-'*20}")
         continue
 
     match = pattern.search(line)
@@ -57,43 +71,78 @@ for line in lines:
         hex_val = match.group(2)
         dec_val = hex_to_float(hex_val)
 
-        # Xử lý theo từng loại label
+        # --- 1. Xử lý Angle (Chỉ lưu lại, không check lỗi) ---
         if label == "Angle":
             current_angle_rad = dec_val
-            print(f"{label:<5}: {dec_val:.6f} (Hex: {hex_val})")
+            deg = math.degrees(current_angle_rad)
+            print(f"Angle: {dec_val:.6f} rad (~{deg:.1f} deg)")
 
-        elif label == "Sin":
-            ideal_sin = math.sin(current_angle_rad)
-            diff = abs(dec_val - ideal_sin)
-
-            if abs(ideal_sin) > 1e-9:
-                percent_err = (diff / abs(ideal_sin)) * 100
-                err_str = f"{percent_err:.4f}%"
+        # --- 2. Xử lý Sin/Cos (Tính toán sai số) ---
+        elif label in ["Sin", "Cos"]:
+            total_checks += 1
+            
+            # Tính giá trị lý thuyết (Ideal)
+            if label == "Sin":
+                ideal = math.sin(current_angle_rad)
             else:
-                # Nếu giá trị lý thuyết gần bằng 0
-                if diff < 1e-5:
-                    err_str = "OK (Ideal~0)"
+                ideal = math.cos(current_angle_rad)
+
+            # Tính chênh lệch tuyệt đối
+            diff = abs(dec_val - ideal)
+            
+            status = ""
+            error_msg = ""
+            current_pct_err = 0.0
+
+            # --- LOGIC KIỂM TRA SAI SỐ ---
+            
+            # Trường hợp 1: Giá trị lý thuyết quá nhỏ (gần bằng 0)
+            # Không thể tính % (chia cho 0), nên dùng sai số tuyệt đối
+            if abs(ideal) < ZERO_THRESHOLD:
+                if diff < ABS_TOLERANCE:
+                    status = "[PASS]"
+                    error_msg = f"Abs Diff: {diff:.6f} (Target < {ABS_TOLERANCE})"
                 else:
-                    err_str = "FAIL (Should be 0)"
-
-            print(f"{label:<5}: {dec_val:.6f} | Ideal: {ideal_sin:.6f} | Diff: {diff:.6f} | Error: {err_str}")
-
-        elif label == "Cos":
-            ideal_cos = math.cos(current_angle_rad)
-            diff = abs(dec_val - ideal_cos)
-
-            if abs(ideal_cos) > 1e-9:
-                percent_err = (diff / abs(ideal_cos)) * 100
-                err_str = f"{percent_err:.4f}%"
+                    status = "[FAIL]"
+                    error_msg = f"Abs Diff: {diff:.6f} (Too High!)"
+            
+            # Trường hợp 2: Giá trị bình thường -> Tính % sai số
             else:
-                if diff < 1e-5:
-                    err_str = "OK (Ideal~0)"
-                else:
-                    err_str = "FAIL (Should be 0)"
+                current_pct_err = (diff / abs(ideal)) * 100.0
+                
+                # Cập nhật sai số lớn nhất từng thấy
+                if current_pct_err > max_error_seen:
+                    max_error_seen = current_pct_err
 
-            print(f"{label:<5}: {dec_val:.6f} | Ideal: {ideal_cos:.6f} | Diff: {diff:.6f} | Error: {err_str}")
+                if current_pct_err <= MAX_PERCENT_ERROR:
+                    status = "[PASS]"
+                else:
+                    status = "[FAIL]"
+                
+                error_msg = f"Err: {current_pct_err:.4f}%"
+
+            if status == "[PASS]":
+                total_pass += 1
+
+            # In kết quả
+            # Format: Label | Measured | Ideal | Status | Error Info
+            print(f"{label:<5}: {dec_val:10.6f} | Ideal: {ideal:10.6f} | {status} | {error_msg}")
 
 if not found_data:
-    print("\nWARNING: No matching data found in log file.")
-    print("Please check your Verilog $display format.")
-    print("Expected format example: 'Angle: 0.785 (Hex: 3f490fdb)'")
+    print("\nWARNING: No data found. Check Verilog log format.")
+else:
+    print(f"\n================================================================")
+    print(f" SUMMARY REPORT")
+    print(f"================================================================")
+    print(f" Total Checks : {total_checks}")
+    print(f" Passed       : {total_pass}")
+    print(f" Failed       : {total_checks - total_pass}")
+    print(f" Max % Error  : {max_error_seen:.5f}%")
+    print(f"================================================================")
+    
+    if (total_checks - total_pass) > 0:
+        print("RESULT: FAILED ❌")
+        sys.exit(1) # Trả về exit code 1 để Makefile biết là lỗi
+    else:
+        print("RESULT: SUCCESS ✅")
+        sys.exit(0)

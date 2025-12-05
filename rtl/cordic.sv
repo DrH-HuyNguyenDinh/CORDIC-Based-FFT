@@ -4,14 +4,17 @@ module cordic (
 	output logic [31:0] o_x, o_y
 );
 
-logic [1:0] check, start_check;
+logic angle_0_360, angle_90_270, angle_180_180, angle_270_90;
+logic [3:0] check_angle;
+logic [1:0] check7;
 logic check1, check2, check3, check4, check5, check6;
-logic [1:0] o_check1,  o_check2, o_check3, o_check4;
-logic [1:0] o_check5,  o_check6, o_check7, o_check8;
-logic [1:0] o_check9,  o_check10, o_check11, o_check12;
-logic [1:0] o_check13, o_check14, o_check15, o_check16;
-logic [1:0] o_check17, o_check18, o_check19;
-logic [1:0] o_check20, o_check21, o_check22;
+logic [5:0] start_check, check;
+logic [5:0] o_check1,  o_check2, o_check3, o_check4;
+logic [5:0] o_check5,  o_check6, o_check7, o_check8;
+logic [5:0] o_check9,  o_check10, o_check11, o_check12;
+logic [5:0] o_check13, o_check14, o_check15, o_check16;
+logic [5:0] o_check17, o_check18, o_check19;
+logic [5:0] o_check20, o_check21, o_check22;
 
 logic [31:0] z1, z2, z3_1, z3_2, z4;
 
@@ -41,6 +44,7 @@ logic [31:0] i_x_k_11, o_x_k_11, i_y_k_11, o_y_k_11;
 logic [31:0] i_x_k_14, o_x_k_14, i_y_k_14, o_y_k_14;
 
 logic [31:0] x, y;
+logic [31:0] x1, y1;
 
 //         _                _           _       _  _           _                        _   
 //        / \   _ __   __ _| | ___     / \   __| |(_)_   _ ___| |_ _ __ ___   ___ _ __ | |_ 
@@ -67,9 +71,72 @@ fpu_add_sub fpuz2 (.i_a(z2), .i_b(32'b0_10000001_10010010000111111011011), .i_co
 
 assign check5 = check1 & check2;
 assign check6 = check3 & check4;
-assign check = {check6, check5};
+assign check7 = {check6, check5};
 
-mux4to1 muxcheck (.i_data_0(z2), .i_data_1(z3_1), .i_data_2(z3_2), .i_data_3(32'b0), .i_sel(check), .o_data(z4));
+mux4to1 muxcheck (.i_data_0(z2), .i_data_1(z3_1), .i_data_2(z3_2), .i_data_3(32'b0), .i_sel(check7), .o_data(z4));
+
+assign angle_0_360   = (~i_z[30] & ~i_z[29] & ~i_z[28] &
+                        ~i_z[27] & ~i_z[26] & ~i_z[25] & ~i_z[24] &
+                        ~i_z[23] & ~i_z[22] & ~i_z[21] & ~i_z[20] &
+                        ~i_z[19] & ~i_z[18] & ~i_z[17] & ~i_z[16] &
+                        ~i_z[15] & ~i_z[14] & ~i_z[13] & ~i_z[12] &
+                        ~i_z[11] & ~i_z[10] & ~i_z[9]  & ~i_z[8]  &
+                        ~i_z[7]  & ~i_z[6]  & ~i_z[5]  & ~i_z[4]  &
+                        ~i_z[3]  & ~i_z[2]  & ~i_z[1]  & ~i_z[0]) | /*0*/
+                       
+                       ( i_z[30] & ~i_z[29] & ~i_z[28] &
+                        ~i_z[27] & ~i_z[26] & ~i_z[25] & ~i_z[24] &
+                         i_z[23] &  i_z[22] & ~i_z[21] & ~i_z[20] &
+                         i_z[19] & ~i_z[18] & ~i_z[17] &  i_z[16] &
+                        ~i_z[15] & ~i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] &  i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  & ~i_z[5]  &  i_z[4]  &
+                         i_z[3]  & ~i_z[2]  &  i_z[1]  &  i_z[0]);  /*360 -360*/
+assign angle_90_270  = (~i_z[31] & ~i_z[30] &  i_z[29] &  i_z[28] &
+                         i_z[27] &  i_z[26] &  i_z[25] &  i_z[24] &
+                         i_z[23] &  i_z[22] & ~i_z[21] & ~i_z[20] &
+                         i_z[19] & ~i_z[18] & ~i_z[17] &  i_z[16] &
+                        ~i_z[15] & ~i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] &  i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  & ~i_z[5]  &  i_z[4]  &
+                         i_z[3]  & ~i_z[2]  &  i_z[1]  &  i_z[0]) | /*90*/
+                        
+                       ( i_z[31] &  i_z[30] & ~i_z[29] & ~i_z[28] &
+                        ~i_z[27] & ~i_z[26] & ~i_z[25] & ~i_z[24] &
+                         i_z[23] & ~i_z[22] & ~i_z[21] &  i_z[20] &
+                        ~i_z[19] &  i_z[18] &  i_z[17] & ~i_z[16] &
+                         i_z[15] &  i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] & ~i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  &  i_z[5]  & ~i_z[4]  &
+                        ~i_z[3]  &  i_z[2]  & ~i_z[1]  & ~i_z[0]); /*-270*/
+assign angle_180_180 = ( i_z[30] & ~i_z[29] & ~i_z[28] &
+                        ~i_z[27] & ~i_z[26] & ~i_z[25] & ~i_z[24] &
+                        ~i_z[23] &  i_z[22] & ~i_z[21] & ~i_z[20] &
+                         i_z[19] & ~i_z[18] & ~i_z[17] &  i_z[16] &
+                        ~i_z[15] & ~i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] &  i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  & ~i_z[5]  &  i_z[4]  &
+                         i_z[3]  & ~i_z[2]  &  i_z[1]  &  i_z[0]) ; //180 -180
+assign angle_270_90  = ( i_z[31] & ~i_z[30] &  i_z[29] &  i_z[28] &
+                         i_z[27] &  i_z[26] &  i_z[25] &  i_z[24] &
+                         i_z[23] &  i_z[22] & ~i_z[21] & ~i_z[20] &
+                         i_z[19] & ~i_z[18] & ~i_z[17] &  i_z[16] &
+                        ~i_z[15] & ~i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] &  i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  & ~i_z[5]  &  i_z[4]  &
+                         i_z[3]  & ~i_z[2]  &  i_z[1]  &  i_z[0]) | /*-90*/
+                        
+                       (~i_z[31] &  i_z[30] & ~i_z[29] & ~i_z[28] &
+                        ~i_z[27] & ~i_z[26] & ~i_z[25] & ~i_z[24] &
+                         i_z[23] & ~i_z[22] & ~i_z[21] &  i_z[20] &
+                        ~i_z[19] &  i_z[18] &  i_z[17] & ~i_z[16] &
+                         i_z[15] &  i_z[14] & ~i_z[13] & ~i_z[12] &
+                         i_z[11] & ~i_z[10] &  i_z[9]  &  i_z[8]  &
+                         i_z[7]  &  i_z[6]  &  i_z[5]  & ~i_z[4]  &
+                        ~i_z[3]  &  i_z[2]  & ~i_z[1]  & ~i_z[0]); /*270*/
+
+assign check_angle = {angle_270_90, angle_180_180, angle_90_270, angle_0_360};
+assign check = {check_angle, check7};
 
 always_ff @(posedge i_clk or negedge i_reset) begin
     if (~i_reset) begin
@@ -726,7 +793,32 @@ fpu_add_sub o_fpu_yk (.i_a(o_y_k_14), .i_b({o_y_k_14[31], shift_o_y_k_14, o_y_k_
 //     |_| \_\___||___/\__,_|_|\__| /_/   \_\__,_|/ |\__,_|___/_| |_| |_|\___|_| |_|\__|
 //                                              |__/                                    
 
-mux4to1 muxresultx (.i_data_0(x), .i_data_1({~x[31], x[30:0]}), .i_data_2(x), .i_data_3(32'b0), .i_sel(o_check22), .o_data(o_x));
-mux4to1 muxresulty (.i_data_0(y), .i_data_1({~y[31], y[30:0]}), .i_data_2(y), .i_data_3(32'b0), .i_sel(o_check22), .o_data(o_y));
+mux4to1 muxresultx (.i_data_0(x), .i_data_1({~x[31], x[30:0]}), .i_data_2(x), .i_data_3(32'b0), .i_sel(o_check22[1:0]), .o_data(x1));
+mux4to1 muxresulty (.i_data_0(y), .i_data_1({~y[31], y[30:0]}), .i_data_2(y), .i_data_3(32'b0), .i_sel(o_check22[1:0]), .o_data(y1));
+
+always @(*) begin
+    case (o_check22[5:2])
+        4'b0001: begin
+            o_x = 32'b00111111100000000000000000000000;
+            o_y = 32'b00000000000000000000000000000000;
+        end
+        4'b0010: begin
+            o_x = 32'b00000000000000000000000000000000;
+            o_y = 32'b00111111100000000000000000000000;
+        end
+        4'b0100: begin
+            o_x = 32'b10111111100000000000000000000000;
+            o_y = 32'b00000000000000000000000000000000;
+        end
+        4'b1000: begin
+            o_x = 32'b00000000000000000000000000000000;
+            o_y = 32'b10111111100000000000000000000000;
+        end
+        default: begin
+            o_x = x1;
+            o_y = y1;
+        end
+    endcase
+end
 
 endmodule
