@@ -1,1803 +1,1816 @@
-Processing data from: tb_cordic.txt
-Current Directory   : /home/nguyendinhhuy/rtl/cordic-based-fft/sim
-
-
-==== TEST CASE 0 ====
-Angle: 0.000000 (Hex: 00000000)
-Sin  : -0.000018 | Ideal: 0.000000 | Diff: 0.000018 | Error: FAIL (Should be 0)
-Cos  : 0.999999 | Ideal: 1.000000 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 1 ====
-Angle: 0.017453 (Hex: 3c8efa35)
-Sin  : 0.017481 | Ideal: 0.017452 | Diff: 0.000029 | Error: 0.1644%
-Cos  : 0.999846 | Ideal: 0.999848 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 2 ====
-Angle: 0.034907 (Hex: 3d0efa35)
-Sin  : 0.034870 | Ideal: 0.034899 | Diff: 0.000030 | Error: 0.0857%
-Cos  : 0.999391 | Ideal: 0.999391 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 3 ====
-Angle: 0.052360 (Hex: 3d567750)
-Sin  : 0.052307 | Ideal: 0.052336 | Diff: 0.000029 | Error: 0.0561%
-Cos  : 0.998630 | Ideal: 0.998630 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 4 ====
-Angle: 0.069813 (Hex: 3d8efa35)
-Sin  : 0.069730 | Ideal: 0.069756 | Diff: 0.000027 | Error: 0.0386%
-Cos  : 0.997565 | Ideal: 0.997564 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 5 ====
-Angle: 0.087266 (Hex: 3db2b8c2)
-Sin  : 0.087126 | Ideal: 0.087156 | Diff: 0.000030 | Error: 0.0344%
-Cos  : 0.996196 | Ideal: 0.996195 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 6 ====
-Angle: 0.104720 (Hex: 3dd67750)
-Sin  : 0.104501 | Ideal: 0.104528 | Diff: 0.000028 | Error: 0.0263%
-Cos  : 0.994524 | Ideal: 0.994522 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 7 ====
-Angle: 0.122173 (Hex: 3dfa35dd)
-Sin  : 0.121842 | Ideal: 0.121869 | Diff: 0.000027 | Error: 0.0221%
-Cos  : 0.992548 | Ideal: 0.992546 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 8 ====
-Angle: 0.139626 (Hex: 3e0efa35)
-Sin  : 0.139192 | Ideal: 0.139173 | Diff: 0.000019 | Error: 0.0134%
-Cos  : 0.990264 | Ideal: 0.990268 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 9 ====
-Angle: 0.157080 (Hex: 3e20d97c)
-Sin  : 0.156455 | Ideal: 0.156434 | Diff: 0.000021 | Error: 0.0134%
-Cos  : 0.987684 | Ideal: 0.987688 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 10 ====
-Angle: 0.174533 (Hex: 3e32b8c2)
-Sin  : 0.173670 | Ideal: 0.173648 | Diff: 0.000021 | Error: 0.0124%
-Cos  : 0.984803 | Ideal: 0.984808 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 11 ====
-Angle: 0.191986 (Hex: 3e449809)
-Sin  : 0.190833 | Ideal: 0.190809 | Diff: 0.000024 | Error: 0.0125%
-Cos  : 0.981621 | Ideal: 0.981627 | Diff: 0.000006 | Error: 0.0006%
-
-==== TEST CASE 12 ====
-Angle: 0.209440 (Hex: 3e567750)
-Sin  : 0.207921 | Ideal: 0.207912 | Diff: 0.000010 | Error: 0.0046%
-Cos  : 0.978144 | Ideal: 0.978148 | Diff: 0.000003 | Error: 0.0003%
-
-==== TEST CASE 13 ====
-Angle: 0.226893 (Hex: 3e685696)
-Sin  : 0.224963 | Ideal: 0.224951 | Diff: 0.000012 | Error: 0.0053%
-Cos  : 0.974366 | Ideal: 0.974370 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 14 ====
-Angle: 0.244346 (Hex: 3e7a35dd)
-Sin  : 0.241934 | Ideal: 0.241922 | Diff: 0.000012 | Error: 0.0051%
-Cos  : 0.970291 | Ideal: 0.970296 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 15 ====
-Angle: 0.261799 (Hex: 3e860a92)
-Sin  : 0.258834 | Ideal: 0.258819 | Diff: 0.000015 | Error: 0.0056%
-Cos  : 0.965921 | Ideal: 0.965926 | Diff: 0.000005 | Error: 0.0006%
-
-==== TEST CASE 16 ====
-Angle: 0.279253 (Hex: 3e8efa35)
-Sin  : 0.275638 | Ideal: 0.275637 | Diff: 0.000000 | Error: 0.0001%
-Cos  : 0.961260 | Ideal: 0.961262 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 17 ====
-Angle: 0.296706 (Hex: 3e97e9d8)
-Sin  : 0.292372 | Ideal: 0.292372 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.956303 | Ideal: 0.956305 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 18 ====
-Angle: 0.314159 (Hex: 3ea0d97c)
-Sin  : 0.309020 | Ideal: 0.309017 | Diff: 0.000003 | Error: 0.0009%
-Cos  : 0.951054 | Ideal: 0.951057 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 19 ====
-Angle: 0.331613 (Hex: 3ea9c91f)
-Sin  : 0.325553 | Ideal: 0.325568 | Diff: 0.000016 | Error: 0.0048%
-Cos  : 0.945523 | Ideal: 0.945519 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 20 ====
-Angle: 0.349066 (Hex: 3eb2b8c2)
-Sin  : 0.342005 | Ideal: 0.342020 | Diff: 0.000015 | Error: 0.0044%
-Cos  : 0.939697 | Ideal: 0.939693 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 21 ====
-Angle: 0.366519 (Hex: 3ebba866)
-Sin  : 0.358355 | Ideal: 0.358368 | Diff: 0.000013 | Error: 0.0036%
-Cos  : 0.933584 | Ideal: 0.933580 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 22 ====
-Angle: 0.383972 (Hex: 3ec49809)
-Sin  : 0.374580 | Ideal: 0.374607 | Diff: 0.000026 | Error: 0.0070%
-Cos  : 0.927193 | Ideal: 0.927184 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 23 ====
-Angle: 0.401426 (Hex: 3ecd87ac)
-Sin  : 0.390707 | Ideal: 0.390731 | Diff: 0.000024 | Error: 0.0061%
-Cos  : 0.920514 | Ideal: 0.920505 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 24 ====
-Angle: 0.418879 (Hex: 3ed67750)
-Sin  : 0.406713 | Ideal: 0.406737 | Diff: 0.000023 | Error: 0.0057%
-Cos  : 0.913554 | Ideal: 0.913545 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 25 ====
-Angle: 0.436332 (Hex: 3edf66f3)
-Sin  : 0.422597 | Ideal: 0.422618 | Diff: 0.000021 | Error: 0.0049%
-Cos  : 0.906316 | Ideal: 0.906308 | Diff: 0.000008 | Error: 0.0009%
-
-==== TEST CASE 26 ====
-Angle: 0.453786 (Hex: 3ee85696)
-Sin  : 0.438392 | Ideal: 0.438371 | Diff: 0.000021 | Error: 0.0048%
-Cos  : 0.898782 | Ideal: 0.898794 | Diff: 0.000012 | Error: 0.0013%
-
-==== TEST CASE 27 ====
-Angle: 0.471239 (Hex: 3ef1463a)
-Sin  : 0.454014 | Ideal: 0.453991 | Diff: 0.000023 | Error: 0.0051%
-Cos  : 0.890993 | Ideal: 0.891007 | Diff: 0.000013 | Error: 0.0015%
-
-==== TEST CASE 28 ====
-Angle: 0.488692 (Hex: 3efa35dd)
-Sin  : 0.469495 | Ideal: 0.469472 | Diff: 0.000023 | Error: 0.0050%
-Cos  : 0.882934 | Ideal: 0.882948 | Diff: 0.000014 | Error: 0.0016%
-
-==== TEST CASE 29 ====
-Angle: 0.506145 (Hex: 3f0192c0)
-Sin  : 0.484820 | Ideal: 0.484810 | Diff: 0.000010 | Error: 0.0021%
-Cos  : 0.874613 | Ideal: 0.874620 | Diff: 0.000007 | Error: 0.0008%
-
-==== TEST CASE 30 ====
-Angle: 0.523599 (Hex: 3f060a92)
-Sin  : 0.500012 | Ideal: 0.500000 | Diff: 0.000012 | Error: 0.0024%
-Cos  : 0.866017 | Ideal: 0.866025 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 31 ====
-Angle: 0.541052 (Hex: 3f0a8263)
-Sin  : 0.515050 | Ideal: 0.515038 | Diff: 0.000012 | Error: 0.0024%
-Cos  : 0.857158 | Ideal: 0.857167 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 32 ====
-Angle: 0.558505 (Hex: 3f0efa35)
-Sin  : 0.529933 | Ideal: 0.529919 | Diff: 0.000014 | Error: 0.0027%
-Cos  : 0.848038 | Ideal: 0.848048 | Diff: 0.000011 | Error: 0.0012%
-
-==== TEST CASE 33 ====
-Angle: 0.575959 (Hex: 3f137207)
-Sin  : 0.544650 | Ideal: 0.544639 | Diff: 0.000011 | Error: 0.0021%
-Cos  : 0.838662 | Ideal: 0.838671 | Diff: 0.000009 | Error: 0.0011%
-
-==== TEST CASE 34 ====
-Angle: 0.593412 (Hex: 3f17e9d8)
-Sin  : 0.559206 | Ideal: 0.559193 | Diff: 0.000013 | Error: 0.0024%
-Cos  : 0.829027 | Ideal: 0.829038 | Diff: 0.000011 | Error: 0.0013%
-
-==== TEST CASE 35 ====
-Angle: 0.610865 (Hex: 3f1c61aa)
-Sin  : 0.573590 | Ideal: 0.573576 | Diff: 0.000013 | Error: 0.0024%
-Cos  : 0.819141 | Ideal: 0.819152 | Diff: 0.000011 | Error: 0.0014%
-
-==== TEST CASE 36 ====
-Angle: 0.628319 (Hex: 3f20d97c)
-Sin  : 0.587801 | Ideal: 0.587785 | Diff: 0.000015 | Error: 0.0026%
-Cos  : 0.809004 | Ideal: 0.809017 | Diff: 0.000013 | Error: 0.0016%
-
-==== TEST CASE 37 ====
-Angle: 0.645772 (Hex: 3f25514d)
-Sin  : 0.601818 | Ideal: 0.601815 | Diff: 0.000003 | Error: 0.0005%
-Cos  : 0.798632 | Ideal: 0.798636 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 38 ====
-Angle: 0.663225 (Hex: 3f29c91f)
-Sin  : 0.615665 | Ideal: 0.615661 | Diff: 0.000003 | Error: 0.0005%
-Cos  : 0.788006 | Ideal: 0.788011 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 39 ====
-Angle: 0.680678 (Hex: 3f2e40f1)
-Sin  : 0.629326 | Ideal: 0.629320 | Diff: 0.000005 | Error: 0.0008%
-Cos  : 0.777140 | Ideal: 0.777146 | Diff: 0.000006 | Error: 0.0008%
-
-==== TEST CASE 40 ====
-Angle: 0.698132 (Hex: 3f32b8c2)
-Sin  : 0.642782 | Ideal: 0.642788 | Diff: 0.000006 | Error: 0.0009%
-Cos  : 0.766047 | Ideal: 0.766044 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 41 ====
-Angle: 0.715585 (Hex: 3f373094)
-Sin  : 0.656055 | Ideal: 0.656059 | Diff: 0.000004 | Error: 0.0006%
-Cos  : 0.754711 | Ideal: 0.754710 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 42 ====
-Angle: 0.733038 (Hex: 3f3ba866)
-Sin  : 0.669127 | Ideal: 0.669131 | Diff: 0.000004 | Error: 0.0006%
-Cos  : 0.743146 | Ideal: 0.743145 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 43 ====
-Angle: 0.750492 (Hex: 3f402037)
-Sin  : 0.681997 | Ideal: 0.681998 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.731353 | Ideal: 0.731354 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 44 ====
-Angle: 0.767945 (Hex: 3f449809)
-Sin  : 0.694646 | Ideal: 0.694658 | Diff: 0.000012 | Error: 0.0018%
-Cos  : 0.719350 | Ideal: 0.719340 | Diff: 0.000010 | Error: 0.0014%
-
-==== TEST CASE 45 ====
-Angle: 0.785398 (Hex: 3f490fdb)
-Sin  : 0.707117 | Ideal: 0.707107 | Diff: 0.000010 | Error: 0.0014%
-Cos  : 0.707095 | Ideal: 0.707107 | Diff: 0.000012 | Error: 0.0017%
-
-==== TEST CASE 46 ====
-Angle: 0.802851 (Hex: 3f4d87ac)
-Sin  : 0.719350 | Ideal: 0.719340 | Diff: 0.000010 | Error: 0.0014%
-Cos  : 0.694646 | Ideal: 0.694658 | Diff: 0.000012 | Error: 0.0018%
-
-==== TEST CASE 47 ====
-Angle: 0.820305 (Hex: 3f51ff7e)
-Sin  : 0.731353 | Ideal: 0.731354 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.681997 | Ideal: 0.681998 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 48 ====
-Angle: 0.837758 (Hex: 3f567750)
-Sin  : 0.743146 | Ideal: 0.743145 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.669127 | Ideal: 0.669131 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 49 ====
-Angle: 0.855211 (Hex: 3f5aef21)
-Sin  : 0.754711 | Ideal: 0.754710 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.656055 | Ideal: 0.656059 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 50 ====
-Angle: 0.872665 (Hex: 3f5f66f3)
-Sin  : 0.766047 | Ideal: 0.766044 | Diff: 0.000003 | Error: 0.0004%
-Cos  : 0.642782 | Ideal: 0.642788 | Diff: 0.000006 | Error: 0.0009%
-
-==== TEST CASE 51 ====
-Angle: 0.890118 (Hex: 3f63dec5)
-Sin  : 0.777140 | Ideal: 0.777146 | Diff: 0.000006 | Error: 0.0008%
-Cos  : 0.629326 | Ideal: 0.629320 | Diff: 0.000005 | Error: 0.0008%
-
-==== TEST CASE 52 ====
-Angle: 0.907571 (Hex: 3f685696)
-Sin  : 0.788006 | Ideal: 0.788011 | Diff: 0.000004 | Error: 0.0005%
-Cos  : 0.615665 | Ideal: 0.615661 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 53 ====
-Angle: 0.925025 (Hex: 3f6cce68)
-Sin  : 0.798632 | Ideal: 0.798636 | Diff: 0.000004 | Error: 0.0005%
-Cos  : 0.601818 | Ideal: 0.601815 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 54 ====
-Angle: 0.942478 (Hex: 3f71463a)
-Sin  : 0.809004 | Ideal: 0.809017 | Diff: 0.000013 | Error: 0.0016%
-Cos  : 0.587801 | Ideal: 0.587785 | Diff: 0.000015 | Error: 0.0026%
-
-==== TEST CASE 55 ====
-Angle: 0.959931 (Hex: 3f75be0b)
-Sin  : 0.819141 | Ideal: 0.819152 | Diff: 0.000011 | Error: 0.0014%
-Cos  : 0.573590 | Ideal: 0.573576 | Diff: 0.000013 | Error: 0.0023%
-
-==== TEST CASE 56 ====
-Angle: 0.977384 (Hex: 3f7a35dd)
-Sin  : 0.829027 | Ideal: 0.829038 | Diff: 0.000011 | Error: 0.0013%
-Cos  : 0.559206 | Ideal: 0.559193 | Diff: 0.000013 | Error: 0.0024%
-
-==== TEST CASE 57 ====
-Angle: 0.994838 (Hex: 3f7eadaf)
-Sin  : 0.838662 | Ideal: 0.838671 | Diff: 0.000009 | Error: 0.0011%
-Cos  : 0.544650 | Ideal: 0.544639 | Diff: 0.000011 | Error: 0.0021%
-
-==== TEST CASE 58 ====
-Angle: 1.012291 (Hex: 3f8192c0)
-Sin  : 0.848038 | Ideal: 0.848048 | Diff: 0.000011 | Error: 0.0012%
-Cos  : 0.529933 | Ideal: 0.529919 | Diff: 0.000014 | Error: 0.0027%
-
-==== TEST CASE 59 ====
-Angle: 1.029744 (Hex: 3f83cea9)
-Sin  : 0.857158 | Ideal: 0.857167 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.515050 | Ideal: 0.515038 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 60 ====
-Angle: 1.047198 (Hex: 3f860a92)
-Sin  : 0.866017 | Ideal: 0.866025 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.500012 | Ideal: 0.500000 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 61 ====
-Angle: 1.064651 (Hex: 3f88467b)
-Sin  : 0.874613 | Ideal: 0.874620 | Diff: 0.000007 | Error: 0.0008%
-Cos  : 0.484820 | Ideal: 0.484810 | Diff: 0.000010 | Error: 0.0021%
-
-==== TEST CASE 62 ====
-Angle: 1.082104 (Hex: 3f8a8263)
-Sin  : 0.882934 | Ideal: 0.882948 | Diff: 0.000014 | Error: 0.0016%
-Cos  : 0.469495 | Ideal: 0.469472 | Diff: 0.000023 | Error: 0.0050%
-
-==== TEST CASE 63 ====
-Angle: 1.099557 (Hex: 3f8cbe4c)
-Sin  : 0.890993 | Ideal: 0.891007 | Diff: 0.000013 | Error: 0.0015%
-Cos  : 0.454014 | Ideal: 0.453991 | Diff: 0.000023 | Error: 0.0051%
-
-==== TEST CASE 64 ====
-Angle: 1.117011 (Hex: 3f8efa35)
-Sin  : 0.898782 | Ideal: 0.898794 | Diff: 0.000012 | Error: 0.0013%
-Cos  : 0.438392 | Ideal: 0.438371 | Diff: 0.000021 | Error: 0.0048%
-
-==== TEST CASE 65 ====
-Angle: 1.134464 (Hex: 3f91361e)
-Sin  : 0.906316 | Ideal: 0.906308 | Diff: 0.000008 | Error: 0.0009%
-Cos  : 0.422597 | Ideal: 0.422618 | Diff: 0.000021 | Error: 0.0049%
-
-==== TEST CASE 66 ====
-Angle: 1.151917 (Hex: 3f937207)
-Sin  : 0.913554 | Ideal: 0.913545 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.406713 | Ideal: 0.406737 | Diff: 0.000023 | Error: 0.0057%
-
-==== TEST CASE 67 ====
-Angle: 1.169371 (Hex: 3f95adf0)
-Sin  : 0.920514 | Ideal: 0.920505 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.390707 | Ideal: 0.390731 | Diff: 0.000024 | Error: 0.0061%
-
-==== TEST CASE 68 ====
-Angle: 1.186824 (Hex: 3f97e9d8)
-Sin  : 0.927193 | Ideal: 0.927184 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.374580 | Ideal: 0.374607 | Diff: 0.000026 | Error: 0.0071%
-
-==== TEST CASE 69 ====
-Angle: 1.204277 (Hex: 3f9a25c1)
-Sin  : 0.933584 | Ideal: 0.933580 | Diff: 0.000003 | Error: 0.0004%
-Cos  : 0.358355 | Ideal: 0.358368 | Diff: 0.000013 | Error: 0.0036%
-
-==== TEST CASE 70 ====
-Angle: 1.221730 (Hex: 3f9c61aa)
-Sin  : 0.939697 | Ideal: 0.939693 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.342005 | Ideal: 0.342020 | Diff: 0.000015 | Error: 0.0044%
-
-==== TEST CASE 71 ====
-Angle: 1.239184 (Hex: 3f9e9d93)
-Sin  : 0.945523 | Ideal: 0.945519 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.325553 | Ideal: 0.325568 | Diff: 0.000016 | Error: 0.0048%
-
-==== TEST CASE 72 ====
-Angle: 1.256637 (Hex: 3fa0d97c)
-Sin  : 0.951054 | Ideal: 0.951057 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.309020 | Ideal: 0.309017 | Diff: 0.000003 | Error: 0.0009%
-
-==== TEST CASE 73 ====
-Angle: 1.274090 (Hex: 3fa31565)
-Sin  : 0.956303 | Ideal: 0.956305 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.292372 | Ideal: 0.292372 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 74 ====
-Angle: 1.291544 (Hex: 3fa5514d)
-Sin  : 0.961260 | Ideal: 0.961262 | Diff: 0.000001 | Error: 0.0001%
-Cos  : 0.275638 | Ideal: 0.275637 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 75 ====
-Angle: 1.308997 (Hex: 3fa78d36)
-Sin  : 0.965921 | Ideal: 0.965926 | Diff: 0.000005 | Error: 0.0005%
-Cos  : 0.258834 | Ideal: 0.258819 | Diff: 0.000015 | Error: 0.0056%
-
-==== TEST CASE 76 ====
-Angle: 1.326450 (Hex: 3fa9c91f)
-Sin  : 0.970291 | Ideal: 0.970296 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.241934 | Ideal: 0.241922 | Diff: 0.000012 | Error: 0.0051%
-
-==== TEST CASE 77 ====
-Angle: 1.343904 (Hex: 3fac0508)
-Sin  : 0.974366 | Ideal: 0.974370 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.224963 | Ideal: 0.224951 | Diff: 0.000012 | Error: 0.0053%
-
-==== TEST CASE 78 ====
-Angle: 1.361357 (Hex: 3fae40f1)
-Sin  : 0.978144 | Ideal: 0.978148 | Diff: 0.000003 | Error: 0.0003%
-Cos  : 0.207921 | Ideal: 0.207912 | Diff: 0.000010 | Error: 0.0046%
-
-==== TEST CASE 79 ====
-Angle: 1.378810 (Hex: 3fb07cda)
-Sin  : 0.981621 | Ideal: 0.981627 | Diff: 0.000006 | Error: 0.0006%
-Cos  : 0.190833 | Ideal: 0.190809 | Diff: 0.000024 | Error: 0.0125%
-
-==== TEST CASE 80 ====
-Angle: 1.396263 (Hex: 3fb2b8c2)
-Sin  : 0.984803 | Ideal: 0.984808 | Diff: 0.000005 | Error: 0.0005%
-Cos  : 0.173670 | Ideal: 0.173648 | Diff: 0.000021 | Error: 0.0123%
-
-==== TEST CASE 81 ====
-Angle: 1.413717 (Hex: 3fb4f4ab)
-Sin  : 0.987684 | Ideal: 0.987688 | Diff: 0.000005 | Error: 0.0005%
-Cos  : 0.156455 | Ideal: 0.156434 | Diff: 0.000021 | Error: 0.0134%
-
-==== TEST CASE 82 ====
-Angle: 1.431170 (Hex: 3fb73094)
-Sin  : 0.990264 | Ideal: 0.990268 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.139192 | Ideal: 0.139173 | Diff: 0.000019 | Error: 0.0134%
-
-==== TEST CASE 83 ====
-Angle: 1.448623 (Hex: 3fb96c7d)
-Sin  : 0.992548 | Ideal: 0.992546 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.121842 | Ideal: 0.121869 | Diff: 0.000027 | Error: 0.0221%
-
-==== TEST CASE 84 ====
-Angle: 1.466077 (Hex: 3fbba866)
-Sin  : 0.994524 | Ideal: 0.994522 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.104501 | Ideal: 0.104528 | Diff: 0.000027 | Error: 0.0263%
-
-==== TEST CASE 85 ====
-Angle: 1.483530 (Hex: 3fbde44e)
-Sin  : 0.996196 | Ideal: 0.996195 | Diff: 0.000001 | Error: 0.0001%
-Cos  : 0.087126 | Ideal: 0.087156 | Diff: 0.000030 | Error: 0.0345%
-
-==== TEST CASE 86 ====
-Angle: 1.500983 (Hex: 3fc02037)
-Sin  : 0.997565 | Ideal: 0.997564 | Diff: 0.000001 | Error: 0.0001%
-Cos  : 0.069730 | Ideal: 0.069757 | Diff: 0.000027 | Error: 0.0387%
-
-==== TEST CASE 87 ====
-Angle: 1.518436 (Hex: 3fc25c20)
-Sin  : 0.998630 | Ideal: 0.998630 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.052307 | Ideal: 0.052336 | Diff: 0.000029 | Error: 0.0561%
-
-==== TEST CASE 88 ====
-Angle: 1.535890 (Hex: 3fc49809)
-Sin  : 0.999391 | Ideal: 0.999391 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.034870 | Ideal: 0.034899 | Diff: 0.000030 | Error: 0.0857%
-
-==== TEST CASE 89 ====
-Angle: 1.553343 (Hex: 3fc6d3f2)
-Sin  : 0.999846 | Ideal: 0.999848 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.017481 | Ideal: 0.017452 | Diff: 0.000029 | Error: 0.1646%
-
-==== TEST CASE 90 ====
-Angle: 1.570796 (Hex: 3fc90fdb)
-Sin  : 0.999999 | Ideal: 1.000000 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.000018 | Ideal: -0.000000 | Diff: 0.000018 | Error: 40151.7944%
-
-==== TEST CASE 91 ====
-Angle: 1.588250 (Hex: 3fcb4bc3)
-Sin  : 0.999846 | Ideal: 0.999848 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.017481 | Ideal: -0.017452 | Diff: 0.000029 | Error: 0.1648%
-
-==== TEST CASE 92 ====
-Angle: 1.605703 (Hex: 3fcd87ac)
-Sin  : 0.999391 | Ideal: 0.999391 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.034870 | Ideal: -0.034899 | Diff: 0.000030 | Error: 0.0856%
-
-==== TEST CASE 93 ====
-Angle: 1.623156 (Hex: 3fcfc395)
-Sin  : 0.998630 | Ideal: 0.998630 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.052307 | Ideal: -0.052336 | Diff: 0.000029 | Error: 0.0561%
-
-==== TEST CASE 94 ====
-Angle: 1.640610 (Hex: 3fd1ff7e)
-Sin  : 0.997565 | Ideal: 0.997564 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.069730 | Ideal: -0.069756 | Diff: 0.000027 | Error: 0.0387%
-
-==== TEST CASE 95 ====
-Angle: 1.658063 (Hex: 3fd43b67)
-Sin  : 0.996196 | Ideal: 0.996195 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.087126 | Ideal: -0.087156 | Diff: 0.000030 | Error: 0.0344%
-
-==== TEST CASE 96 ====
-Angle: 1.675516 (Hex: 3fd67750)
-Sin  : 0.994524 | Ideal: 0.994522 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.104501 | Ideal: -0.104529 | Diff: 0.000028 | Error: 0.0264%
-
-==== TEST CASE 97 ====
-Angle: 1.692969 (Hex: 3fd8b338)
-Sin  : 0.992548 | Ideal: 0.992546 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.121842 | Ideal: -0.121869 | Diff: 0.000027 | Error: 0.0221%
-
-==== TEST CASE 98 ====
-Angle: 1.710423 (Hex: 3fdaef21)
-Sin  : 0.990264 | Ideal: 0.990268 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.139192 | Ideal: -0.139173 | Diff: 0.000019 | Error: 0.0134%
-
-==== TEST CASE 99 ====
-Angle: 1.727876 (Hex: 3fdd2b0a)
-Sin  : 0.987684 | Ideal: 0.987688 | Diff: 0.000005 | Error: 0.0005%
-Cos  : -0.156455 | Ideal: -0.156434 | Diff: 0.000021 | Error: 0.0134%
-
-==== TEST CASE 100 ====
-Angle: 1.745329 (Hex: 3fdf66f3)
-Sin  : 0.984803 | Ideal: 0.984808 | Diff: 0.000005 | Error: 0.0005%
-Cos  : -0.173670 | Ideal: -0.173648 | Diff: 0.000021 | Error: 0.0123%
-
-==== TEST CASE 101 ====
-Angle: 1.762783 (Hex: 3fe1a2dc)
-Sin  : 0.981621 | Ideal: 0.981627 | Diff: 0.000006 | Error: 0.0006%
-Cos  : -0.190833 | Ideal: -0.190809 | Diff: 0.000024 | Error: 0.0125%
-
-==== TEST CASE 102 ====
-Angle: 1.780236 (Hex: 3fe3dec5)
-Sin  : 0.978144 | Ideal: 0.978148 | Diff: 0.000003 | Error: 0.0003%
-Cos  : -0.207921 | Ideal: -0.207912 | Diff: 0.000010 | Error: 0.0046%
-
-==== TEST CASE 103 ====
-Angle: 1.797689 (Hex: 3fe61aad)
-Sin  : 0.974366 | Ideal: 0.974370 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.224963 | Ideal: -0.224951 | Diff: 0.000012 | Error: 0.0053%
-
-==== TEST CASE 104 ====
-Angle: 1.815142 (Hex: 3fe85696)
-Sin  : 0.970291 | Ideal: 0.970296 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.241934 | Ideal: -0.241922 | Diff: 0.000012 | Error: 0.0051%
-
-==== TEST CASE 105 ====
-Angle: 1.832596 (Hex: 3fea927f)
-Sin  : 0.965921 | Ideal: 0.965926 | Diff: 0.000005 | Error: 0.0006%
-Cos  : -0.258834 | Ideal: -0.258819 | Diff: 0.000015 | Error: 0.0056%
-
-==== TEST CASE 106 ====
-Angle: 1.850049 (Hex: 3fecce68)
-Sin  : 0.961260 | Ideal: 0.961262 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.275638 | Ideal: -0.275637 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 107 ====
-Angle: 1.867502 (Hex: 3fef0a51)
-Sin  : 0.956303 | Ideal: 0.956305 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.292372 | Ideal: -0.292372 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 108 ====
-Angle: 1.884956 (Hex: 3ff1463a)
-Sin  : 0.951054 | Ideal: 0.951057 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.309020 | Ideal: -0.309017 | Diff: 0.000003 | Error: 0.0009%
-
-==== TEST CASE 109 ====
-Angle: 1.902409 (Hex: 3ff38222)
-Sin  : 0.945523 | Ideal: 0.945519 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.325553 | Ideal: -0.325568 | Diff: 0.000015 | Error: 0.0048%
-
-==== TEST CASE 110 ====
-Angle: 1.919862 (Hex: 3ff5be0b)
-Sin  : 0.939697 | Ideal: 0.939693 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.342005 | Ideal: -0.342020 | Diff: 0.000015 | Error: 0.0044%
-
-==== TEST CASE 111 ====
-Angle: 1.937315 (Hex: 3ff7f9f4)
-Sin  : 0.933584 | Ideal: 0.933580 | Diff: 0.000003 | Error: 0.0004%
-Cos  : -0.358355 | Ideal: -0.358368 | Diff: 0.000013 | Error: 0.0036%
-
-==== TEST CASE 112 ====
-Angle: 1.954769 (Hex: 3ffa35dd)
-Sin  : 0.927193 | Ideal: 0.927184 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.374580 | Ideal: -0.374607 | Diff: 0.000026 | Error: 0.0070%
-
-==== TEST CASE 113 ====
-Angle: 1.972222 (Hex: 3ffc71c6)
-Sin  : 0.920514 | Ideal: 0.920505 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.390707 | Ideal: -0.390731 | Diff: 0.000024 | Error: 0.0062%
-
-==== TEST CASE 114 ====
-Angle: 1.989675 (Hex: 3ffeadaf)
-Sin  : 0.913554 | Ideal: 0.913545 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.406713 | Ideal: -0.406737 | Diff: 0.000023 | Error: 0.0058%
-
-==== TEST CASE 115 ====
-Angle: 2.007129 (Hex: 400074cc)
-Sin  : 0.906316 | Ideal: 0.906308 | Diff: 0.000008 | Error: 0.0009%
-Cos  : -0.422597 | Ideal: -0.422618 | Diff: 0.000021 | Error: 0.0050%
-
-==== TEST CASE 116 ====
-Angle: 2.024582 (Hex: 400192c0)
-Sin  : 0.898782 | Ideal: 0.898794 | Diff: 0.000012 | Error: 0.0013%
-Cos  : -0.438392 | Ideal: -0.438371 | Diff: 0.000021 | Error: 0.0048%
-
-==== TEST CASE 117 ====
-Angle: 2.042035 (Hex: 4002b0b5)
-Sin  : 0.890993 | Ideal: 0.891006 | Diff: 0.000013 | Error: 0.0015%
-Cos  : -0.454014 | Ideal: -0.453991 | Diff: 0.000023 | Error: 0.0051%
-
-==== TEST CASE 118 ====
-Angle: 2.059489 (Hex: 4003cea9)
-Sin  : 0.882934 | Ideal: 0.882948 | Diff: 0.000014 | Error: 0.0016%
-Cos  : -0.469495 | Ideal: -0.469472 | Diff: 0.000023 | Error: 0.0050%
-
-==== TEST CASE 119 ====
-Angle: 2.076942 (Hex: 4004ec9d)
-Sin  : 0.874613 | Ideal: 0.874620 | Diff: 0.000007 | Error: 0.0008%
-Cos  : -0.484820 | Ideal: -0.484810 | Diff: 0.000010 | Error: 0.0021%
-
-==== TEST CASE 120 ====
-Angle: 2.094395 (Hex: 40060a92)
-Sin  : 0.866017 | Ideal: 0.866025 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.500012 | Ideal: -0.500000 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 121 ====
-Angle: 2.111848 (Hex: 40072886)
-Sin  : 0.857158 | Ideal: 0.857167 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.515050 | Ideal: -0.515038 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 122 ====
-Angle: 2.129302 (Hex: 4008467b)
-Sin  : 0.848038 | Ideal: 0.848048 | Diff: 0.000011 | Error: 0.0012%
-Cos  : -0.529933 | Ideal: -0.529919 | Diff: 0.000014 | Error: 0.0027%
-
-==== TEST CASE 123 ====
-Angle: 2.146755 (Hex: 4009646f)
-Sin  : 0.838662 | Ideal: 0.838671 | Diff: 0.000009 | Error: 0.0011%
-Cos  : -0.544650 | Ideal: -0.544639 | Diff: 0.000011 | Error: 0.0021%
-
-==== TEST CASE 124 ====
-Angle: 2.164208 (Hex: 400a8263)
-Sin  : 0.829027 | Ideal: 0.829038 | Diff: 0.000011 | Error: 0.0013%
-Cos  : -0.559206 | Ideal: -0.559193 | Diff: 0.000013 | Error: 0.0024%
-
-==== TEST CASE 125 ====
-Angle: 2.181662 (Hex: 400ba058)
-Sin  : 0.819141 | Ideal: 0.819152 | Diff: 0.000011 | Error: 0.0014%
-Cos  : -0.573590 | Ideal: -0.573576 | Diff: 0.000013 | Error: 0.0023%
-
-==== TEST CASE 126 ====
-Angle: 2.199115 (Hex: 400cbe4c)
-Sin  : 0.809004 | Ideal: 0.809017 | Diff: 0.000013 | Error: 0.0016%
-Cos  : -0.587801 | Ideal: -0.587785 | Diff: 0.000015 | Error: 0.0026%
-
-==== TEST CASE 127 ====
-Angle: 2.216568 (Hex: 400ddc41)
-Sin  : 0.798632 | Ideal: 0.798635 | Diff: 0.000004 | Error: 0.0005%
-Cos  : -0.601818 | Ideal: -0.601815 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 128 ====
-Angle: 2.234021 (Hex: 400efa35)
-Sin  : 0.788006 | Ideal: 0.788011 | Diff: 0.000004 | Error: 0.0005%
-Cos  : -0.615665 | Ideal: -0.615661 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 129 ====
-Angle: 2.251475 (Hex: 40101829)
-Sin  : 0.777140 | Ideal: 0.777146 | Diff: 0.000006 | Error: 0.0008%
-Cos  : -0.629326 | Ideal: -0.629320 | Diff: 0.000005 | Error: 0.0008%
-
-==== TEST CASE 130 ====
-Angle: 2.268928 (Hex: 4011361e)
-Sin  : 0.766047 | Ideal: 0.766044 | Diff: 0.000003 | Error: 0.0004%
-Cos  : -0.642782 | Ideal: -0.642788 | Diff: 0.000006 | Error: 0.0009%
-
-==== TEST CASE 131 ====
-Angle: 2.286381 (Hex: 40125412)
-Sin  : 0.754711 | Ideal: 0.754710 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.656055 | Ideal: -0.656059 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 132 ====
-Angle: 2.303835 (Hex: 40137207)
-Sin  : 0.743146 | Ideal: 0.743145 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.669127 | Ideal: -0.669131 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 133 ====
-Angle: 2.321288 (Hex: 40148ffb)
-Sin  : 0.731353 | Ideal: 0.731354 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.681997 | Ideal: -0.681998 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 134 ====
-Angle: 2.338741 (Hex: 4015adf0)
-Sin  : 0.719350 | Ideal: 0.719340 | Diff: 0.000010 | Error: 0.0014%
-Cos  : -0.694646 | Ideal: -0.694658 | Diff: 0.000013 | Error: 0.0018%
-
-==== TEST CASE 135 ====
-Angle: 2.356194 (Hex: 4016cbe4)
-Sin  : 0.707117 | Ideal: 0.707107 | Diff: 0.000010 | Error: 0.0014%
-Cos  : -0.707095 | Ideal: -0.707107 | Diff: 0.000012 | Error: 0.0017%
-
-==== TEST CASE 136 ====
-Angle: 2.373648 (Hex: 4017e9d8)
-Sin  : 0.694646 | Ideal: 0.694658 | Diff: 0.000012 | Error: 0.0018%
-Cos  : -0.719350 | Ideal: -0.719340 | Diff: 0.000010 | Error: 0.0014%
-
-==== TEST CASE 137 ====
-Angle: 2.391101 (Hex: 401907cd)
-Sin  : 0.681997 | Ideal: 0.681998 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.731353 | Ideal: -0.731354 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 138 ====
-Angle: 2.408554 (Hex: 401a25c1)
-Sin  : 0.669127 | Ideal: 0.669131 | Diff: 0.000004 | Error: 0.0006%
-Cos  : -0.743146 | Ideal: -0.743145 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 139 ====
-Angle: 2.426008 (Hex: 401b43b6)
-Sin  : 0.656055 | Ideal: 0.656059 | Diff: 0.000004 | Error: 0.0006%
-Cos  : -0.754711 | Ideal: -0.754710 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 140 ====
-Angle: 2.443461 (Hex: 401c61aa)
-Sin  : 0.642782 | Ideal: 0.642788 | Diff: 0.000006 | Error: 0.0009%
-Cos  : -0.766047 | Ideal: -0.766044 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 141 ====
-Angle: 2.460914 (Hex: 401d7f9e)
-Sin  : 0.629326 | Ideal: 0.629320 | Diff: 0.000005 | Error: 0.0008%
-Cos  : -0.777140 | Ideal: -0.777146 | Diff: 0.000006 | Error: 0.0008%
-
-==== TEST CASE 142 ====
-Angle: 2.478368 (Hex: 401e9d93)
-Sin  : 0.615665 | Ideal: 0.615661 | Diff: 0.000003 | Error: 0.0005%
-Cos  : -0.788006 | Ideal: -0.788011 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 143 ====
-Angle: 2.495821 (Hex: 401fbb87)
-Sin  : 0.601818 | Ideal: 0.601815 | Diff: 0.000003 | Error: 0.0005%
-Cos  : -0.798632 | Ideal: -0.798635 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 144 ====
-Angle: 2.513274 (Hex: 4020d97c)
-Sin  : 0.587801 | Ideal: 0.587785 | Diff: 0.000015 | Error: 0.0026%
-Cos  : -0.809004 | Ideal: -0.809017 | Diff: 0.000013 | Error: 0.0016%
-
-==== TEST CASE 145 ====
-Angle: 2.530727 (Hex: 4021f770)
-Sin  : 0.573590 | Ideal: 0.573576 | Diff: 0.000013 | Error: 0.0023%
-Cos  : -0.819141 | Ideal: -0.819152 | Diff: 0.000011 | Error: 0.0014%
-
-==== TEST CASE 146 ====
-Angle: 2.548181 (Hex: 40231565)
-Sin  : 0.559206 | Ideal: 0.559193 | Diff: 0.000013 | Error: 0.0024%
-Cos  : -0.829027 | Ideal: -0.829038 | Diff: 0.000011 | Error: 0.0013%
-
-==== TEST CASE 147 ====
-Angle: 2.565634 (Hex: 40243359)
-Sin  : 0.544650 | Ideal: 0.544639 | Diff: 0.000011 | Error: 0.0021%
-Cos  : -0.838662 | Ideal: -0.838671 | Diff: 0.000009 | Error: 0.0011%
-
-==== TEST CASE 148 ====
-Angle: 2.583087 (Hex: 4025514d)
-Sin  : 0.529933 | Ideal: 0.529919 | Diff: 0.000014 | Error: 0.0027%
-Cos  : -0.848038 | Ideal: -0.848048 | Diff: 0.000011 | Error: 0.0012%
-
-==== TEST CASE 149 ====
-Angle: 2.600541 (Hex: 40266f42)
-Sin  : 0.515050 | Ideal: 0.515038 | Diff: 0.000012 | Error: 0.0024%
-Cos  : -0.857158 | Ideal: -0.857167 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 150 ====
-Angle: 2.617994 (Hex: 40278d36)
-Sin  : 0.500012 | Ideal: 0.500000 | Diff: 0.000012 | Error: 0.0024%
-Cos  : -0.866017 | Ideal: -0.866025 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 151 ====
-Angle: 2.635447 (Hex: 4028ab2b)
-Sin  : 0.484820 | Ideal: 0.484810 | Diff: 0.000010 | Error: 0.0021%
-Cos  : -0.874613 | Ideal: -0.874620 | Diff: 0.000007 | Error: 0.0008%
-
-==== TEST CASE 152 ====
-Angle: 2.652900 (Hex: 4029c91f)
-Sin  : 0.469495 | Ideal: 0.469472 | Diff: 0.000023 | Error: 0.0050%
-Cos  : -0.882934 | Ideal: -0.882948 | Diff: 0.000014 | Error: 0.0016%
-
-==== TEST CASE 153 ====
-Angle: 2.670354 (Hex: 402ae713)
-Sin  : 0.454014 | Ideal: 0.453991 | Diff: 0.000023 | Error: 0.0051%
-Cos  : -0.890993 | Ideal: -0.891006 | Diff: 0.000013 | Error: 0.0015%
-
-==== TEST CASE 154 ====
-Angle: 2.687807 (Hex: 402c0508)
-Sin  : 0.438392 | Ideal: 0.438371 | Diff: 0.000021 | Error: 0.0048%
-Cos  : -0.898782 | Ideal: -0.898794 | Diff: 0.000012 | Error: 0.0013%
-
-==== TEST CASE 155 ====
-Angle: 2.705260 (Hex: 402d22fc)
-Sin  : 0.422597 | Ideal: 0.422618 | Diff: 0.000021 | Error: 0.0050%
-Cos  : -0.906316 | Ideal: -0.906308 | Diff: 0.000008 | Error: 0.0009%
-
-==== TEST CASE 156 ====
-Angle: 2.722714 (Hex: 402e40f1)
-Sin  : 0.406713 | Ideal: 0.406737 | Diff: 0.000023 | Error: 0.0057%
-Cos  : -0.913554 | Ideal: -0.913545 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 157 ====
-Angle: 2.740167 (Hex: 402f5ee5)
-Sin  : 0.390707 | Ideal: 0.390731 | Diff: 0.000024 | Error: 0.0062%
-Cos  : -0.920514 | Ideal: -0.920505 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 158 ====
-Angle: 2.757620 (Hex: 40307cda)
-Sin  : 0.374580 | Ideal: 0.374606 | Diff: 0.000026 | Error: 0.0070%
-Cos  : -0.927193 | Ideal: -0.927184 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 159 ====
-Angle: 2.775074 (Hex: 40319ace)
-Sin  : 0.358355 | Ideal: 0.358368 | Diff: 0.000013 | Error: 0.0036%
-Cos  : -0.933584 | Ideal: -0.933580 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 160 ====
-Angle: 2.792527 (Hex: 4032b8c2)
-Sin  : 0.342005 | Ideal: 0.342020 | Diff: 0.000015 | Error: 0.0045%
-Cos  : -0.939697 | Ideal: -0.939693 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 161 ====
-Angle: 2.809980 (Hex: 4033d6b7)
-Sin  : 0.325553 | Ideal: 0.325568 | Diff: 0.000015 | Error: 0.0048%
-Cos  : -0.945523 | Ideal: -0.945519 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 162 ====
-Angle: 2.827433 (Hex: 4034f4ab)
-Sin  : 0.309020 | Ideal: 0.309017 | Diff: 0.000003 | Error: 0.0009%
-Cos  : -0.951054 | Ideal: -0.951057 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 163 ====
-Angle: 2.844887 (Hex: 403612a0)
-Sin  : 0.292372 | Ideal: 0.292372 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.956303 | Ideal: -0.956305 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 164 ====
-Angle: 2.862340 (Hex: 40373094)
-Sin  : 0.275638 | Ideal: 0.275637 | Diff: 0.000000 | Error: 0.0001%
-Cos  : -0.961260 | Ideal: -0.961262 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 165 ====
-Angle: 2.879793 (Hex: 40384e88)
-Sin  : 0.258834 | Ideal: 0.258819 | Diff: 0.000014 | Error: 0.0056%
-Cos  : -0.965921 | Ideal: -0.965926 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 166 ====
-Angle: 2.897247 (Hex: 40396c7d)
-Sin  : 0.241934 | Ideal: 0.241922 | Diff: 0.000012 | Error: 0.0051%
-Cos  : -0.970291 | Ideal: -0.970296 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 167 ====
-Angle: 2.914700 (Hex: 403a8a71)
-Sin  : 0.224963 | Ideal: 0.224951 | Diff: 0.000012 | Error: 0.0053%
-Cos  : -0.974366 | Ideal: -0.974370 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 168 ====
-Angle: 2.932153 (Hex: 403ba866)
-Sin  : 0.207921 | Ideal: 0.207912 | Diff: 0.000010 | Error: 0.0047%
-Cos  : -0.978144 | Ideal: -0.978148 | Diff: 0.000003 | Error: 0.0003%
-
-==== TEST CASE 169 ====
-Angle: 2.949606 (Hex: 403cc65a)
-Sin  : 0.190833 | Ideal: 0.190809 | Diff: 0.000024 | Error: 0.0125%
-Cos  : -0.981621 | Ideal: -0.981627 | Diff: 0.000006 | Error: 0.0006%
-
-==== TEST CASE 170 ====
-Angle: 2.967060 (Hex: 403de44e)
-Sin  : 0.173670 | Ideal: 0.173648 | Diff: 0.000021 | Error: 0.0123%
-Cos  : -0.984803 | Ideal: -0.984808 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 171 ====
-Angle: 2.984513 (Hex: 403f0243)
-Sin  : 0.156455 | Ideal: 0.156434 | Diff: 0.000021 | Error: 0.0134%
-Cos  : -0.987684 | Ideal: -0.987688 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 172 ====
-Angle: 3.001966 (Hex: 40402037)
-Sin  : 0.139192 | Ideal: 0.139173 | Diff: 0.000019 | Error: 0.0134%
-Cos  : -0.990264 | Ideal: -0.990268 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 173 ====
-Angle: 3.019420 (Hex: 40413e2c)
-Sin  : 0.121842 | Ideal: 0.121869 | Diff: 0.000027 | Error: 0.0221%
-Cos  : -0.992548 | Ideal: -0.992546 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 174 ====
-Angle: 3.036873 (Hex: 40425c20)
-Sin  : 0.104501 | Ideal: 0.104528 | Diff: 0.000028 | Error: 0.0264%
-Cos  : -0.994524 | Ideal: -0.994522 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 175 ====
-Angle: 3.054326 (Hex: 40437a15)
-Sin  : 0.087126 | Ideal: 0.087156 | Diff: 0.000030 | Error: 0.0343%
-Cos  : -0.996196 | Ideal: -0.996195 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 176 ====
-Angle: 3.071779 (Hex: 40449809)
-Sin  : 0.069730 | Ideal: 0.069756 | Diff: 0.000027 | Error: 0.0386%
-Cos  : -0.997565 | Ideal: -0.997564 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 177 ====
-Angle: 3.089233 (Hex: 4045b5fd)
-Sin  : 0.052307 | Ideal: 0.052336 | Diff: 0.000029 | Error: 0.0563%
-Cos  : -0.998630 | Ideal: -0.998630 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 178 ====
-Angle: 3.106686 (Hex: 4046d3f2)
-Sin  : 0.034870 | Ideal: 0.034899 | Diff: 0.000030 | Error: 0.0855%
-Cos  : -0.999391 | Ideal: -0.999391 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 179 ====
-Angle: 3.124139 (Hex: 4047f1e6)
-Sin  : 0.017481 | Ideal: 0.017452 | Diff: 0.000029 | Error: 0.1641%
-Cos  : -0.999846 | Ideal: -0.999848 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 180 ====
-Angle: 3.141593 (Hex: 40490fdb)
-Sin  : 0.000018 | Ideal: -0.000000 | Diff: 0.000018 | Error: 20225.8972%
-Cos  : -0.999999 | Ideal: -1.000000 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 181 ====
-Angle: 3.159046 (Hex: 404a2dcf)
-Sin  : -0.017481 | Ideal: -0.017452 | Diff: 0.000029 | Error: 0.1645%
-Cos  : -0.999846 | Ideal: -0.999848 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 182 ====
-Angle: 3.176499 (Hex: 404b4bc3)
-Sin  : -0.034870 | Ideal: -0.034899 | Diff: 0.000030 | Error: 0.0853%
-Cos  : -0.999391 | Ideal: -0.999391 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 183 ====
-Angle: 3.193953 (Hex: 404c69b8)
-Sin  : -0.052307 | Ideal: -0.052336 | Diff: 0.000029 | Error: 0.0561%
-Cos  : -0.998630 | Ideal: -0.998630 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 184 ====
-Angle: 3.211406 (Hex: 404d87ac)
-Sin  : -0.069730 | Ideal: -0.069756 | Diff: 0.000027 | Error: 0.0385%
-Cos  : -0.997565 | Ideal: -0.997564 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 185 ====
-Angle: 3.228859 (Hex: 404ea5a1)
-Sin  : -0.087126 | Ideal: -0.087156 | Diff: 0.000030 | Error: 0.0345%
-Cos  : -0.996196 | Ideal: -0.996195 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 186 ====
-Angle: 3.246312 (Hex: 404fc395)
-Sin  : -0.104501 | Ideal: -0.104528 | Diff: 0.000027 | Error: 0.0263%
-Cos  : -0.994524 | Ideal: -0.994522 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 187 ====
-Angle: 3.263766 (Hex: 4050e18a)
-Sin  : -0.121842 | Ideal: -0.121869 | Diff: 0.000027 | Error: 0.0222%
-Cos  : -0.992548 | Ideal: -0.992546 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 188 ====
-Angle: 3.281219 (Hex: 4051ff7e)
-Sin  : -0.139192 | Ideal: -0.139173 | Diff: 0.000019 | Error: 0.0134%
-Cos  : -0.990264 | Ideal: -0.990268 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 189 ====
-Angle: 3.298672 (Hex: 40531d72)
-Sin  : -0.156455 | Ideal: -0.156434 | Diff: 0.000021 | Error: 0.0135%
-Cos  : -0.987684 | Ideal: -0.987688 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 190 ====
-Angle: 3.316126 (Hex: 40543b67)
-Sin  : -0.173670 | Ideal: -0.173648 | Diff: 0.000021 | Error: 0.0123%
-Cos  : -0.984803 | Ideal: -0.984808 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 191 ====
-Angle: 3.333579 (Hex: 4055595b)
-Sin  : -0.190833 | Ideal: -0.190809 | Diff: 0.000024 | Error: 0.0125%
-Cos  : -0.981621 | Ideal: -0.981627 | Diff: 0.000006 | Error: 0.0006%
-
-==== TEST CASE 192 ====
-Angle: 3.351032 (Hex: 40567750)
-Sin  : -0.207921 | Ideal: -0.207912 | Diff: 0.000010 | Error: 0.0046%
-Cos  : -0.978144 | Ideal: -0.978148 | Diff: 0.000003 | Error: 0.0003%
-
-==== TEST CASE 193 ====
-Angle: 3.368485 (Hex: 40579544)
-Sin  : -0.224963 | Ideal: -0.224951 | Diff: 0.000012 | Error: 0.0053%
-Cos  : -0.974366 | Ideal: -0.974370 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 194 ====
-Angle: 3.385939 (Hex: 4058b338)
-Sin  : -0.241934 | Ideal: -0.241922 | Diff: 0.000012 | Error: 0.0052%
-Cos  : -0.970291 | Ideal: -0.970296 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 195 ====
-Angle: 3.403392 (Hex: 4059d12d)
-Sin  : -0.258834 | Ideal: -0.258819 | Diff: 0.000015 | Error: 0.0056%
-Cos  : -0.965921 | Ideal: -0.965926 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 196 ====
-Angle: 3.420845 (Hex: 405aef21)
-Sin  : -0.275638 | Ideal: -0.275637 | Diff: 0.000000 | Error: 0.0001%
-Cos  : -0.961260 | Ideal: -0.961262 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 197 ====
-Angle: 3.438299 (Hex: 405c0d16)
-Sin  : -0.292372 | Ideal: -0.292372 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.956303 | Ideal: -0.956305 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 198 ====
-Angle: 3.455752 (Hex: 405d2b0a)
-Sin  : -0.309020 | Ideal: -0.309017 | Diff: 0.000003 | Error: 0.0009%
-Cos  : -0.951054 | Ideal: -0.951057 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 199 ====
-Angle: 3.473205 (Hex: 405e48ff)
-Sin  : -0.325553 | Ideal: -0.325568 | Diff: 0.000016 | Error: 0.0048%
-Cos  : -0.945523 | Ideal: -0.945519 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 200 ====
-Angle: 3.490659 (Hex: 405f66f3)
-Sin  : -0.342005 | Ideal: -0.342020 | Diff: 0.000015 | Error: 0.0044%
-Cos  : -0.939697 | Ideal: -0.939693 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 201 ====
-Angle: 3.508112 (Hex: 406084e7)
-Sin  : -0.358355 | Ideal: -0.358368 | Diff: 0.000013 | Error: 0.0036%
-Cos  : -0.933584 | Ideal: -0.933580 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 202 ====
-Angle: 3.525565 (Hex: 4061a2dc)
-Sin  : -0.374580 | Ideal: -0.374607 | Diff: 0.000026 | Error: 0.0071%
-Cos  : -0.927193 | Ideal: -0.927184 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 203 ====
-Angle: 3.543018 (Hex: 4062c0d0)
-Sin  : -0.390707 | Ideal: -0.390731 | Diff: 0.000024 | Error: 0.0061%
-Cos  : -0.920514 | Ideal: -0.920505 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 204 ====
-Angle: 3.560472 (Hex: 4063dec5)
-Sin  : -0.406713 | Ideal: -0.406737 | Diff: 0.000023 | Error: 0.0058%
-Cos  : -0.913554 | Ideal: -0.913545 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 205 ====
-Angle: 3.577925 (Hex: 4064fcb9)
-Sin  : -0.422597 | Ideal: -0.422618 | Diff: 0.000021 | Error: 0.0049%
-Cos  : -0.906316 | Ideal: -0.906308 | Diff: 0.000008 | Error: 0.0009%
-
-==== TEST CASE 206 ====
-Angle: 3.595378 (Hex: 40661aad)
-Sin  : -0.438392 | Ideal: -0.438371 | Diff: 0.000021 | Error: 0.0048%
-Cos  : -0.898782 | Ideal: -0.898794 | Diff: 0.000012 | Error: 0.0013%
-
-==== TEST CASE 207 ====
-Angle: 3.612832 (Hex: 406738a2)
-Sin  : -0.454014 | Ideal: -0.453991 | Diff: 0.000023 | Error: 0.0051%
-Cos  : -0.890993 | Ideal: -0.891007 | Diff: 0.000013 | Error: 0.0015%
-
-==== TEST CASE 208 ====
-Angle: 3.630285 (Hex: 40685696)
-Sin  : -0.469495 | Ideal: -0.469472 | Diff: 0.000023 | Error: 0.0050%
-Cos  : -0.882934 | Ideal: -0.882948 | Diff: 0.000014 | Error: 0.0016%
-
-==== TEST CASE 209 ====
-Angle: 3.647738 (Hex: 4069748b)
-Sin  : -0.484820 | Ideal: -0.484810 | Diff: 0.000010 | Error: 0.0020%
-Cos  : -0.874613 | Ideal: -0.874620 | Diff: 0.000007 | Error: 0.0008%
-
-==== TEST CASE 210 ====
-Angle: 3.665191 (Hex: 406a927f)
-Sin  : -0.500012 | Ideal: -0.500000 | Diff: 0.000012 | Error: 0.0024%
-Cos  : -0.866017 | Ideal: -0.866025 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 211 ====
-Angle: 3.682645 (Hex: 406bb073)
-Sin  : -0.515050 | Ideal: -0.515038 | Diff: 0.000012 | Error: 0.0024%
-Cos  : -0.857158 | Ideal: -0.857167 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 212 ====
-Angle: 3.700098 (Hex: 406cce68)
-Sin  : -0.529933 | Ideal: -0.529919 | Diff: 0.000014 | Error: 0.0027%
-Cos  : -0.848038 | Ideal: -0.848048 | Diff: 0.000011 | Error: 0.0012%
-
-==== TEST CASE 213 ====
-Angle: 3.717551 (Hex: 406dec5c)
-Sin  : -0.544650 | Ideal: -0.544639 | Diff: 0.000011 | Error: 0.0021%
-Cos  : -0.838662 | Ideal: -0.838671 | Diff: 0.000009 | Error: 0.0011%
-
-==== TEST CASE 214 ====
-Angle: 3.735005 (Hex: 406f0a51)
-Sin  : -0.559206 | Ideal: -0.559193 | Diff: 0.000013 | Error: 0.0024%
-Cos  : -0.829027 | Ideal: -0.829038 | Diff: 0.000011 | Error: 0.0013%
-
-==== TEST CASE 215 ====
-Angle: 3.752458 (Hex: 40702845)
-Sin  : -0.573590 | Ideal: -0.573576 | Diff: 0.000014 | Error: 0.0024%
-Cos  : -0.819141 | Ideal: -0.819152 | Diff: 0.000011 | Error: 0.0014%
-
-==== TEST CASE 216 ====
-Angle: 3.769911 (Hex: 4071463a)
-Sin  : -0.587801 | Ideal: -0.587785 | Diff: 0.000015 | Error: 0.0026%
-Cos  : -0.809004 | Ideal: -0.809017 | Diff: 0.000013 | Error: 0.0016%
-
-==== TEST CASE 217 ====
-Angle: 3.787364 (Hex: 4072642e)
-Sin  : -0.601818 | Ideal: -0.601815 | Diff: 0.000003 | Error: 0.0005%
-Cos  : -0.798632 | Ideal: -0.798636 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 218 ====
-Angle: 3.804818 (Hex: 40738222)
-Sin  : -0.615665 | Ideal: -0.615661 | Diff: 0.000003 | Error: 0.0005%
-Cos  : -0.788006 | Ideal: -0.788011 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 219 ====
-Angle: 3.822271 (Hex: 4074a017)
-Sin  : -0.629326 | Ideal: -0.629320 | Diff: 0.000005 | Error: 0.0008%
-Cos  : -0.777140 | Ideal: -0.777146 | Diff: 0.000006 | Error: 0.0008%
-
-==== TEST CASE 220 ====
-Angle: 3.839724 (Hex: 4075be0b)
-Sin  : -0.642782 | Ideal: -0.642788 | Diff: 0.000006 | Error: 0.0009%
-Cos  : -0.766047 | Ideal: -0.766044 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 221 ====
-Angle: 3.857178 (Hex: 4076dc00)
-Sin  : -0.656055 | Ideal: -0.656059 | Diff: 0.000004 | Error: 0.0006%
-Cos  : -0.754711 | Ideal: -0.754710 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 222 ====
-Angle: 3.874631 (Hex: 4077f9f4)
-Sin  : -0.669127 | Ideal: -0.669131 | Diff: 0.000004 | Error: 0.0005%
-Cos  : -0.743146 | Ideal: -0.743145 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 223 ====
-Angle: 3.892084 (Hex: 407917e8)
-Sin  : -0.681997 | Ideal: -0.681998 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.731353 | Ideal: -0.731354 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 224 ====
-Angle: 3.909538 (Hex: 407a35dd)
-Sin  : -0.694646 | Ideal: -0.694658 | Diff: 0.000012 | Error: 0.0018%
-Cos  : -0.719350 | Ideal: -0.719340 | Diff: 0.000010 | Error: 0.0014%
-
-==== TEST CASE 225 ====
-Angle: 3.926991 (Hex: 407b53d1)
-Sin  : -0.707095 | Ideal: -0.707107 | Diff: 0.000012 | Error: 0.0017%
-Cos  : -0.707117 | Ideal: -0.707107 | Diff: 0.000010 | Error: 0.0014%
-
-==== TEST CASE 226 ====
-Angle: 3.944444 (Hex: 407c71c6)
-Sin  : -0.719350 | Ideal: -0.719340 | Diff: 0.000010 | Error: 0.0014%
-Cos  : -0.694646 | Ideal: -0.694658 | Diff: 0.000012 | Error: 0.0018%
-
-==== TEST CASE 227 ====
-Angle: 3.961897 (Hex: 407d8fba)
-Sin  : -0.731353 | Ideal: -0.731354 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.681997 | Ideal: -0.681998 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 228 ====
-Angle: 3.979351 (Hex: 407eadaf)
-Sin  : -0.743146 | Ideal: -0.743145 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.669127 | Ideal: -0.669131 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 229 ====
-Angle: 3.996804 (Hex: 407fcba3)
-Sin  : -0.754711 | Ideal: -0.754710 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.656055 | Ideal: -0.656059 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 230 ====
-Angle: 4.014257 (Hex: 408074cc)
-Sin  : -0.766047 | Ideal: -0.766045 | Diff: 0.000003 | Error: 0.0004%
-Cos  : -0.642782 | Ideal: -0.642787 | Diff: 0.000006 | Error: 0.0009%
-
-==== TEST CASE 231 ====
-Angle: 4.031711 (Hex: 408103c6)
-Sin  : -0.777140 | Ideal: -0.777146 | Diff: 0.000006 | Error: 0.0008%
-Cos  : -0.629326 | Ideal: -0.629320 | Diff: 0.000005 | Error: 0.0008%
-
-==== TEST CASE 232 ====
-Angle: 4.049164 (Hex: 408192c0)
-Sin  : -0.788006 | Ideal: -0.788011 | Diff: 0.000004 | Error: 0.0005%
-Cos  : -0.615665 | Ideal: -0.615662 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 233 ====
-Angle: 4.066617 (Hex: 408221ba)
-Sin  : -0.798632 | Ideal: -0.798635 | Diff: 0.000004 | Error: 0.0005%
-Cos  : -0.601818 | Ideal: -0.601815 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 234 ====
-Angle: 4.084071 (Hex: 4082b0b5)
-Sin  : -0.809004 | Ideal: -0.809017 | Diff: 0.000013 | Error: 0.0016%
-Cos  : -0.587801 | Ideal: -0.587785 | Diff: 0.000015 | Error: 0.0026%
-
-==== TEST CASE 235 ====
-Angle: 4.101524 (Hex: 40833faf)
-Sin  : -0.819141 | Ideal: -0.819152 | Diff: 0.000011 | Error: 0.0014%
-Cos  : -0.573590 | Ideal: -0.573576 | Diff: 0.000014 | Error: 0.0024%
-
-==== TEST CASE 236 ====
-Angle: 4.118977 (Hex: 4083cea9)
-Sin  : -0.829027 | Ideal: -0.829038 | Diff: 0.000011 | Error: 0.0013%
-Cos  : -0.559206 | Ideal: -0.559193 | Diff: 0.000013 | Error: 0.0024%
-
-==== TEST CASE 237 ====
-Angle: 4.136430 (Hex: 40845da3)
-Sin  : -0.838662 | Ideal: -0.838671 | Diff: 0.000009 | Error: 0.0011%
-Cos  : -0.544650 | Ideal: -0.544639 | Diff: 0.000011 | Error: 0.0021%
-
-==== TEST CASE 238 ====
-Angle: 4.153883 (Hex: 4084ec9d)
-Sin  : -0.848038 | Ideal: -0.848048 | Diff: 0.000010 | Error: 0.0012%
-Cos  : -0.529933 | Ideal: -0.529919 | Diff: 0.000014 | Error: 0.0027%
-
-==== TEST CASE 239 ====
-Angle: 4.171337 (Hex: 40857b98)
-Sin  : -0.857158 | Ideal: -0.857167 | Diff: 0.000009 | Error: 0.0011%
-Cos  : -0.515050 | Ideal: -0.515038 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 240 ====
-Angle: 4.188790 (Hex: 40860a92)
-Sin  : -0.866017 | Ideal: -0.866025 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.500012 | Ideal: -0.500000 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 241 ====
-Angle: 4.206244 (Hex: 4086998c)
-Sin  : -0.874613 | Ideal: -0.874620 | Diff: 0.000007 | Error: 0.0008%
-Cos  : -0.484820 | Ideal: -0.484810 | Diff: 0.000010 | Error: 0.0021%
-
-==== TEST CASE 242 ====
-Angle: 4.223697 (Hex: 40872886)
-Sin  : -0.882934 | Ideal: -0.882948 | Diff: 0.000014 | Error: 0.0016%
-Cos  : -0.469495 | Ideal: -0.469472 | Diff: 0.000023 | Error: 0.0050%
-
-==== TEST CASE 243 ====
-Angle: 4.241150 (Hex: 4087b780)
-Sin  : -0.890993 | Ideal: -0.891006 | Diff: 0.000013 | Error: 0.0015%
-Cos  : -0.454014 | Ideal: -0.453991 | Diff: 0.000023 | Error: 0.0051%
-
-==== TEST CASE 244 ====
-Angle: 4.258604 (Hex: 4088467b)
-Sin  : -0.898782 | Ideal: -0.898794 | Diff: 0.000012 | Error: 0.0013%
-Cos  : -0.438392 | Ideal: -0.438371 | Diff: 0.000021 | Error: 0.0049%
-
-==== TEST CASE 245 ====
-Angle: 4.276057 (Hex: 4088d575)
-Sin  : -0.906316 | Ideal: -0.906308 | Diff: 0.000008 | Error: 0.0009%
-Cos  : -0.422597 | Ideal: -0.422618 | Diff: 0.000021 | Error: 0.0049%
-
-==== TEST CASE 246 ====
-Angle: 4.293510 (Hex: 4089646f)
-Sin  : -0.913554 | Ideal: -0.913545 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.406713 | Ideal: -0.406737 | Diff: 0.000023 | Error: 0.0057%
-
-==== TEST CASE 247 ====
-Angle: 4.310963 (Hex: 4089f369)
-Sin  : -0.920514 | Ideal: -0.920505 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.390707 | Ideal: -0.390731 | Diff: 0.000024 | Error: 0.0062%
-
-==== TEST CASE 248 ====
-Angle: 4.328416 (Hex: 408a8263)
-Sin  : -0.927193 | Ideal: -0.927184 | Diff: 0.000009 | Error: 0.0010%
-Cos  : -0.374580 | Ideal: -0.374607 | Diff: 0.000027 | Error: 0.0071%
-
-==== TEST CASE 249 ====
-Angle: 4.345870 (Hex: 408b115e)
-Sin  : -0.933584 | Ideal: -0.933580 | Diff: 0.000003 | Error: 0.0004%
-Cos  : -0.358355 | Ideal: -0.358368 | Diff: 0.000013 | Error: 0.0035%
-
-==== TEST CASE 250 ====
-Angle: 4.363323 (Hex: 408ba058)
-Sin  : -0.939697 | Ideal: -0.939693 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.342005 | Ideal: -0.342020 | Diff: 0.000015 | Error: 0.0044%
-
-==== TEST CASE 251 ====
-Angle: 4.380776 (Hex: 408c2f52)
-Sin  : -0.945523 | Ideal: -0.945519 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.325553 | Ideal: -0.325568 | Diff: 0.000016 | Error: 0.0048%
-
-==== TEST CASE 252 ====
-Angle: 4.398230 (Hex: 408cbe4c)
-Sin  : -0.951054 | Ideal: -0.951056 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.309020 | Ideal: -0.309017 | Diff: 0.000003 | Error: 0.0009%
-
-==== TEST CASE 253 ====
-Angle: 4.415683 (Hex: 408d4d46)
-Sin  : -0.956303 | Ideal: -0.956305 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.292372 | Ideal: -0.292372 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 254 ====
-Angle: 4.433136 (Hex: 408ddc41)
-Sin  : -0.961260 | Ideal: -0.961262 | Diff: 0.000001 | Error: 0.0002%
-Cos  : -0.275638 | Ideal: -0.275637 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 255 ====
-Angle: 4.450590 (Hex: 408e6b3b)
-Sin  : -0.965921 | Ideal: -0.965926 | Diff: 0.000005 | Error: 0.0006%
-Cos  : -0.258834 | Ideal: -0.258819 | Diff: 0.000015 | Error: 0.0057%
-
-==== TEST CASE 256 ====
-Angle: 4.468043 (Hex: 408efa35)
-Sin  : -0.970291 | Ideal: -0.970296 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.241934 | Ideal: -0.241922 | Diff: 0.000012 | Error: 0.0051%
-
-==== TEST CASE 257 ====
-Angle: 4.485496 (Hex: 408f892f)
-Sin  : -0.974366 | Ideal: -0.974370 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.224963 | Ideal: -0.224951 | Diff: 0.000012 | Error: 0.0052%
-
-==== TEST CASE 258 ====
-Angle: 4.502949 (Hex: 40901829)
-Sin  : -0.978144 | Ideal: -0.978148 | Diff: 0.000003 | Error: 0.0003%
-Cos  : -0.207921 | Ideal: -0.207912 | Diff: 0.000009 | Error: 0.0045%
-
-==== TEST CASE 259 ====
-Angle: 4.520403 (Hex: 4090a724)
-Sin  : -0.981621 | Ideal: -0.981627 | Diff: 0.000006 | Error: 0.0006%
-Cos  : -0.190833 | Ideal: -0.190809 | Diff: 0.000024 | Error: 0.0125%
-
-==== TEST CASE 260 ====
-Angle: 4.537856 (Hex: 4091361e)
-Sin  : -0.984803 | Ideal: -0.984808 | Diff: 0.000005 | Error: 0.0005%
-Cos  : -0.173670 | Ideal: -0.173648 | Diff: 0.000021 | Error: 0.0124%
-
-==== TEST CASE 261 ====
-Angle: 4.555309 (Hex: 4091c518)
-Sin  : -0.987684 | Ideal: -0.987688 | Diff: 0.000005 | Error: 0.0005%
-Cos  : -0.156455 | Ideal: -0.156435 | Diff: 0.000021 | Error: 0.0134%
-
-==== TEST CASE 262 ====
-Angle: 4.572762 (Hex: 40925412)
-Sin  : -0.990264 | Ideal: -0.990268 | Diff: 0.000004 | Error: 0.0004%
-Cos  : -0.139192 | Ideal: -0.139173 | Diff: 0.000019 | Error: 0.0133%
-
-==== TEST CASE 263 ====
-Angle: 4.590216 (Hex: 4092e30d)
-Sin  : -0.992548 | Ideal: -0.992546 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.121842 | Ideal: -0.121869 | Diff: 0.000027 | Error: 0.0219%
-
-==== TEST CASE 264 ====
-Angle: 4.607669 (Hex: 40937207)
-Sin  : -0.994524 | Ideal: -0.994522 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.104501 | Ideal: -0.104528 | Diff: 0.000027 | Error: 0.0262%
-
-==== TEST CASE 265 ====
-Angle: 4.625123 (Hex: 40940101)
-Sin  : -0.996196 | Ideal: -0.996195 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.087126 | Ideal: -0.087156 | Diff: 0.000030 | Error: 0.0344%
-
-==== TEST CASE 266 ====
-Angle: 4.642576 (Hex: 40948ffb)
-Sin  : -0.997565 | Ideal: -0.997564 | Diff: 0.000001 | Error: 0.0001%
-Cos  : -0.069730 | Ideal: -0.069757 | Diff: 0.000027 | Error: 0.0387%
-
-==== TEST CASE 267 ====
-Angle: 4.660029 (Hex: 40951ef5)
-Sin  : -0.998630 | Ideal: -0.998630 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.052307 | Ideal: -0.052336 | Diff: 0.000030 | Error: 0.0564%
-
-==== TEST CASE 268 ====
-Angle: 4.677483 (Hex: 4095adf0)
-Sin  : -0.999391 | Ideal: -0.999391 | Diff: 0.000000 | Error: 0.0000%
-Cos  : -0.034870 | Ideal: -0.034899 | Diff: 0.000030 | Error: 0.0851%
-
-==== TEST CASE 269 ====
-Angle: 4.694936 (Hex: 40963cea)
-Sin  : -0.999846 | Ideal: -0.999848 | Diff: 0.000002 | Error: 0.0002%
-Cos  : -0.017481 | Ideal: -0.017452 | Diff: 0.000029 | Error: 0.1651%
-
-==== TEST CASE 270 ====
-Angle: 4.712389 (Hex: 4096cbe4)
-Sin  : 0.985164 | Ideal: -1.000000 | Diff: 1.985164 | Error: 198.5164%
-Cos  : -0.171606 | Ideal: 0.000000 | Diff: 0.171606 | Error: 1439057837.1532%
-
-==== TEST CASE 271 ====
-Angle: 4.729842 (Hex: 40975ade)
-Sin  : -0.999846 | Ideal: -0.999848 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.017481 | Ideal: 0.017452 | Diff: 0.000029 | Error: 0.1649%
-
-==== TEST CASE 272 ====
-Angle: 4.747295 (Hex: 4097e9d8)
-Sin  : -0.999391 | Ideal: -0.999391 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.034870 | Ideal: 0.034899 | Diff: 0.000030 | Error: 0.0851%
-
-==== TEST CASE 273 ====
-Angle: 4.764749 (Hex: 409878d3)
-Sin  : -0.998630 | Ideal: -0.998630 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.052307 | Ideal: 0.052336 | Diff: 0.000030 | Error: 0.0565%
-
-==== TEST CASE 274 ====
-Angle: 4.782202 (Hex: 409907cd)
-Sin  : -0.997565 | Ideal: -0.997564 | Diff: 0.000001 | Error: 0.0001%
-Cos  : 0.069730 | Ideal: 0.069757 | Diff: 0.000027 | Error: 0.0388%
-
-==== TEST CASE 275 ====
-Angle: 4.799655 (Hex: 409996c7)
-Sin  : -0.996196 | Ideal: -0.996195 | Diff: 0.000001 | Error: 0.0001%
-Cos  : 0.087126 | Ideal: 0.087156 | Diff: 0.000030 | Error: 0.0344%
-
-==== TEST CASE 276 ====
-Angle: 4.817109 (Hex: 409a25c1)
-Sin  : -0.994524 | Ideal: -0.994522 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.104501 | Ideal: 0.104528 | Diff: 0.000027 | Error: 0.0262%
-
-==== TEST CASE 277 ====
-Angle: 4.834562 (Hex: 409ab4bb)
-Sin  : -0.992548 | Ideal: -0.992546 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.121842 | Ideal: 0.121869 | Diff: 0.000027 | Error: 0.0219%
-
-==== TEST CASE 278 ====
-Angle: 4.852015 (Hex: 409b43b6)
-Sin  : -0.990264 | Ideal: -0.990268 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.139192 | Ideal: 0.139173 | Diff: 0.000019 | Error: 0.0133%
-
-==== TEST CASE 279 ====
-Angle: 4.869469 (Hex: 409bd2b0)
-Sin  : -0.987684 | Ideal: -0.987688 | Diff: 0.000005 | Error: 0.0005%
-Cos  : 0.156455 | Ideal: 0.156435 | Diff: 0.000021 | Error: 0.0134%
-
-==== TEST CASE 280 ====
-Angle: 4.886922 (Hex: 409c61aa)
-Sin  : -0.984803 | Ideal: -0.984808 | Diff: 0.000005 | Error: 0.0005%
-Cos  : 0.173670 | Ideal: 0.173648 | Diff: 0.000021 | Error: 0.0124%
-
-==== TEST CASE 281 ====
-Angle: 4.904375 (Hex: 409cf0a4)
-Sin  : -0.981621 | Ideal: -0.981627 | Diff: 0.000006 | Error: 0.0006%
-Cos  : 0.190833 | Ideal: 0.190809 | Diff: 0.000024 | Error: 0.0125%
-
-==== TEST CASE 282 ====
-Angle: 4.921828 (Hex: 409d7f9e)
-Sin  : -0.978144 | Ideal: -0.978148 | Diff: 0.000003 | Error: 0.0003%
-Cos  : 0.207921 | Ideal: 0.207911 | Diff: 0.000010 | Error: 0.0047%
-
-==== TEST CASE 283 ====
-Angle: 4.939282 (Hex: 409e0e99)
-Sin  : -0.974366 | Ideal: -0.974370 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.224963 | Ideal: 0.224951 | Diff: 0.000012 | Error: 0.0052%
-
-==== TEST CASE 284 ====
-Angle: 4.956735 (Hex: 409e9d93)
-Sin  : -0.970291 | Ideal: -0.970296 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.241934 | Ideal: 0.241922 | Diff: 0.000012 | Error: 0.0051%
-
-==== TEST CASE 285 ====
-Angle: 4.974188 (Hex: 409f2c8d)
-Sin  : -0.965921 | Ideal: -0.965926 | Diff: 0.000005 | Error: 0.0006%
-Cos  : 0.258834 | Ideal: 0.258819 | Diff: 0.000015 | Error: 0.0056%
-
-==== TEST CASE 286 ====
-Angle: 4.991642 (Hex: 409fbb87)
-Sin  : -0.961260 | Ideal: -0.961262 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.275638 | Ideal: 0.275637 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 287 ====
-Angle: 5.009095 (Hex: 40a04a81)
-Sin  : -0.956303 | Ideal: -0.956305 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.292372 | Ideal: 0.292371 | Diff: 0.000001 | Error: 0.0003%
-
-==== TEST CASE 288 ====
-Angle: 5.026548 (Hex: 40a0d97c)
-Sin  : -0.951054 | Ideal: -0.951056 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.309020 | Ideal: 0.309017 | Diff: 0.000003 | Error: 0.0009%
-
-==== TEST CASE 289 ====
-Angle: 5.044002 (Hex: 40a16876)
-Sin  : -0.945523 | Ideal: -0.945519 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.325553 | Ideal: 0.325568 | Diff: 0.000016 | Error: 0.0048%
-
-==== TEST CASE 290 ====
-Angle: 5.061455 (Hex: 40a1f770)
-Sin  : -0.939697 | Ideal: -0.939693 | Diff: 0.000004 | Error: 0.0004%
-Cos  : 0.342005 | Ideal: 0.342020 | Diff: 0.000015 | Error: 0.0044%
-
-==== TEST CASE 291 ====
-Angle: 5.078908 (Hex: 40a2866a)
-Sin  : -0.933584 | Ideal: -0.933580 | Diff: 0.000003 | Error: 0.0004%
-Cos  : 0.358355 | Ideal: 0.358368 | Diff: 0.000013 | Error: 0.0035%
-
-==== TEST CASE 292 ====
-Angle: 5.096362 (Hex: 40a31565)
-Sin  : -0.927193 | Ideal: -0.927184 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.374580 | Ideal: 0.374607 | Diff: 0.000027 | Error: 0.0071%
-
-==== TEST CASE 293 ====
-Angle: 5.113815 (Hex: 40a3a45f)
-Sin  : -0.920514 | Ideal: -0.920505 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.390707 | Ideal: 0.390731 | Diff: 0.000024 | Error: 0.0062%
-
-==== TEST CASE 294 ====
-Angle: 5.131268 (Hex: 40a43359)
-Sin  : -0.913554 | Ideal: -0.913545 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.406713 | Ideal: 0.406737 | Diff: 0.000023 | Error: 0.0058%
-
-==== TEST CASE 295 ====
-Angle: 5.148721 (Hex: 40a4c253)
-Sin  : -0.906316 | Ideal: -0.906308 | Diff: 0.000008 | Error: 0.0009%
-Cos  : 0.422597 | Ideal: 0.422618 | Diff: 0.000021 | Error: 0.0049%
-
-==== TEST CASE 296 ====
-Angle: 5.166174 (Hex: 40a5514d)
-Sin  : -0.898782 | Ideal: -0.898794 | Diff: 0.000012 | Error: 0.0013%
-Cos  : 0.438392 | Ideal: 0.438371 | Diff: 0.000021 | Error: 0.0049%
-
-==== TEST CASE 297 ====
-Angle: 5.183628 (Hex: 40a5e048)
-Sin  : -0.890993 | Ideal: -0.891006 | Diff: 0.000013 | Error: 0.0015%
-Cos  : 0.454014 | Ideal: 0.453991 | Diff: 0.000023 | Error: 0.0051%
-
-==== TEST CASE 298 ====
-Angle: 5.201081 (Hex: 40a66f42)
-Sin  : -0.882934 | Ideal: -0.882948 | Diff: 0.000014 | Error: 0.0016%
-Cos  : 0.469495 | Ideal: 0.469472 | Diff: 0.000023 | Error: 0.0050%
-
-==== TEST CASE 299 ====
-Angle: 5.218534 (Hex: 40a6fe3c)
-Sin  : -0.874613 | Ideal: -0.874620 | Diff: 0.000007 | Error: 0.0008%
-Cos  : 0.484820 | Ideal: 0.484810 | Diff: 0.000010 | Error: 0.0021%
-
-==== TEST CASE 300 ====
-Angle: 5.235988 (Hex: 40a78d36)
-Sin  : -0.866017 | Ideal: -0.866025 | Diff: 0.000009 | Error: 0.0010%
-Cos  : 0.500012 | Ideal: 0.500000 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 301 ====
-Angle: 5.253441 (Hex: 40a81c30)
-Sin  : -0.857158 | Ideal: -0.857167 | Diff: 0.000009 | Error: 0.0011%
-Cos  : 0.515050 | Ideal: 0.515038 | Diff: 0.000012 | Error: 0.0024%
-
-==== TEST CASE 302 ====
-Angle: 5.270895 (Hex: 40a8ab2b)
-Sin  : -0.848038 | Ideal: -0.848048 | Diff: 0.000010 | Error: 0.0012%
-Cos  : 0.529933 | Ideal: 0.529919 | Diff: 0.000014 | Error: 0.0026%
-
-==== TEST CASE 303 ====
-Angle: 5.288348 (Hex: 40a93a25)
-Sin  : -0.838662 | Ideal: -0.838671 | Diff: 0.000009 | Error: 0.0011%
-Cos  : 0.544650 | Ideal: 0.544639 | Diff: 0.000011 | Error: 0.0021%
-
-==== TEST CASE 304 ====
-Angle: 5.305801 (Hex: 40a9c91f)
-Sin  : -0.829027 | Ideal: -0.829038 | Diff: 0.000011 | Error: 0.0013%
-Cos  : 0.559206 | Ideal: 0.559193 | Diff: 0.000013 | Error: 0.0024%
-
-==== TEST CASE 305 ====
-Angle: 5.323254 (Hex: 40aa5819)
-Sin  : -0.819141 | Ideal: -0.819152 | Diff: 0.000011 | Error: 0.0014%
-Cos  : 0.573590 | Ideal: 0.573576 | Diff: 0.000014 | Error: 0.0024%
-
-==== TEST CASE 306 ====
-Angle: 5.340707 (Hex: 40aae713)
-Sin  : -0.809004 | Ideal: -0.809017 | Diff: 0.000013 | Error: 0.0016%
-Cos  : 0.587801 | Ideal: 0.587785 | Diff: 0.000015 | Error: 0.0026%
-
-==== TEST CASE 307 ====
-Angle: 5.358161 (Hex: 40ab760e)
-Sin  : -0.798632 | Ideal: -0.798635 | Diff: 0.000004 | Error: 0.0005%
-Cos  : 0.601818 | Ideal: 0.601815 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 308 ====
-Angle: 5.375614 (Hex: 40ac0508)
-Sin  : -0.788006 | Ideal: -0.788011 | Diff: 0.000004 | Error: 0.0005%
-Cos  : 0.615665 | Ideal: 0.615662 | Diff: 0.000003 | Error: 0.0005%
-
-==== TEST CASE 309 ====
-Angle: 5.393067 (Hex: 40ac9402)
-Sin  : -0.777140 | Ideal: -0.777146 | Diff: 0.000006 | Error: 0.0008%
-Cos  : 0.629326 | Ideal: 0.629320 | Diff: 0.000005 | Error: 0.0008%
-
-==== TEST CASE 310 ====
-Angle: 5.410521 (Hex: 40ad22fc)
-Sin  : -0.766047 | Ideal: -0.766045 | Diff: 0.000003 | Error: 0.0004%
-Cos  : 0.642782 | Ideal: 0.642788 | Diff: 0.000006 | Error: 0.0009%
-
-==== TEST CASE 311 ====
-Angle: 5.427974 (Hex: 40adb1f6)
-Sin  : -0.754711 | Ideal: -0.754710 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.656055 | Ideal: 0.656059 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 312 ====
-Angle: 5.445427 (Hex: 40ae40f1)
-Sin  : -0.743146 | Ideal: -0.743145 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.669127 | Ideal: 0.669131 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 313 ====
-Angle: 5.462881 (Hex: 40aecfeb)
-Sin  : -0.731353 | Ideal: -0.731354 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.681997 | Ideal: 0.681998 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 314 ====
-Angle: 5.480334 (Hex: 40af5ee5)
-Sin  : -0.719350 | Ideal: -0.719340 | Diff: 0.000010 | Error: 0.0014%
-Cos  : 0.694646 | Ideal: 0.694658 | Diff: 0.000012 | Error: 0.0018%
-
-==== TEST CASE 315 ====
-Angle: 5.497787 (Hex: 40afeddf)
-Sin  : -0.707117 | Ideal: -0.707107 | Diff: 0.000010 | Error: 0.0014%
-Cos  : 0.707095 | Ideal: 0.707107 | Diff: 0.000012 | Error: 0.0017%
-
-==== TEST CASE 316 ====
-Angle: 5.515241 (Hex: 40b07cda)
-Sin  : -0.694646 | Ideal: -0.694658 | Diff: 0.000012 | Error: 0.0018%
-Cos  : 0.719350 | Ideal: 0.719340 | Diff: 0.000010 | Error: 0.0014%
-
-==== TEST CASE 317 ====
-Angle: 5.532694 (Hex: 40b10bd4)
-Sin  : -0.681997 | Ideal: -0.681998 | Diff: 0.000002 | Error: 0.0002%
-Cos  : 0.731353 | Ideal: 0.731354 | Diff: 0.000000 | Error: 0.0001%
-
-==== TEST CASE 318 ====
-Angle: 5.550147 (Hex: 40b19ace)
-Sin  : -0.669127 | Ideal: -0.669131 | Diff: 0.000004 | Error: 0.0005%
-Cos  : 0.743146 | Ideal: 0.743145 | Diff: 0.000001 | Error: 0.0002%
-
-==== TEST CASE 319 ====
-Angle: 5.567600 (Hex: 40b229c8)
-Sin  : -0.656055 | Ideal: -0.656059 | Diff: 0.000004 | Error: 0.0006%
-Cos  : 0.754711 | Ideal: 0.754710 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 320 ====
-Angle: 5.585053 (Hex: 40b2b8c2)
-Sin  : -0.642782 | Ideal: -0.642788 | Diff: 0.000006 | Error: 0.0009%
-Cos  : 0.766047 | Ideal: 0.766044 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 321 ====
-Angle: 5.602507 (Hex: 40b347bd)
-Sin  : -0.629326 | Ideal: -0.629320 | Diff: 0.000005 | Error: 0.0008%
-Cos  : 0.777140 | Ideal: 0.777146 | Diff: 0.000006 | Error: 0.0008%
-
-==== TEST CASE 322 ====
-Angle: 5.619960 (Hex: 40b3d6b7)
-Sin  : -0.615665 | Ideal: -0.615661 | Diff: 0.000003 | Error: 0.0005%
-Cos  : 0.788006 | Ideal: 0.788011 | Diff: 0.000004 | Error: 0.0006%
-
-==== TEST CASE 323 ====
-Angle: 5.637414 (Hex: 40b465b1)
-Sin  : -0.601818 | Ideal: -0.601815 | Diff: 0.000003 | Error: 0.0005%
-Cos  : 0.798632 | Ideal: 0.798636 | Diff: 0.000004 | Error: 0.0005%
-
-==== TEST CASE 324 ====
-Angle: 5.654867 (Hex: 40b4f4ab)
-Sin  : -0.587801 | Ideal: -0.587785 | Diff: 0.000015 | Error: 0.0026%
-Cos  : 0.809004 | Ideal: 0.809017 | Diff: 0.000013 | Error: 0.0016%
-
-==== TEST CASE 325 ====
-Angle: 5.672320 (Hex: 40b583a5)
-Sin  : -0.573590 | Ideal: -0.573577 | Diff: 0.000013 | Error: 0.0023%
-Cos  : 0.819141 | Ideal: 0.819152 | Diff: 0.000011 | Error: 0.0014%
-
-==== TEST CASE 326 ====
-Angle: 5.689774 (Hex: 40b612a0)
-Sin  : -0.559206 | Ideal: -0.559193 | Diff: 0.000013 | Error: 0.0024%
-Cos  : 0.829027 | Ideal: 0.829038 | Diff: 0.000011 | Error: 0.0013%
-
-==== TEST CASE 327 ====
-Angle: 5.707227 (Hex: 40b6a19a)
-Sin  : -0.544650 | Ideal: -0.544639 | Diff: 0.000011 | Error: 0.0021%
-Cos  : 0.838662 | Ideal: 0.838671 | Diff: 0.000009 | Error: 0.0011%
-
-==== TEST CASE 328 ====
-Angle: 5.724680 (Hex: 40b73094)
-Sin  : -0.529933 | Ideal: -0.529919 | Diff: 0.000014 | Error: 0.0027%
-Cos  : 0.848038 | Ideal: 0.848048 | Diff: 0.000011 | Error: 0.0012%
-
-==== TEST CASE 329 ====
-Angle: 5.742133 (Hex: 40b7bf8e)
-Sin  : -0.515050 | Ideal: -0.515038 | Diff: 0.000012 | Error: 0.0024%
-Cos  : 0.857158 | Ideal: 0.857167 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 330 ====
-Angle: 5.759586 (Hex: 40b84e88)
-Sin  : -0.500012 | Ideal: -0.500000 | Diff: 0.000012 | Error: 0.0023%
-Cos  : 0.866017 | Ideal: 0.866025 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 331 ====
-Angle: 5.777040 (Hex: 40b8dd83)
-Sin  : -0.484820 | Ideal: -0.484809 | Diff: 0.000010 | Error: 0.0021%
-Cos  : 0.874613 | Ideal: 0.874620 | Diff: 0.000007 | Error: 0.0008%
-
-==== TEST CASE 332 ====
-Angle: 5.794493 (Hex: 40b96c7d)
-Sin  : -0.469495 | Ideal: -0.469471 | Diff: 0.000023 | Error: 0.0050%
-Cos  : 0.882934 | Ideal: 0.882948 | Diff: 0.000014 | Error: 0.0016%
-
-==== TEST CASE 333 ====
-Angle: 5.811946 (Hex: 40b9fb77)
-Sin  : -0.454014 | Ideal: -0.453991 | Diff: 0.000023 | Error: 0.0051%
-Cos  : 0.890993 | Ideal: 0.891007 | Diff: 0.000013 | Error: 0.0015%
-
-==== TEST CASE 334 ====
-Angle: 5.829400 (Hex: 40ba8a71)
-Sin  : -0.438392 | Ideal: -0.438371 | Diff: 0.000021 | Error: 0.0048%
-Cos  : 0.898782 | Ideal: 0.898794 | Diff: 0.000012 | Error: 0.0013%
-
-==== TEST CASE 335 ====
-Angle: 5.846853 (Hex: 40bb196b)
-Sin  : -0.422597 | Ideal: -0.422618 | Diff: 0.000021 | Error: 0.0050%
-Cos  : 0.906316 | Ideal: 0.906308 | Diff: 0.000008 | Error: 0.0009%
-
-==== TEST CASE 336 ====
-Angle: 5.864306 (Hex: 40bba866)
-Sin  : -0.406713 | Ideal: -0.406736 | Diff: 0.000023 | Error: 0.0057%
-Cos  : 0.913554 | Ideal: 0.913546 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 337 ====
-Angle: 5.881760 (Hex: 40bc3760)
-Sin  : -0.390707 | Ideal: -0.390731 | Diff: 0.000024 | Error: 0.0061%
-Cos  : 0.920514 | Ideal: 0.920505 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 338 ====
-Angle: 5.899213 (Hex: 40bcc65a)
-Sin  : -0.374580 | Ideal: -0.374607 | Diff: 0.000026 | Error: 0.0071%
-Cos  : 0.927193 | Ideal: 0.927184 | Diff: 0.000009 | Error: 0.0010%
-
-==== TEST CASE 339 ====
-Angle: 5.916666 (Hex: 40bd5554)
-Sin  : -0.358355 | Ideal: -0.358368 | Diff: 0.000013 | Error: 0.0036%
-Cos  : 0.933584 | Ideal: 0.933580 | Diff: 0.000003 | Error: 0.0004%
-
-==== TEST CASE 340 ====
-Angle: 5.934119 (Hex: 40bde44e)
-Sin  : -0.342005 | Ideal: -0.342020 | Diff: 0.000015 | Error: 0.0045%
-Cos  : 0.939697 | Ideal: 0.939693 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 341 ====
-Angle: 5.951573 (Hex: 40be7349)
-Sin  : -0.325553 | Ideal: -0.325568 | Diff: 0.000015 | Error: 0.0047%
-Cos  : 0.945523 | Ideal: 0.945519 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 342 ====
-Angle: 5.969026 (Hex: 40bf0243)
-Sin  : -0.309020 | Ideal: -0.309017 | Diff: 0.000003 | Error: 0.0009%
-Cos  : 0.951054 | Ideal: 0.951057 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 343 ====
-Angle: 5.986479 (Hex: 40bf913d)
-Sin  : -0.292372 | Ideal: -0.292372 | Diff: 0.000001 | Error: 0.0002%
-Cos  : 0.956303 | Ideal: 0.956305 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 344 ====
-Angle: 6.003932 (Hex: 40c02037)
-Sin  : -0.275638 | Ideal: -0.275638 | Diff: 0.000000 | Error: 0.0000%
-Cos  : 0.961260 | Ideal: 0.961262 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 345 ====
-Angle: 6.021386 (Hex: 40c0af32)
-Sin  : -0.258834 | Ideal: -0.258819 | Diff: 0.000015 | Error: 0.0057%
-Cos  : 0.965921 | Ideal: 0.965926 | Diff: 0.000005 | Error: 0.0006%
-
-==== TEST CASE 346 ====
-Angle: 6.038839 (Hex: 40c13e2c)
-Sin  : -0.241934 | Ideal: -0.241922 | Diff: 0.000012 | Error: 0.0052%
-Cos  : 0.970291 | Ideal: 0.970296 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 347 ====
-Angle: 6.056293 (Hex: 40c1cd26)
-Sin  : -0.224963 | Ideal: -0.224951 | Diff: 0.000012 | Error: 0.0053%
-Cos  : 0.974366 | Ideal: 0.974370 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 348 ====
-Angle: 6.073746 (Hex: 40c25c20)
-Sin  : -0.207921 | Ideal: -0.207912 | Diff: 0.000010 | Error: 0.0046%
-Cos  : 0.978144 | Ideal: 0.978148 | Diff: 0.000003 | Error: 0.0003%
-
-==== TEST CASE 349 ====
-Angle: 6.091199 (Hex: 40c2eb1a)
-Sin  : -0.190833 | Ideal: -0.190809 | Diff: 0.000024 | Error: 0.0124%
-Cos  : 0.981621 | Ideal: 0.981627 | Diff: 0.000006 | Error: 0.0006%
-
-==== TEST CASE 350 ====
-Angle: 6.108653 (Hex: 40c37a15)
-Sin  : -0.173670 | Ideal: -0.173648 | Diff: 0.000022 | Error: 0.0125%
-Cos  : 0.984803 | Ideal: 0.984808 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 351 ====
-Angle: 6.126106 (Hex: 40c4090f)
-Sin  : -0.156455 | Ideal: -0.156434 | Diff: 0.000021 | Error: 0.0135%
-Cos  : 0.987684 | Ideal: 0.987688 | Diff: 0.000005 | Error: 0.0005%
-
-==== TEST CASE 352 ====
-Angle: 6.143559 (Hex: 40c49809)
-Sin  : -0.139192 | Ideal: -0.139173 | Diff: 0.000019 | Error: 0.0134%
-Cos  : 0.990264 | Ideal: 0.990268 | Diff: 0.000004 | Error: 0.0004%
-
-==== TEST CASE 353 ====
-Angle: 6.161012 (Hex: 40c52703)
-Sin  : -0.121842 | Ideal: -0.121869 | Diff: 0.000027 | Error: 0.0222%
-Cos  : 0.992548 | Ideal: 0.992546 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 354 ====
-Angle: 6.178465 (Hex: 40c5b5fd)
-Sin  : -0.104501 | Ideal: -0.104529 | Diff: 0.000028 | Error: 0.0265%
-Cos  : 0.994524 | Ideal: 0.994522 | Diff: 0.000002 | Error: 0.0002%
-
-==== TEST CASE 355 ====
-Angle: 6.195919 (Hex: 40c644f8)
-Sin  : -0.087126 | Ideal: -0.087156 | Diff: 0.000030 | Error: 0.0342%
-Cos  : 0.996196 | Ideal: 0.996195 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 356 ====
-Angle: 6.213372 (Hex: 40c6d3f2)
-Sin  : -0.069730 | Ideal: -0.069756 | Diff: 0.000027 | Error: 0.0385%
-Cos  : 0.997565 | Ideal: 0.997564 | Diff: 0.000001 | Error: 0.0001%
-
-==== TEST CASE 357 ====
-Angle: 6.230825 (Hex: 40c762ec)
-Sin  : -0.052307 | Ideal: -0.052336 | Diff: 0.000029 | Error: 0.0561%
-Cos  : 0.998630 | Ideal: 0.998630 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 358 ====
-Angle: 6.248279 (Hex: 40c7f1e6)
-Sin  : -0.034870 | Ideal: -0.034900 | Diff: 0.000030 | Error: 0.0860%
-Cos  : 0.999391 | Ideal: 0.999391 | Diff: 0.000000 | Error: 0.0000%
-
-==== TEST CASE 359 ====
-Angle: 6.265732 (Hex: 40c880e0)
-Sin  : -0.017481 | Ideal: -0.017453 | Diff: 0.000028 | Error: 0.1633%
-Cos  : 0.999846 | Ideal: 0.999848 | Diff: 0.000002 | Error: 0.0002%
+----------------------------------------------------------------
+ LOG CHECKER: PERCENTAGE ERROR TEST
+ File: tb_cordic.txt
+ Max Allowed Error: 0.5%
+----------------------------------------------------------------
+
+
+-------------------- ==== TEST CASE 0 (Input Angle Index: 0) ==== --------------------
+Angle: 0.000000 rad (~0.0 deg)
+Sin  :   0.000000 | Ideal:   0.000000 | [PASS] | Abs Diff: 0.000000 (Target < 0.0001)
+Cos  :   1.000000 | Ideal:   1.000000 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 1 (Input Angle Index: 1) ==== --------------------
+Angle: 0.017453 rad (~1.0 deg)
+Sin  :   0.017481 | Ideal:   0.017452 | [PASS] | Err: 0.1644%
+Cos  :   0.999846 | Ideal:   0.999848 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 2 (Input Angle Index: 2) ==== --------------------
+Angle: 0.034907 rad (~2.0 deg)
+Sin  :   0.034870 | Ideal:   0.034899 | [PASS] | Err: 0.0857%
+Cos  :   0.999391 | Ideal:   0.999391 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 3 (Input Angle Index: 3) ==== --------------------
+Angle: 0.052360 rad (~3.0 deg)
+Sin  :   0.052307 | Ideal:   0.052336 | [PASS] | Err: 0.0561%
+Cos  :   0.998630 | Ideal:   0.998630 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 4 (Input Angle Index: 4) ==== --------------------
+Angle: 0.069813 rad (~4.0 deg)
+Sin  :   0.069730 | Ideal:   0.069756 | [PASS] | Err: 0.0386%
+Cos  :   0.997565 | Ideal:   0.997564 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 5 (Input Angle Index: 5) ==== --------------------
+Angle: 0.087266 rad (~5.0 deg)
+Sin  :   0.087126 | Ideal:   0.087156 | [PASS] | Err: 0.0344%
+Cos  :   0.996196 | Ideal:   0.996195 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 6 (Input Angle Index: 6) ==== --------------------
+Angle: 0.104720 rad (~6.0 deg)
+Sin  :   0.104501 | Ideal:   0.104528 | [PASS] | Err: 0.0263%
+Cos  :   0.994524 | Ideal:   0.994522 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 7 (Input Angle Index: 7) ==== --------------------
+Angle: 0.122173 rad (~7.0 deg)
+Sin  :   0.121842 | Ideal:   0.121869 | [PASS] | Err: 0.0221%
+Cos  :   0.992548 | Ideal:   0.992546 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 8 (Input Angle Index: 8) ==== --------------------
+Angle: 0.139626 rad (~8.0 deg)
+Sin  :   0.139192 | Ideal:   0.139173 | [PASS] | Err: 0.0134%
+Cos  :   0.990264 | Ideal:   0.990268 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 9 (Input Angle Index: 9) ==== --------------------
+Angle: 0.157080 rad (~9.0 deg)
+Sin  :   0.156455 | Ideal:   0.156434 | [PASS] | Err: 0.0134%
+Cos  :   0.987684 | Ideal:   0.987688 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 10 (Input Angle Index: 10) ==== --------------------
+Angle: 0.174533 rad (~10.0 deg)
+Sin  :   0.173670 | Ideal:   0.173648 | [PASS] | Err: 0.0124%
+Cos  :   0.984803 | Ideal:   0.984808 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 11 (Input Angle Index: 11) ==== --------------------
+Angle: 0.191986 rad (~11.0 deg)
+Sin  :   0.190833 | Ideal:   0.190809 | [PASS] | Err: 0.0125%
+Cos  :   0.981621 | Ideal:   0.981627 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 12 (Input Angle Index: 12) ==== --------------------
+Angle: 0.209440 rad (~12.0 deg)
+Sin  :   0.207921 | Ideal:   0.207912 | [PASS] | Err: 0.0046%
+Cos  :   0.978144 | Ideal:   0.978148 | [PASS] | Err: 0.0003%
+
+-------------------- ==== TEST CASE 13 (Input Angle Index: 13) ==== --------------------
+Angle: 0.226893 rad (~13.0 deg)
+Sin  :   0.224963 | Ideal:   0.224951 | [PASS] | Err: 0.0053%
+Cos  :   0.974366 | Ideal:   0.974370 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 14 (Input Angle Index: 14) ==== --------------------
+Angle: 0.244346 rad (~14.0 deg)
+Sin  :   0.241934 | Ideal:   0.241922 | [PASS] | Err: 0.0051%
+Cos  :   0.970291 | Ideal:   0.970296 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 15 (Input Angle Index: 15) ==== --------------------
+Angle: 0.261799 rad (~15.0 deg)
+Sin  :   0.258834 | Ideal:   0.258819 | [PASS] | Err: 0.0056%
+Cos  :   0.965921 | Ideal:   0.965926 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 16 (Input Angle Index: 16) ==== --------------------
+Angle: 0.279253 rad (~16.0 deg)
+Sin  :   0.275638 | Ideal:   0.275637 | [PASS] | Err: 0.0001%
+Cos  :   0.961260 | Ideal:   0.961262 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 17 (Input Angle Index: 17) ==== --------------------
+Angle: 0.296706 rad (~17.0 deg)
+Sin  :   0.292372 | Ideal:   0.292372 | [PASS] | Err: 0.0002%
+Cos  :   0.956303 | Ideal:   0.956305 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 18 (Input Angle Index: 18) ==== --------------------
+Angle: 0.314159 rad (~18.0 deg)
+Sin  :   0.309020 | Ideal:   0.309017 | [PASS] | Err: 0.0009%
+Cos  :   0.951054 | Ideal:   0.951057 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 19 (Input Angle Index: 19) ==== --------------------
+Angle: 0.331613 rad (~19.0 deg)
+Sin  :   0.325553 | Ideal:   0.325568 | [PASS] | Err: 0.0048%
+Cos  :   0.945523 | Ideal:   0.945519 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 20 (Input Angle Index: 20) ==== --------------------
+Angle: 0.349066 rad (~20.0 deg)
+Sin  :   0.342005 | Ideal:   0.342020 | [PASS] | Err: 0.0044%
+Cos  :   0.939697 | Ideal:   0.939693 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 21 (Input Angle Index: 21) ==== --------------------
+Angle: 0.366519 rad (~21.0 deg)
+Sin  :   0.358355 | Ideal:   0.358368 | [PASS] | Err: 0.0036%
+Cos  :   0.933584 | Ideal:   0.933580 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 22 (Input Angle Index: 22) ==== --------------------
+Angle: 0.383972 rad (~22.0 deg)
+Sin  :   0.374580 | Ideal:   0.374607 | [PASS] | Err: 0.0070%
+Cos  :   0.927193 | Ideal:   0.927184 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 23 (Input Angle Index: 23) ==== --------------------
+Angle: 0.401426 rad (~23.0 deg)
+Sin  :   0.390707 | Ideal:   0.390731 | [PASS] | Err: 0.0061%
+Cos  :   0.920514 | Ideal:   0.920505 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 24 (Input Angle Index: 24) ==== --------------------
+Angle: 0.418879 rad (~24.0 deg)
+Sin  :   0.406713 | Ideal:   0.406737 | [PASS] | Err: 0.0057%
+Cos  :   0.913554 | Ideal:   0.913545 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 25 (Input Angle Index: 25) ==== --------------------
+Angle: 0.436332 rad (~25.0 deg)
+Sin  :   0.422597 | Ideal:   0.422618 | [PASS] | Err: 0.0049%
+Cos  :   0.906316 | Ideal:   0.906308 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 26 (Input Angle Index: 26) ==== --------------------
+Angle: 0.453786 rad (~26.0 deg)
+Sin  :   0.438392 | Ideal:   0.438371 | [PASS] | Err: 0.0048%
+Cos  :   0.898782 | Ideal:   0.898794 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 27 (Input Angle Index: 27) ==== --------------------
+Angle: 0.471239 rad (~27.0 deg)
+Sin  :   0.454014 | Ideal:   0.453991 | [PASS] | Err: 0.0051%
+Cos  :   0.890993 | Ideal:   0.891007 | [PASS] | Err: 0.0015%
+
+-------------------- ==== TEST CASE 28 (Input Angle Index: 28) ==== --------------------
+Angle: 0.488692 rad (~28.0 deg)
+Sin  :   0.469495 | Ideal:   0.469472 | [PASS] | Err: 0.0050%
+Cos  :   0.882934 | Ideal:   0.882948 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 29 (Input Angle Index: 29) ==== --------------------
+Angle: 0.506145 rad (~29.0 deg)
+Sin  :   0.484820 | Ideal:   0.484810 | [PASS] | Err: 0.0021%
+Cos  :   0.874613 | Ideal:   0.874620 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 30 (Input Angle Index: 30) ==== --------------------
+Angle: 0.523599 rad (~30.0 deg)
+Sin  :   0.500012 | Ideal:   0.500000 | [PASS] | Err: 0.0024%
+Cos  :   0.866017 | Ideal:   0.866025 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 31 (Input Angle Index: 31) ==== --------------------
+Angle: 0.541052 rad (~31.0 deg)
+Sin  :   0.515050 | Ideal:   0.515038 | [PASS] | Err: 0.0024%
+Cos  :   0.857158 | Ideal:   0.857167 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 32 (Input Angle Index: 32) ==== --------------------
+Angle: 0.558505 rad (~32.0 deg)
+Sin  :   0.529933 | Ideal:   0.529919 | [PASS] | Err: 0.0027%
+Cos  :   0.848038 | Ideal:   0.848048 | [PASS] | Err: 0.0012%
+
+-------------------- ==== TEST CASE 33 (Input Angle Index: 33) ==== --------------------
+Angle: 0.575959 rad (~33.0 deg)
+Sin  :   0.544650 | Ideal:   0.544639 | [PASS] | Err: 0.0021%
+Cos  :   0.838662 | Ideal:   0.838671 | [PASS] | Err: 0.0011%
+
+-------------------- ==== TEST CASE 34 (Input Angle Index: 34) ==== --------------------
+Angle: 0.593412 rad (~34.0 deg)
+Sin  :   0.559206 | Ideal:   0.559193 | [PASS] | Err: 0.0024%
+Cos  :   0.829027 | Ideal:   0.829038 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 35 (Input Angle Index: 35) ==== --------------------
+Angle: 0.610865 rad (~35.0 deg)
+Sin  :   0.573590 | Ideal:   0.573576 | [PASS] | Err: 0.0024%
+Cos  :   0.819141 | Ideal:   0.819152 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 36 (Input Angle Index: 36) ==== --------------------
+Angle: 0.628319 rad (~36.0 deg)
+Sin  :   0.587801 | Ideal:   0.587785 | [PASS] | Err: 0.0026%
+Cos  :   0.809004 | Ideal:   0.809017 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 37 (Input Angle Index: 37) ==== --------------------
+Angle: 0.645772 rad (~37.0 deg)
+Sin  :   0.601818 | Ideal:   0.601815 | [PASS] | Err: 0.0005%
+Cos  :   0.798632 | Ideal:   0.798636 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 38 (Input Angle Index: 38) ==== --------------------
+Angle: 0.663225 rad (~38.0 deg)
+Sin  :   0.615665 | Ideal:   0.615661 | [PASS] | Err: 0.0005%
+Cos  :   0.788006 | Ideal:   0.788011 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 39 (Input Angle Index: 39) ==== --------------------
+Angle: 0.680678 rad (~39.0 deg)
+Sin  :   0.629326 | Ideal:   0.629320 | [PASS] | Err: 0.0008%
+Cos  :   0.777140 | Ideal:   0.777146 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 40 (Input Angle Index: 40) ==== --------------------
+Angle: 0.698132 rad (~40.0 deg)
+Sin  :   0.642782 | Ideal:   0.642788 | [PASS] | Err: 0.0009%
+Cos  :   0.766047 | Ideal:   0.766044 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 41 (Input Angle Index: 41) ==== --------------------
+Angle: 0.715585 rad (~41.0 deg)
+Sin  :   0.656055 | Ideal:   0.656059 | [PASS] | Err: 0.0006%
+Cos  :   0.754711 | Ideal:   0.754710 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 42 (Input Angle Index: 42) ==== --------------------
+Angle: 0.733038 rad (~42.0 deg)
+Sin  :   0.669127 | Ideal:   0.669131 | [PASS] | Err: 0.0006%
+Cos  :   0.743146 | Ideal:   0.743145 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 43 (Input Angle Index: 43) ==== --------------------
+Angle: 0.750492 rad (~43.0 deg)
+Sin  :   0.681997 | Ideal:   0.681998 | [PASS] | Err: 0.0002%
+Cos  :   0.731353 | Ideal:   0.731354 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 44 (Input Angle Index: 44) ==== --------------------
+Angle: 0.767945 rad (~44.0 deg)
+Sin  :   0.694646 | Ideal:   0.694658 | [PASS] | Err: 0.0018%
+Cos  :   0.719350 | Ideal:   0.719340 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 45 (Input Angle Index: 45) ==== --------------------
+Angle: 0.785398 rad (~45.0 deg)
+Sin  :   0.707117 | Ideal:   0.707107 | [PASS] | Err: 0.0014%
+Cos  :   0.707095 | Ideal:   0.707107 | [PASS] | Err: 0.0017%
+
+-------------------- ==== TEST CASE 46 (Input Angle Index: 46) ==== --------------------
+Angle: 0.802851 rad (~46.0 deg)
+Sin  :   0.719350 | Ideal:   0.719340 | [PASS] | Err: 0.0014%
+Cos  :   0.694646 | Ideal:   0.694658 | [PASS] | Err: 0.0018%
+
+-------------------- ==== TEST CASE 47 (Input Angle Index: 47) ==== --------------------
+Angle: 0.820305 rad (~47.0 deg)
+Sin  :   0.731353 | Ideal:   0.731354 | [PASS] | Err: 0.0000%
+Cos  :   0.681997 | Ideal:   0.681998 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 48 (Input Angle Index: 48) ==== --------------------
+Angle: 0.837758 rad (~48.0 deg)
+Sin  :   0.743146 | Ideal:   0.743145 | [PASS] | Err: 0.0002%
+Cos  :   0.669127 | Ideal:   0.669131 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 49 (Input Angle Index: 49) ==== --------------------
+Angle: 0.855211 rad (~49.0 deg)
+Sin  :   0.754711 | Ideal:   0.754710 | [PASS] | Err: 0.0002%
+Cos  :   0.656055 | Ideal:   0.656059 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 50 (Input Angle Index: 50) ==== --------------------
+Angle: 0.872665 rad (~50.0 deg)
+Sin  :   0.766047 | Ideal:   0.766044 | [PASS] | Err: 0.0004%
+Cos  :   0.642782 | Ideal:   0.642788 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 51 (Input Angle Index: 51) ==== --------------------
+Angle: 0.890118 rad (~51.0 deg)
+Sin  :   0.777140 | Ideal:   0.777146 | [PASS] | Err: 0.0008%
+Cos  :   0.629326 | Ideal:   0.629320 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 52 (Input Angle Index: 52) ==== --------------------
+Angle: 0.907571 rad (~52.0 deg)
+Sin  :   0.788006 | Ideal:   0.788011 | [PASS] | Err: 0.0005%
+Cos  :   0.615665 | Ideal:   0.615661 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 53 (Input Angle Index: 53) ==== --------------------
+Angle: 0.925025 rad (~53.0 deg)
+Sin  :   0.798632 | Ideal:   0.798636 | [PASS] | Err: 0.0005%
+Cos  :   0.601818 | Ideal:   0.601815 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 54 (Input Angle Index: 54) ==== --------------------
+Angle: 0.942478 rad (~54.0 deg)
+Sin  :   0.809004 | Ideal:   0.809017 | [PASS] | Err: 0.0016%
+Cos  :   0.587801 | Ideal:   0.587785 | [PASS] | Err: 0.0026%
+
+-------------------- ==== TEST CASE 55 (Input Angle Index: 55) ==== --------------------
+Angle: 0.959931 rad (~55.0 deg)
+Sin  :   0.819141 | Ideal:   0.819152 | [PASS] | Err: 0.0014%
+Cos  :   0.573590 | Ideal:   0.573576 | [PASS] | Err: 0.0023%
+
+-------------------- ==== TEST CASE 56 (Input Angle Index: 56) ==== --------------------
+Angle: 0.977384 rad (~56.0 deg)
+Sin  :   0.829027 | Ideal:   0.829038 | [PASS] | Err: 0.0013%
+Cos  :   0.559206 | Ideal:   0.559193 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 57 (Input Angle Index: 57) ==== --------------------
+Angle: 0.994838 rad (~57.0 deg)
+Sin  :   0.838662 | Ideal:   0.838671 | [PASS] | Err: 0.0011%
+Cos  :   0.544650 | Ideal:   0.544639 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 58 (Input Angle Index: 58) ==== --------------------
+Angle: 1.012291 rad (~58.0 deg)
+Sin  :   0.848038 | Ideal:   0.848048 | [PASS] | Err: 0.0012%
+Cos  :   0.529933 | Ideal:   0.529919 | [PASS] | Err: 0.0027%
+
+-------------------- ==== TEST CASE 59 (Input Angle Index: 59) ==== --------------------
+Angle: 1.029744 rad (~59.0 deg)
+Sin  :   0.857158 | Ideal:   0.857167 | [PASS] | Err: 0.0010%
+Cos  :   0.515050 | Ideal:   0.515038 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 60 (Input Angle Index: 60) ==== --------------------
+Angle: 1.047198 rad (~60.0 deg)
+Sin  :   0.866017 | Ideal:   0.866025 | [PASS] | Err: 0.0010%
+Cos  :   0.500012 | Ideal:   0.500000 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 61 (Input Angle Index: 61) ==== --------------------
+Angle: 1.064651 rad (~61.0 deg)
+Sin  :   0.874613 | Ideal:   0.874620 | [PASS] | Err: 0.0008%
+Cos  :   0.484820 | Ideal:   0.484810 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 62 (Input Angle Index: 62) ==== --------------------
+Angle: 1.082104 rad (~62.0 deg)
+Sin  :   0.882934 | Ideal:   0.882948 | [PASS] | Err: 0.0016%
+Cos  :   0.469495 | Ideal:   0.469472 | [PASS] | Err: 0.0050%
+
+-------------------- ==== TEST CASE 63 (Input Angle Index: 63) ==== --------------------
+Angle: 1.099557 rad (~63.0 deg)
+Sin  :   0.890993 | Ideal:   0.891007 | [PASS] | Err: 0.0015%
+Cos  :   0.454014 | Ideal:   0.453991 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 64 (Input Angle Index: 64) ==== --------------------
+Angle: 1.117011 rad (~64.0 deg)
+Sin  :   0.898782 | Ideal:   0.898794 | [PASS] | Err: 0.0013%
+Cos  :   0.438392 | Ideal:   0.438371 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 65 (Input Angle Index: 65) ==== --------------------
+Angle: 1.134464 rad (~65.0 deg)
+Sin  :   0.906316 | Ideal:   0.906308 | [PASS] | Err: 0.0009%
+Cos  :   0.422597 | Ideal:   0.422618 | [PASS] | Err: 0.0049%
+
+-------------------- ==== TEST CASE 66 (Input Angle Index: 66) ==== --------------------
+Angle: 1.151917 rad (~66.0 deg)
+Sin  :   0.913554 | Ideal:   0.913545 | [PASS] | Err: 0.0010%
+Cos  :   0.406713 | Ideal:   0.406737 | [PASS] | Err: 0.0057%
+
+-------------------- ==== TEST CASE 67 (Input Angle Index: 67) ==== --------------------
+Angle: 1.169371 rad (~67.0 deg)
+Sin  :   0.920514 | Ideal:   0.920505 | [PASS] | Err: 0.0010%
+Cos  :   0.390707 | Ideal:   0.390731 | [PASS] | Err: 0.0061%
+
+-------------------- ==== TEST CASE 68 (Input Angle Index: 68) ==== --------------------
+Angle: 1.186824 rad (~68.0 deg)
+Sin  :   0.927193 | Ideal:   0.927184 | [PASS] | Err: 0.0010%
+Cos  :   0.374580 | Ideal:   0.374607 | [PASS] | Err: 0.0071%
+
+-------------------- ==== TEST CASE 69 (Input Angle Index: 69) ==== --------------------
+Angle: 1.204277 rad (~69.0 deg)
+Sin  :   0.933584 | Ideal:   0.933580 | [PASS] | Err: 0.0004%
+Cos  :   0.358355 | Ideal:   0.358368 | [PASS] | Err: 0.0036%
+
+-------------------- ==== TEST CASE 70 (Input Angle Index: 70) ==== --------------------
+Angle: 1.221730 rad (~70.0 deg)
+Sin  :   0.939697 | Ideal:   0.939693 | [PASS] | Err: 0.0004%
+Cos  :   0.342005 | Ideal:   0.342020 | [PASS] | Err: 0.0044%
+
+-------------------- ==== TEST CASE 71 (Input Angle Index: 71) ==== --------------------
+Angle: 1.239184 rad (~71.0 deg)
+Sin  :   0.945523 | Ideal:   0.945519 | [PASS] | Err: 0.0004%
+Cos  :   0.325553 | Ideal:   0.325568 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 72 (Input Angle Index: 72) ==== --------------------
+Angle: 1.256637 rad (~72.0 deg)
+Sin  :   0.951054 | Ideal:   0.951057 | [PASS] | Err: 0.0002%
+Cos  :   0.309020 | Ideal:   0.309017 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 73 (Input Angle Index: 73) ==== --------------------
+Angle: 1.274090 rad (~73.0 deg)
+Sin  :   0.956303 | Ideal:   0.956305 | [PASS] | Err: 0.0002%
+Cos  :   0.292372 | Ideal:   0.292372 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 74 (Input Angle Index: 74) ==== --------------------
+Angle: 1.291544 rad (~74.0 deg)
+Sin  :   0.961260 | Ideal:   0.961262 | [PASS] | Err: 0.0001%
+Cos  :   0.275638 | Ideal:   0.275637 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 75 (Input Angle Index: 75) ==== --------------------
+Angle: 1.308997 rad (~75.0 deg)
+Sin  :   0.965921 | Ideal:   0.965926 | [PASS] | Err: 0.0005%
+Cos  :   0.258834 | Ideal:   0.258819 | [PASS] | Err: 0.0056%
+
+-------------------- ==== TEST CASE 76 (Input Angle Index: 76) ==== --------------------
+Angle: 1.326450 rad (~76.0 deg)
+Sin  :   0.970291 | Ideal:   0.970296 | [PASS] | Err: 0.0004%
+Cos  :   0.241934 | Ideal:   0.241922 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 77 (Input Angle Index: 77) ==== --------------------
+Angle: 1.343904 rad (~77.0 deg)
+Sin  :   0.974366 | Ideal:   0.974370 | [PASS] | Err: 0.0004%
+Cos  :   0.224963 | Ideal:   0.224951 | [PASS] | Err: 0.0053%
+
+-------------------- ==== TEST CASE 78 (Input Angle Index: 78) ==== --------------------
+Angle: 1.361357 rad (~78.0 deg)
+Sin  :   0.978144 | Ideal:   0.978148 | [PASS] | Err: 0.0003%
+Cos  :   0.207921 | Ideal:   0.207912 | [PASS] | Err: 0.0046%
+
+-------------------- ==== TEST CASE 79 (Input Angle Index: 79) ==== --------------------
+Angle: 1.378810 rad (~79.0 deg)
+Sin  :   0.981621 | Ideal:   0.981627 | [PASS] | Err: 0.0006%
+Cos  :   0.190833 | Ideal:   0.190809 | [PASS] | Err: 0.0125%
+
+-------------------- ==== TEST CASE 80 (Input Angle Index: 80) ==== --------------------
+Angle: 1.396263 rad (~80.0 deg)
+Sin  :   0.984803 | Ideal:   0.984808 | [PASS] | Err: 0.0005%
+Cos  :   0.173670 | Ideal:   0.173648 | [PASS] | Err: 0.0123%
+
+-------------------- ==== TEST CASE 81 (Input Angle Index: 81) ==== --------------------
+Angle: 1.413717 rad (~81.0 deg)
+Sin  :   0.987684 | Ideal:   0.987688 | [PASS] | Err: 0.0005%
+Cos  :   0.156455 | Ideal:   0.156434 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 82 (Input Angle Index: 82) ==== --------------------
+Angle: 1.431170 rad (~82.0 deg)
+Sin  :   0.990264 | Ideal:   0.990268 | [PASS] | Err: 0.0004%
+Cos  :   0.139192 | Ideal:   0.139173 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 83 (Input Angle Index: 83) ==== --------------------
+Angle: 1.448623 rad (~83.0 deg)
+Sin  :   0.992548 | Ideal:   0.992546 | [PASS] | Err: 0.0002%
+Cos  :   0.121842 | Ideal:   0.121869 | [PASS] | Err: 0.0221%
+
+-------------------- ==== TEST CASE 84 (Input Angle Index: 84) ==== --------------------
+Angle: 1.466077 rad (~84.0 deg)
+Sin  :   0.994524 | Ideal:   0.994522 | [PASS] | Err: 0.0002%
+Cos  :   0.104501 | Ideal:   0.104528 | [PASS] | Err: 0.0263%
+
+-------------------- ==== TEST CASE 85 (Input Angle Index: 85) ==== --------------------
+Angle: 1.483530 rad (~85.0 deg)
+Sin  :   0.996196 | Ideal:   0.996195 | [PASS] | Err: 0.0001%
+Cos  :   0.087126 | Ideal:   0.087156 | [PASS] | Err: 0.0345%
+
+-------------------- ==== TEST CASE 86 (Input Angle Index: 86) ==== --------------------
+Angle: 1.500983 rad (~86.0 deg)
+Sin  :   0.997565 | Ideal:   0.997564 | [PASS] | Err: 0.0001%
+Cos  :   0.069730 | Ideal:   0.069757 | [PASS] | Err: 0.0387%
+
+-------------------- ==== TEST CASE 87 (Input Angle Index: 87) ==== --------------------
+Angle: 1.518436 rad (~87.0 deg)
+Sin  :   0.998630 | Ideal:   0.998630 | [PASS] | Err: 0.0000%
+Cos  :   0.052307 | Ideal:   0.052336 | [PASS] | Err: 0.0561%
+
+-------------------- ==== TEST CASE 88 (Input Angle Index: 88) ==== --------------------
+Angle: 1.535890 rad (~88.0 deg)
+Sin  :   0.999391 | Ideal:   0.999391 | [PASS] | Err: 0.0000%
+Cos  :   0.034870 | Ideal:   0.034899 | [PASS] | Err: 0.0857%
+
+-------------------- ==== TEST CASE 89 (Input Angle Index: 89) ==== --------------------
+Angle: 1.553343 rad (~89.0 deg)
+Sin  :   0.999846 | Ideal:   0.999848 | [PASS] | Err: 0.0002%
+Cos  :   0.017481 | Ideal:   0.017452 | [PASS] | Err: 0.1646%
+
+-------------------- ==== TEST CASE 90 (Input Angle Index: 90) ==== --------------------
+Angle: 1.570796 rad (~90.0 deg)
+Sin  :   1.000000 | Ideal:   1.000000 | [PASS] | Err: 0.0000%
+Cos  :   0.000000 | Ideal:  -0.000000 | [PASS] | Abs Diff: 0.000000 (Target < 0.0001)
+
+-------------------- ==== TEST CASE 91 (Input Angle Index: 91) ==== --------------------
+Angle: 1.588250 rad (~91.0 deg)
+Sin  :   0.999846 | Ideal:   0.999848 | [PASS] | Err: 0.0002%
+Cos  :  -0.017481 | Ideal:  -0.017452 | [PASS] | Err: 0.1648%
+
+-------------------- ==== TEST CASE 92 (Input Angle Index: 92) ==== --------------------
+Angle: 1.605703 rad (~92.0 deg)
+Sin  :   0.999391 | Ideal:   0.999391 | [PASS] | Err: 0.0000%
+Cos  :  -0.034870 | Ideal:  -0.034899 | [PASS] | Err: 0.0856%
+
+-------------------- ==== TEST CASE 93 (Input Angle Index: 93) ==== --------------------
+Angle: 1.623156 rad (~93.0 deg)
+Sin  :   0.998630 | Ideal:   0.998630 | [PASS] | Err: 0.0000%
+Cos  :  -0.052307 | Ideal:  -0.052336 | [PASS] | Err: 0.0561%
+
+-------------------- ==== TEST CASE 94 (Input Angle Index: 94) ==== --------------------
+Angle: 1.640610 rad (~94.0 deg)
+Sin  :   0.997565 | Ideal:   0.997564 | [PASS] | Err: 0.0001%
+Cos  :  -0.069730 | Ideal:  -0.069756 | [PASS] | Err: 0.0387%
+
+-------------------- ==== TEST CASE 95 (Input Angle Index: 95) ==== --------------------
+Angle: 1.658063 rad (~95.0 deg)
+Sin  :   0.996196 | Ideal:   0.996195 | [PASS] | Err: 0.0001%
+Cos  :  -0.087126 | Ideal:  -0.087156 | [PASS] | Err: 0.0344%
+
+-------------------- ==== TEST CASE 96 (Input Angle Index: 96) ==== --------------------
+Angle: 1.675516 rad (~96.0 deg)
+Sin  :   0.994524 | Ideal:   0.994522 | [PASS] | Err: 0.0002%
+Cos  :  -0.104501 | Ideal:  -0.104529 | [PASS] | Err: 0.0264%
+
+-------------------- ==== TEST CASE 97 (Input Angle Index: 97) ==== --------------------
+Angle: 1.692969 rad (~97.0 deg)
+Sin  :   0.992548 | Ideal:   0.992546 | [PASS] | Err: 0.0002%
+Cos  :  -0.121842 | Ideal:  -0.121869 | [PASS] | Err: 0.0221%
+
+-------------------- ==== TEST CASE 98 (Input Angle Index: 98) ==== --------------------
+Angle: 1.710423 rad (~98.0 deg)
+Sin  :   0.990264 | Ideal:   0.990268 | [PASS] | Err: 0.0004%
+Cos  :  -0.139192 | Ideal:  -0.139173 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 99 (Input Angle Index: 99) ==== --------------------
+Angle: 1.727876 rad (~99.0 deg)
+Sin  :   0.987684 | Ideal:   0.987688 | [PASS] | Err: 0.0005%
+Cos  :  -0.156455 | Ideal:  -0.156434 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 100 (Input Angle Index: 100) ==== --------------------
+Angle: 1.745329 rad (~100.0 deg)
+Sin  :   0.984803 | Ideal:   0.984808 | [PASS] | Err: 0.0005%
+Cos  :  -0.173670 | Ideal:  -0.173648 | [PASS] | Err: 0.0123%
+
+-------------------- ==== TEST CASE 101 (Input Angle Index: 101) ==== --------------------
+Angle: 1.762783 rad (~101.0 deg)
+Sin  :   0.981621 | Ideal:   0.981627 | [PASS] | Err: 0.0006%
+Cos  :  -0.190833 | Ideal:  -0.190809 | [PASS] | Err: 0.0125%
+
+-------------------- ==== TEST CASE 102 (Input Angle Index: 102) ==== --------------------
+Angle: 1.780236 rad (~102.0 deg)
+Sin  :   0.978144 | Ideal:   0.978148 | [PASS] | Err: 0.0003%
+Cos  :  -0.207921 | Ideal:  -0.207912 | [PASS] | Err: 0.0046%
+
+-------------------- ==== TEST CASE 103 (Input Angle Index: 103) ==== --------------------
+Angle: 1.797689 rad (~103.0 deg)
+Sin  :   0.974366 | Ideal:   0.974370 | [PASS] | Err: 0.0004%
+Cos  :  -0.224963 | Ideal:  -0.224951 | [PASS] | Err: 0.0053%
+
+-------------------- ==== TEST CASE 104 (Input Angle Index: 104) ==== --------------------
+Angle: 1.815142 rad (~104.0 deg)
+Sin  :   0.970291 | Ideal:   0.970296 | [PASS] | Err: 0.0004%
+Cos  :  -0.241934 | Ideal:  -0.241922 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 105 (Input Angle Index: 105) ==== --------------------
+Angle: 1.832596 rad (~105.0 deg)
+Sin  :   0.965921 | Ideal:   0.965926 | [PASS] | Err: 0.0006%
+Cos  :  -0.258834 | Ideal:  -0.258819 | [PASS] | Err: 0.0056%
+
+-------------------- ==== TEST CASE 106 (Input Angle Index: 106) ==== --------------------
+Angle: 1.850049 rad (~106.0 deg)
+Sin  :   0.961260 | Ideal:   0.961262 | [PASS] | Err: 0.0001%
+Cos  :  -0.275638 | Ideal:  -0.275637 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 107 (Input Angle Index: 107) ==== --------------------
+Angle: 1.867502 rad (~107.0 deg)
+Sin  :   0.956303 | Ideal:   0.956305 | [PASS] | Err: 0.0002%
+Cos  :  -0.292372 | Ideal:  -0.292372 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 108 (Input Angle Index: 108) ==== --------------------
+Angle: 1.884956 rad (~108.0 deg)
+Sin  :   0.951054 | Ideal:   0.951057 | [PASS] | Err: 0.0002%
+Cos  :  -0.309020 | Ideal:  -0.309017 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 109 (Input Angle Index: 109) ==== --------------------
+Angle: 1.902409 rad (~109.0 deg)
+Sin  :   0.945523 | Ideal:   0.945519 | [PASS] | Err: 0.0004%
+Cos  :  -0.325553 | Ideal:  -0.325568 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 110 (Input Angle Index: 110) ==== --------------------
+Angle: 1.919862 rad (~110.0 deg)
+Sin  :   0.939697 | Ideal:   0.939693 | [PASS] | Err: 0.0004%
+Cos  :  -0.342005 | Ideal:  -0.342020 | [PASS] | Err: 0.0044%
+
+-------------------- ==== TEST CASE 111 (Input Angle Index: 111) ==== --------------------
+Angle: 1.937315 rad (~111.0 deg)
+Sin  :   0.933584 | Ideal:   0.933580 | [PASS] | Err: 0.0004%
+Cos  :  -0.358355 | Ideal:  -0.358368 | [PASS] | Err: 0.0036%
+
+-------------------- ==== TEST CASE 112 (Input Angle Index: 112) ==== --------------------
+Angle: 1.954769 rad (~112.0 deg)
+Sin  :   0.927193 | Ideal:   0.927184 | [PASS] | Err: 0.0010%
+Cos  :  -0.374580 | Ideal:  -0.374607 | [PASS] | Err: 0.0070%
+
+-------------------- ==== TEST CASE 113 (Input Angle Index: 113) ==== --------------------
+Angle: 1.972222 rad (~113.0 deg)
+Sin  :   0.920514 | Ideal:   0.920505 | [PASS] | Err: 0.0010%
+Cos  :  -0.390707 | Ideal:  -0.390731 | [PASS] | Err: 0.0062%
+
+-------------------- ==== TEST CASE 114 (Input Angle Index: 114) ==== --------------------
+Angle: 1.989675 rad (~114.0 deg)
+Sin  :   0.913554 | Ideal:   0.913545 | [PASS] | Err: 0.0010%
+Cos  :  -0.406713 | Ideal:  -0.406737 | [PASS] | Err: 0.0058%
+
+-------------------- ==== TEST CASE 115 (Input Angle Index: 115) ==== --------------------
+Angle: 2.007129 rad (~115.0 deg)
+Sin  :   0.906316 | Ideal:   0.906308 | [PASS] | Err: 0.0009%
+Cos  :  -0.422597 | Ideal:  -0.422618 | [PASS] | Err: 0.0050%
+
+-------------------- ==== TEST CASE 116 (Input Angle Index: 116) ==== --------------------
+Angle: 2.024582 rad (~116.0 deg)
+Sin  :   0.898782 | Ideal:   0.898794 | [PASS] | Err: 0.0013%
+Cos  :  -0.438392 | Ideal:  -0.438371 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 117 (Input Angle Index: 117) ==== --------------------
+Angle: 2.042035 rad (~117.0 deg)
+Sin  :   0.890993 | Ideal:   0.891006 | [PASS] | Err: 0.0015%
+Cos  :  -0.454014 | Ideal:  -0.453991 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 118 (Input Angle Index: 118) ==== --------------------
+Angle: 2.059489 rad (~118.0 deg)
+Sin  :   0.882934 | Ideal:   0.882948 | [PASS] | Err: 0.0016%
+Cos  :  -0.469495 | Ideal:  -0.469472 | [PASS] | Err: 0.0050%
+
+-------------------- ==== TEST CASE 119 (Input Angle Index: 119) ==== --------------------
+Angle: 2.076942 rad (~119.0 deg)
+Sin  :   0.874613 | Ideal:   0.874620 | [PASS] | Err: 0.0008%
+Cos  :  -0.484820 | Ideal:  -0.484810 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 120 (Input Angle Index: 120) ==== --------------------
+Angle: 2.094395 rad (~120.0 deg)
+Sin  :   0.866017 | Ideal:   0.866025 | [PASS] | Err: 0.0010%
+Cos  :  -0.500012 | Ideal:  -0.500000 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 121 (Input Angle Index: 121) ==== --------------------
+Angle: 2.111848 rad (~121.0 deg)
+Sin  :   0.857158 | Ideal:   0.857167 | [PASS] | Err: 0.0010%
+Cos  :  -0.515050 | Ideal:  -0.515038 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 122 (Input Angle Index: 122) ==== --------------------
+Angle: 2.129302 rad (~122.0 deg)
+Sin  :   0.848038 | Ideal:   0.848048 | [PASS] | Err: 0.0012%
+Cos  :  -0.529933 | Ideal:  -0.529919 | [PASS] | Err: 0.0027%
+
+-------------------- ==== TEST CASE 123 (Input Angle Index: 123) ==== --------------------
+Angle: 2.146755 rad (~123.0 deg)
+Sin  :   0.838662 | Ideal:   0.838671 | [PASS] | Err: 0.0011%
+Cos  :  -0.544650 | Ideal:  -0.544639 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 124 (Input Angle Index: 124) ==== --------------------
+Angle: 2.164208 rad (~124.0 deg)
+Sin  :   0.829027 | Ideal:   0.829038 | [PASS] | Err: 0.0013%
+Cos  :  -0.559206 | Ideal:  -0.559193 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 125 (Input Angle Index: 125) ==== --------------------
+Angle: 2.181662 rad (~125.0 deg)
+Sin  :   0.819141 | Ideal:   0.819152 | [PASS] | Err: 0.0014%
+Cos  :  -0.573590 | Ideal:  -0.573576 | [PASS] | Err: 0.0023%
+
+-------------------- ==== TEST CASE 126 (Input Angle Index: 126) ==== --------------------
+Angle: 2.199115 rad (~126.0 deg)
+Sin  :   0.809004 | Ideal:   0.809017 | [PASS] | Err: 0.0016%
+Cos  :  -0.587801 | Ideal:  -0.587785 | [PASS] | Err: 0.0026%
+
+-------------------- ==== TEST CASE 127 (Input Angle Index: 127) ==== --------------------
+Angle: 2.216568 rad (~127.0 deg)
+Sin  :   0.798632 | Ideal:   0.798635 | [PASS] | Err: 0.0005%
+Cos  :  -0.601818 | Ideal:  -0.601815 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 128 (Input Angle Index: 128) ==== --------------------
+Angle: 2.234021 rad (~128.0 deg)
+Sin  :   0.788006 | Ideal:   0.788011 | [PASS] | Err: 0.0005%
+Cos  :  -0.615665 | Ideal:  -0.615661 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 129 (Input Angle Index: 129) ==== --------------------
+Angle: 2.251475 rad (~129.0 deg)
+Sin  :   0.777140 | Ideal:   0.777146 | [PASS] | Err: 0.0008%
+Cos  :  -0.629326 | Ideal:  -0.629320 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 130 (Input Angle Index: 130) ==== --------------------
+Angle: 2.268928 rad (~130.0 deg)
+Sin  :   0.766047 | Ideal:   0.766044 | [PASS] | Err: 0.0004%
+Cos  :  -0.642782 | Ideal:  -0.642788 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 131 (Input Angle Index: 131) ==== --------------------
+Angle: 2.286381 rad (~131.0 deg)
+Sin  :   0.754711 | Ideal:   0.754710 | [PASS] | Err: 0.0002%
+Cos  :  -0.656055 | Ideal:  -0.656059 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 132 (Input Angle Index: 132) ==== --------------------
+Angle: 2.303835 rad (~132.0 deg)
+Sin  :   0.743146 | Ideal:   0.743145 | [PASS] | Err: 0.0002%
+Cos  :  -0.669127 | Ideal:  -0.669131 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 133 (Input Angle Index: 133) ==== --------------------
+Angle: 2.321288 rad (~133.0 deg)
+Sin  :   0.731353 | Ideal:   0.731354 | [PASS] | Err: 0.0000%
+Cos  :  -0.681997 | Ideal:  -0.681998 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 134 (Input Angle Index: 134) ==== --------------------
+Angle: 2.338741 rad (~134.0 deg)
+Sin  :   0.719350 | Ideal:   0.719340 | [PASS] | Err: 0.0014%
+Cos  :  -0.694646 | Ideal:  -0.694658 | [PASS] | Err: 0.0018%
+
+-------------------- ==== TEST CASE 135 (Input Angle Index: 135) ==== --------------------
+Angle: 2.356194 rad (~135.0 deg)
+Sin  :   0.707117 | Ideal:   0.707107 | [PASS] | Err: 0.0014%
+Cos  :  -0.707095 | Ideal:  -0.707107 | [PASS] | Err: 0.0017%
+
+-------------------- ==== TEST CASE 136 (Input Angle Index: 136) ==== --------------------
+Angle: 2.373648 rad (~136.0 deg)
+Sin  :   0.694646 | Ideal:   0.694658 | [PASS] | Err: 0.0018%
+Cos  :  -0.719350 | Ideal:  -0.719340 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 137 (Input Angle Index: 137) ==== --------------------
+Angle: 2.391101 rad (~137.0 deg)
+Sin  :   0.681997 | Ideal:   0.681998 | [PASS] | Err: 0.0002%
+Cos  :  -0.731353 | Ideal:  -0.731354 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 138 (Input Angle Index: 138) ==== --------------------
+Angle: 2.408554 rad (~138.0 deg)
+Sin  :   0.669127 | Ideal:   0.669131 | [PASS] | Err: 0.0006%
+Cos  :  -0.743146 | Ideal:  -0.743145 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 139 (Input Angle Index: 139) ==== --------------------
+Angle: 2.426008 rad (~139.0 deg)
+Sin  :   0.656055 | Ideal:   0.656059 | [PASS] | Err: 0.0006%
+Cos  :  -0.754711 | Ideal:  -0.754710 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 140 (Input Angle Index: 140) ==== --------------------
+Angle: 2.443461 rad (~140.0 deg)
+Sin  :   0.642782 | Ideal:   0.642788 | [PASS] | Err: 0.0009%
+Cos  :  -0.766047 | Ideal:  -0.766044 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 141 (Input Angle Index: 141) ==== --------------------
+Angle: 2.460914 rad (~141.0 deg)
+Sin  :   0.629326 | Ideal:   0.629320 | [PASS] | Err: 0.0008%
+Cos  :  -0.777140 | Ideal:  -0.777146 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 142 (Input Angle Index: 142) ==== --------------------
+Angle: 2.478368 rad (~142.0 deg)
+Sin  :   0.615665 | Ideal:   0.615661 | [PASS] | Err: 0.0005%
+Cos  :  -0.788006 | Ideal:  -0.788011 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 143 (Input Angle Index: 143) ==== --------------------
+Angle: 2.495821 rad (~143.0 deg)
+Sin  :   0.601818 | Ideal:   0.601815 | [PASS] | Err: 0.0005%
+Cos  :  -0.798632 | Ideal:  -0.798635 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 144 (Input Angle Index: 144) ==== --------------------
+Angle: 2.513274 rad (~144.0 deg)
+Sin  :   0.587801 | Ideal:   0.587785 | [PASS] | Err: 0.0026%
+Cos  :  -0.809004 | Ideal:  -0.809017 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 145 (Input Angle Index: 145) ==== --------------------
+Angle: 2.530727 rad (~145.0 deg)
+Sin  :   0.573590 | Ideal:   0.573576 | [PASS] | Err: 0.0023%
+Cos  :  -0.819141 | Ideal:  -0.819152 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 146 (Input Angle Index: 146) ==== --------------------
+Angle: 2.548181 rad (~146.0 deg)
+Sin  :   0.559206 | Ideal:   0.559193 | [PASS] | Err: 0.0024%
+Cos  :  -0.829027 | Ideal:  -0.829038 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 147 (Input Angle Index: 147) ==== --------------------
+Angle: 2.565634 rad (~147.0 deg)
+Sin  :   0.544650 | Ideal:   0.544639 | [PASS] | Err: 0.0021%
+Cos  :  -0.838662 | Ideal:  -0.838671 | [PASS] | Err: 0.0011%
+
+-------------------- ==== TEST CASE 148 (Input Angle Index: 148) ==== --------------------
+Angle: 2.583087 rad (~148.0 deg)
+Sin  :   0.529933 | Ideal:   0.529919 | [PASS] | Err: 0.0027%
+Cos  :  -0.848038 | Ideal:  -0.848048 | [PASS] | Err: 0.0012%
+
+-------------------- ==== TEST CASE 149 (Input Angle Index: 149) ==== --------------------
+Angle: 2.600541 rad (~149.0 deg)
+Sin  :   0.515050 | Ideal:   0.515038 | [PASS] | Err: 0.0024%
+Cos  :  -0.857158 | Ideal:  -0.857167 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 150 (Input Angle Index: 150) ==== --------------------
+Angle: 2.617994 rad (~150.0 deg)
+Sin  :   0.500012 | Ideal:   0.500000 | [PASS] | Err: 0.0024%
+Cos  :  -0.866017 | Ideal:  -0.866025 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 151 (Input Angle Index: 151) ==== --------------------
+Angle: 2.635447 rad (~151.0 deg)
+Sin  :   0.484820 | Ideal:   0.484810 | [PASS] | Err: 0.0021%
+Cos  :  -0.874613 | Ideal:  -0.874620 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 152 (Input Angle Index: 152) ==== --------------------
+Angle: 2.652900 rad (~152.0 deg)
+Sin  :   0.469495 | Ideal:   0.469472 | [PASS] | Err: 0.0050%
+Cos  :  -0.882934 | Ideal:  -0.882948 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 153 (Input Angle Index: 153) ==== --------------------
+Angle: 2.670354 rad (~153.0 deg)
+Sin  :   0.454014 | Ideal:   0.453991 | [PASS] | Err: 0.0051%
+Cos  :  -0.890993 | Ideal:  -0.891006 | [PASS] | Err: 0.0015%
+
+-------------------- ==== TEST CASE 154 (Input Angle Index: 154) ==== --------------------
+Angle: 2.687807 rad (~154.0 deg)
+Sin  :   0.438392 | Ideal:   0.438371 | [PASS] | Err: 0.0048%
+Cos  :  -0.898782 | Ideal:  -0.898794 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 155 (Input Angle Index: 155) ==== --------------------
+Angle: 2.705260 rad (~155.0 deg)
+Sin  :   0.422597 | Ideal:   0.422618 | [PASS] | Err: 0.0050%
+Cos  :  -0.906316 | Ideal:  -0.906308 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 156 (Input Angle Index: 156) ==== --------------------
+Angle: 2.722714 rad (~156.0 deg)
+Sin  :   0.406713 | Ideal:   0.406737 | [PASS] | Err: 0.0057%
+Cos  :  -0.913554 | Ideal:  -0.913545 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 157 (Input Angle Index: 157) ==== --------------------
+Angle: 2.740167 rad (~157.0 deg)
+Sin  :   0.390707 | Ideal:   0.390731 | [PASS] | Err: 0.0062%
+Cos  :  -0.920514 | Ideal:  -0.920505 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 158 (Input Angle Index: 158) ==== --------------------
+Angle: 2.757620 rad (~158.0 deg)
+Sin  :   0.374580 | Ideal:   0.374606 | [PASS] | Err: 0.0070%
+Cos  :  -0.927193 | Ideal:  -0.927184 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 159 (Input Angle Index: 159) ==== --------------------
+Angle: 2.775074 rad (~159.0 deg)
+Sin  :   0.358355 | Ideal:   0.358368 | [PASS] | Err: 0.0036%
+Cos  :  -0.933584 | Ideal:  -0.933580 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 160 (Input Angle Index: 160) ==== --------------------
+Angle: 2.792527 rad (~160.0 deg)
+Sin  :   0.342005 | Ideal:   0.342020 | [PASS] | Err: 0.0045%
+Cos  :  -0.939697 | Ideal:  -0.939693 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 161 (Input Angle Index: 161) ==== --------------------
+Angle: 2.809980 rad (~161.0 deg)
+Sin  :   0.325553 | Ideal:   0.325568 | [PASS] | Err: 0.0048%
+Cos  :  -0.945523 | Ideal:  -0.945519 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 162 (Input Angle Index: 162) ==== --------------------
+Angle: 2.827433 rad (~162.0 deg)
+Sin  :   0.309020 | Ideal:   0.309017 | [PASS] | Err: 0.0009%
+Cos  :  -0.951054 | Ideal:  -0.951057 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 163 (Input Angle Index: 163) ==== --------------------
+Angle: 2.844887 rad (~163.0 deg)
+Sin  :   0.292372 | Ideal:   0.292372 | [PASS] | Err: 0.0002%
+Cos  :  -0.956303 | Ideal:  -0.956305 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 164 (Input Angle Index: 164) ==== --------------------
+Angle: 2.862340 rad (~164.0 deg)
+Sin  :   0.275638 | Ideal:   0.275637 | [PASS] | Err: 0.0001%
+Cos  :  -0.961260 | Ideal:  -0.961262 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 165 (Input Angle Index: 165) ==== --------------------
+Angle: 2.879793 rad (~165.0 deg)
+Sin  :   0.258834 | Ideal:   0.258819 | [PASS] | Err: 0.0056%
+Cos  :  -0.965921 | Ideal:  -0.965926 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 166 (Input Angle Index: 166) ==== --------------------
+Angle: 2.897247 rad (~166.0 deg)
+Sin  :   0.241934 | Ideal:   0.241922 | [PASS] | Err: 0.0051%
+Cos  :  -0.970291 | Ideal:  -0.970296 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 167 (Input Angle Index: 167) ==== --------------------
+Angle: 2.914700 rad (~167.0 deg)
+Sin  :   0.224963 | Ideal:   0.224951 | [PASS] | Err: 0.0053%
+Cos  :  -0.974366 | Ideal:  -0.974370 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 168 (Input Angle Index: 168) ==== --------------------
+Angle: 2.932153 rad (~168.0 deg)
+Sin  :   0.207921 | Ideal:   0.207912 | [PASS] | Err: 0.0047%
+Cos  :  -0.978144 | Ideal:  -0.978148 | [PASS] | Err: 0.0003%
+
+-------------------- ==== TEST CASE 169 (Input Angle Index: 169) ==== --------------------
+Angle: 2.949606 rad (~169.0 deg)
+Sin  :   0.190833 | Ideal:   0.190809 | [PASS] | Err: 0.0125%
+Cos  :  -0.981621 | Ideal:  -0.981627 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 170 (Input Angle Index: 170) ==== --------------------
+Angle: 2.967060 rad (~170.0 deg)
+Sin  :   0.173670 | Ideal:   0.173648 | [PASS] | Err: 0.0123%
+Cos  :  -0.984803 | Ideal:  -0.984808 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 171 (Input Angle Index: 171) ==== --------------------
+Angle: 2.984513 rad (~171.0 deg)
+Sin  :   0.156455 | Ideal:   0.156434 | [PASS] | Err: 0.0134%
+Cos  :  -0.987684 | Ideal:  -0.987688 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 172 (Input Angle Index: 172) ==== --------------------
+Angle: 3.001966 rad (~172.0 deg)
+Sin  :   0.139192 | Ideal:   0.139173 | [PASS] | Err: 0.0134%
+Cos  :  -0.990264 | Ideal:  -0.990268 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 173 (Input Angle Index: 173) ==== --------------------
+Angle: 3.019420 rad (~173.0 deg)
+Sin  :   0.121842 | Ideal:   0.121869 | [PASS] | Err: 0.0221%
+Cos  :  -0.992548 | Ideal:  -0.992546 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 174 (Input Angle Index: 174) ==== --------------------
+Angle: 3.036873 rad (~174.0 deg)
+Sin  :   0.104501 | Ideal:   0.104528 | [PASS] | Err: 0.0264%
+Cos  :  -0.994524 | Ideal:  -0.994522 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 175 (Input Angle Index: 175) ==== --------------------
+Angle: 3.054326 rad (~175.0 deg)
+Sin  :   0.087126 | Ideal:   0.087156 | [PASS] | Err: 0.0343%
+Cos  :  -0.996196 | Ideal:  -0.996195 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 176 (Input Angle Index: 176) ==== --------------------
+Angle: 3.071779 rad (~176.0 deg)
+Sin  :   0.069730 | Ideal:   0.069756 | [PASS] | Err: 0.0386%
+Cos  :  -0.997565 | Ideal:  -0.997564 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 177 (Input Angle Index: 177) ==== --------------------
+Angle: 3.089233 rad (~177.0 deg)
+Sin  :   0.052307 | Ideal:   0.052336 | [PASS] | Err: 0.0563%
+Cos  :  -0.998630 | Ideal:  -0.998630 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 178 (Input Angle Index: 178) ==== --------------------
+Angle: 3.106686 rad (~178.0 deg)
+Sin  :   0.034870 | Ideal:   0.034899 | [PASS] | Err: 0.0855%
+Cos  :  -0.999391 | Ideal:  -0.999391 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 179 (Input Angle Index: 179) ==== --------------------
+Angle: 3.124139 rad (~179.0 deg)
+Sin  :   0.017481 | Ideal:   0.017452 | [PASS] | Err: 0.1641%
+Cos  :  -0.999846 | Ideal:  -0.999848 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 180 (Input Angle Index: 180) ==== --------------------
+Angle: 3.141593 rad (~180.0 deg)
+Sin  :   0.000000 | Ideal:  -0.000000 | [PASS] | Abs Diff: 0.000000 (Target < 0.0001)
+Cos  :  -1.000000 | Ideal:  -1.000000 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 181 (Input Angle Index: 181) ==== --------------------
+Angle: 3.159046 rad (~181.0 deg)
+Sin  :  -0.017481 | Ideal:  -0.017452 | [PASS] | Err: 0.1645%
+Cos  :  -0.999846 | Ideal:  -0.999848 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 182 (Input Angle Index: 182) ==== --------------------
+Angle: 3.176499 rad (~182.0 deg)
+Sin  :  -0.034870 | Ideal:  -0.034899 | [PASS] | Err: 0.0853%
+Cos  :  -0.999391 | Ideal:  -0.999391 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 183 (Input Angle Index: 183) ==== --------------------
+Angle: 3.193953 rad (~183.0 deg)
+Sin  :  -0.052307 | Ideal:  -0.052336 | [PASS] | Err: 0.0561%
+Cos  :  -0.998630 | Ideal:  -0.998630 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 184 (Input Angle Index: 184) ==== --------------------
+Angle: 3.211406 rad (~184.0 deg)
+Sin  :  -0.069730 | Ideal:  -0.069756 | [PASS] | Err: 0.0385%
+Cos  :  -0.997565 | Ideal:  -0.997564 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 185 (Input Angle Index: 185) ==== --------------------
+Angle: 3.228859 rad (~185.0 deg)
+Sin  :  -0.087126 | Ideal:  -0.087156 | [PASS] | Err: 0.0345%
+Cos  :  -0.996196 | Ideal:  -0.996195 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 186 (Input Angle Index: 186) ==== --------------------
+Angle: 3.246312 rad (~186.0 deg)
+Sin  :  -0.104501 | Ideal:  -0.104528 | [PASS] | Err: 0.0263%
+Cos  :  -0.994524 | Ideal:  -0.994522 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 187 (Input Angle Index: 187) ==== --------------------
+Angle: 3.263766 rad (~187.0 deg)
+Sin  :  -0.121842 | Ideal:  -0.121869 | [PASS] | Err: 0.0222%
+Cos  :  -0.992548 | Ideal:  -0.992546 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 188 (Input Angle Index: 188) ==== --------------------
+Angle: 3.281219 rad (~188.0 deg)
+Sin  :  -0.139192 | Ideal:  -0.139173 | [PASS] | Err: 0.0134%
+Cos  :  -0.990264 | Ideal:  -0.990268 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 189 (Input Angle Index: 189) ==== --------------------
+Angle: 3.298672 rad (~189.0 deg)
+Sin  :  -0.156455 | Ideal:  -0.156434 | [PASS] | Err: 0.0135%
+Cos  :  -0.987684 | Ideal:  -0.987688 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 190 (Input Angle Index: 190) ==== --------------------
+Angle: 3.316126 rad (~190.0 deg)
+Sin  :  -0.173670 | Ideal:  -0.173648 | [PASS] | Err: 0.0123%
+Cos  :  -0.984803 | Ideal:  -0.984808 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 191 (Input Angle Index: 191) ==== --------------------
+Angle: 3.333579 rad (~191.0 deg)
+Sin  :  -0.190833 | Ideal:  -0.190809 | [PASS] | Err: 0.0125%
+Cos  :  -0.981621 | Ideal:  -0.981627 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 192 (Input Angle Index: 192) ==== --------------------
+Angle: 3.351032 rad (~192.0 deg)
+Sin  :  -0.207921 | Ideal:  -0.207912 | [PASS] | Err: 0.0046%
+Cos  :  -0.978144 | Ideal:  -0.978148 | [PASS] | Err: 0.0003%
+
+-------------------- ==== TEST CASE 193 (Input Angle Index: 193) ==== --------------------
+Angle: 3.368485 rad (~193.0 deg)
+Sin  :  -0.224963 | Ideal:  -0.224951 | [PASS] | Err: 0.0053%
+Cos  :  -0.974366 | Ideal:  -0.974370 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 194 (Input Angle Index: 194) ==== --------------------
+Angle: 3.385939 rad (~194.0 deg)
+Sin  :  -0.241934 | Ideal:  -0.241922 | [PASS] | Err: 0.0052%
+Cos  :  -0.970291 | Ideal:  -0.970296 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 195 (Input Angle Index: 195) ==== --------------------
+Angle: 3.403392 rad (~195.0 deg)
+Sin  :  -0.258834 | Ideal:  -0.258819 | [PASS] | Err: 0.0056%
+Cos  :  -0.965921 | Ideal:  -0.965926 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 196 (Input Angle Index: 196) ==== --------------------
+Angle: 3.420845 rad (~196.0 deg)
+Sin  :  -0.275638 | Ideal:  -0.275637 | [PASS] | Err: 0.0001%
+Cos  :  -0.961260 | Ideal:  -0.961262 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 197 (Input Angle Index: 197) ==== --------------------
+Angle: 3.438299 rad (~197.0 deg)
+Sin  :  -0.292372 | Ideal:  -0.292372 | [PASS] | Err: 0.0002%
+Cos  :  -0.956303 | Ideal:  -0.956305 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 198 (Input Angle Index: 198) ==== --------------------
+Angle: 3.455752 rad (~198.0 deg)
+Sin  :  -0.309020 | Ideal:  -0.309017 | [PASS] | Err: 0.0009%
+Cos  :  -0.951054 | Ideal:  -0.951057 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 199 (Input Angle Index: 199) ==== --------------------
+Angle: 3.473205 rad (~199.0 deg)
+Sin  :  -0.325553 | Ideal:  -0.325568 | [PASS] | Err: 0.0048%
+Cos  :  -0.945523 | Ideal:  -0.945519 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 200 (Input Angle Index: 200) ==== --------------------
+Angle: 3.490659 rad (~200.0 deg)
+Sin  :  -0.342005 | Ideal:  -0.342020 | [PASS] | Err: 0.0044%
+Cos  :  -0.939697 | Ideal:  -0.939693 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 201 (Input Angle Index: 201) ==== --------------------
+Angle: 3.508112 rad (~201.0 deg)
+Sin  :  -0.358355 | Ideal:  -0.358368 | [PASS] | Err: 0.0036%
+Cos  :  -0.933584 | Ideal:  -0.933580 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 202 (Input Angle Index: 202) ==== --------------------
+Angle: 3.525565 rad (~202.0 deg)
+Sin  :  -0.374580 | Ideal:  -0.374607 | [PASS] | Err: 0.0071%
+Cos  :  -0.927193 | Ideal:  -0.927184 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 203 (Input Angle Index: 203) ==== --------------------
+Angle: 3.543018 rad (~203.0 deg)
+Sin  :  -0.390707 | Ideal:  -0.390731 | [PASS] | Err: 0.0061%
+Cos  :  -0.920514 | Ideal:  -0.920505 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 204 (Input Angle Index: 204) ==== --------------------
+Angle: 3.560472 rad (~204.0 deg)
+Sin  :  -0.406713 | Ideal:  -0.406737 | [PASS] | Err: 0.0058%
+Cos  :  -0.913554 | Ideal:  -0.913545 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 205 (Input Angle Index: 205) ==== --------------------
+Angle: 3.577925 rad (~205.0 deg)
+Sin  :  -0.422597 | Ideal:  -0.422618 | [PASS] | Err: 0.0049%
+Cos  :  -0.906316 | Ideal:  -0.906308 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 206 (Input Angle Index: 206) ==== --------------------
+Angle: 3.595378 rad (~206.0 deg)
+Sin  :  -0.438392 | Ideal:  -0.438371 | [PASS] | Err: 0.0048%
+Cos  :  -0.898782 | Ideal:  -0.898794 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 207 (Input Angle Index: 207) ==== --------------------
+Angle: 3.612832 rad (~207.0 deg)
+Sin  :  -0.454014 | Ideal:  -0.453991 | [PASS] | Err: 0.0051%
+Cos  :  -0.890993 | Ideal:  -0.891007 | [PASS] | Err: 0.0015%
+
+-------------------- ==== TEST CASE 208 (Input Angle Index: 208) ==== --------------------
+Angle: 3.630285 rad (~208.0 deg)
+Sin  :  -0.469495 | Ideal:  -0.469472 | [PASS] | Err: 0.0050%
+Cos  :  -0.882934 | Ideal:  -0.882948 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 209 (Input Angle Index: 209) ==== --------------------
+Angle: 3.647738 rad (~209.0 deg)
+Sin  :  -0.484820 | Ideal:  -0.484810 | [PASS] | Err: 0.0020%
+Cos  :  -0.874613 | Ideal:  -0.874620 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 210 (Input Angle Index: 210) ==== --------------------
+Angle: 3.665191 rad (~210.0 deg)
+Sin  :  -0.500012 | Ideal:  -0.500000 | [PASS] | Err: 0.0024%
+Cos  :  -0.866017 | Ideal:  -0.866025 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 211 (Input Angle Index: 211) ==== --------------------
+Angle: 3.682645 rad (~211.0 deg)
+Sin  :  -0.515050 | Ideal:  -0.515038 | [PASS] | Err: 0.0024%
+Cos  :  -0.857158 | Ideal:  -0.857167 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 212 (Input Angle Index: 212) ==== --------------------
+Angle: 3.700098 rad (~212.0 deg)
+Sin  :  -0.529933 | Ideal:  -0.529919 | [PASS] | Err: 0.0027%
+Cos  :  -0.848038 | Ideal:  -0.848048 | [PASS] | Err: 0.0012%
+
+-------------------- ==== TEST CASE 213 (Input Angle Index: 213) ==== --------------------
+Angle: 3.717551 rad (~213.0 deg)
+Sin  :  -0.544650 | Ideal:  -0.544639 | [PASS] | Err: 0.0021%
+Cos  :  -0.838662 | Ideal:  -0.838671 | [PASS] | Err: 0.0011%
+
+-------------------- ==== TEST CASE 214 (Input Angle Index: 214) ==== --------------------
+Angle: 3.735005 rad (~214.0 deg)
+Sin  :  -0.559206 | Ideal:  -0.559193 | [PASS] | Err: 0.0024%
+Cos  :  -0.829027 | Ideal:  -0.829038 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 215 (Input Angle Index: 215) ==== --------------------
+Angle: 3.752458 rad (~215.0 deg)
+Sin  :  -0.573590 | Ideal:  -0.573576 | [PASS] | Err: 0.0024%
+Cos  :  -0.819141 | Ideal:  -0.819152 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 216 (Input Angle Index: 216) ==== --------------------
+Angle: 3.769911 rad (~216.0 deg)
+Sin  :  -0.587801 | Ideal:  -0.587785 | [PASS] | Err: 0.0026%
+Cos  :  -0.809004 | Ideal:  -0.809017 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 217 (Input Angle Index: 217) ==== --------------------
+Angle: 3.787364 rad (~217.0 deg)
+Sin  :  -0.601818 | Ideal:  -0.601815 | [PASS] | Err: 0.0005%
+Cos  :  -0.798632 | Ideal:  -0.798636 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 218 (Input Angle Index: 218) ==== --------------------
+Angle: 3.804818 rad (~218.0 deg)
+Sin  :  -0.615665 | Ideal:  -0.615661 | [PASS] | Err: 0.0005%
+Cos  :  -0.788006 | Ideal:  -0.788011 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 219 (Input Angle Index: 219) ==== --------------------
+Angle: 3.822271 rad (~219.0 deg)
+Sin  :  -0.629326 | Ideal:  -0.629320 | [PASS] | Err: 0.0008%
+Cos  :  -0.777140 | Ideal:  -0.777146 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 220 (Input Angle Index: 220) ==== --------------------
+Angle: 3.839724 rad (~220.0 deg)
+Sin  :  -0.642782 | Ideal:  -0.642788 | [PASS] | Err: 0.0009%
+Cos  :  -0.766047 | Ideal:  -0.766044 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 221 (Input Angle Index: 221) ==== --------------------
+Angle: 3.857178 rad (~221.0 deg)
+Sin  :  -0.656055 | Ideal:  -0.656059 | [PASS] | Err: 0.0006%
+Cos  :  -0.754711 | Ideal:  -0.754710 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 222 (Input Angle Index: 222) ==== --------------------
+Angle: 3.874631 rad (~222.0 deg)
+Sin  :  -0.669127 | Ideal:  -0.669131 | [PASS] | Err: 0.0005%
+Cos  :  -0.743146 | Ideal:  -0.743145 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 223 (Input Angle Index: 223) ==== --------------------
+Angle: 3.892084 rad (~223.0 deg)
+Sin  :  -0.681997 | Ideal:  -0.681998 | [PASS] | Err: 0.0002%
+Cos  :  -0.731353 | Ideal:  -0.731354 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 224 (Input Angle Index: 224) ==== --------------------
+Angle: 3.909538 rad (~224.0 deg)
+Sin  :  -0.694646 | Ideal:  -0.694658 | [PASS] | Err: 0.0018%
+Cos  :  -0.719350 | Ideal:  -0.719340 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 225 (Input Angle Index: 225) ==== --------------------
+Angle: 3.926991 rad (~225.0 deg)
+Sin  :  -0.707095 | Ideal:  -0.707107 | [PASS] | Err: 0.0017%
+Cos  :  -0.707117 | Ideal:  -0.707107 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 226 (Input Angle Index: 226) ==== --------------------
+Angle: 3.944444 rad (~226.0 deg)
+Sin  :  -0.719350 | Ideal:  -0.719340 | [PASS] | Err: 0.0014%
+Cos  :  -0.694646 | Ideal:  -0.694658 | [PASS] | Err: 0.0018%
+
+-------------------- ==== TEST CASE 227 (Input Angle Index: 227) ==== --------------------
+Angle: 3.961897 rad (~227.0 deg)
+Sin  :  -0.731353 | Ideal:  -0.731354 | [PASS] | Err: 0.0000%
+Cos  :  -0.681997 | Ideal:  -0.681998 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 228 (Input Angle Index: 228) ==== --------------------
+Angle: 3.979351 rad (~228.0 deg)
+Sin  :  -0.743146 | Ideal:  -0.743145 | [PASS] | Err: 0.0002%
+Cos  :  -0.669127 | Ideal:  -0.669131 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 229 (Input Angle Index: 229) ==== --------------------
+Angle: 3.996804 rad (~229.0 deg)
+Sin  :  -0.754711 | Ideal:  -0.754710 | [PASS] | Err: 0.0002%
+Cos  :  -0.656055 | Ideal:  -0.656059 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 230 (Input Angle Index: 230) ==== --------------------
+Angle: 4.014257 rad (~230.0 deg)
+Sin  :  -0.766047 | Ideal:  -0.766045 | [PASS] | Err: 0.0004%
+Cos  :  -0.642782 | Ideal:  -0.642787 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 231 (Input Angle Index: 231) ==== --------------------
+Angle: 4.031711 rad (~231.0 deg)
+Sin  :  -0.777140 | Ideal:  -0.777146 | [PASS] | Err: 0.0008%
+Cos  :  -0.629326 | Ideal:  -0.629320 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 232 (Input Angle Index: 232) ==== --------------------
+Angle: 4.049164 rad (~232.0 deg)
+Sin  :  -0.788006 | Ideal:  -0.788011 | [PASS] | Err: 0.0005%
+Cos  :  -0.615665 | Ideal:  -0.615662 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 233 (Input Angle Index: 233) ==== --------------------
+Angle: 4.066617 rad (~233.0 deg)
+Sin  :  -0.798632 | Ideal:  -0.798635 | [PASS] | Err: 0.0005%
+Cos  :  -0.601818 | Ideal:  -0.601815 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 234 (Input Angle Index: 234) ==== --------------------
+Angle: 4.084071 rad (~234.0 deg)
+Sin  :  -0.809004 | Ideal:  -0.809017 | [PASS] | Err: 0.0016%
+Cos  :  -0.587801 | Ideal:  -0.587785 | [PASS] | Err: 0.0026%
+
+-------------------- ==== TEST CASE 235 (Input Angle Index: 235) ==== --------------------
+Angle: 4.101524 rad (~235.0 deg)
+Sin  :  -0.819141 | Ideal:  -0.819152 | [PASS] | Err: 0.0014%
+Cos  :  -0.573590 | Ideal:  -0.573576 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 236 (Input Angle Index: 236) ==== --------------------
+Angle: 4.118977 rad (~236.0 deg)
+Sin  :  -0.829027 | Ideal:  -0.829038 | [PASS] | Err: 0.0013%
+Cos  :  -0.559206 | Ideal:  -0.559193 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 237 (Input Angle Index: 237) ==== --------------------
+Angle: 4.136430 rad (~237.0 deg)
+Sin  :  -0.838662 | Ideal:  -0.838671 | [PASS] | Err: 0.0011%
+Cos  :  -0.544650 | Ideal:  -0.544639 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 238 (Input Angle Index: 238) ==== --------------------
+Angle: 4.153883 rad (~238.0 deg)
+Sin  :  -0.848038 | Ideal:  -0.848048 | [PASS] | Err: 0.0012%
+Cos  :  -0.529933 | Ideal:  -0.529919 | [PASS] | Err: 0.0027%
+
+-------------------- ==== TEST CASE 239 (Input Angle Index: 239) ==== --------------------
+Angle: 4.171337 rad (~239.0 deg)
+Sin  :  -0.857158 | Ideal:  -0.857167 | [PASS] | Err: 0.0011%
+Cos  :  -0.515050 | Ideal:  -0.515038 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 240 (Input Angle Index: 240) ==== --------------------
+Angle: 4.188790 rad (~240.0 deg)
+Sin  :  -0.866017 | Ideal:  -0.866025 | [PASS] | Err: 0.0010%
+Cos  :  -0.500012 | Ideal:  -0.500000 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 241 (Input Angle Index: 241) ==== --------------------
+Angle: 4.206244 rad (~241.0 deg)
+Sin  :  -0.874613 | Ideal:  -0.874620 | [PASS] | Err: 0.0008%
+Cos  :  -0.484820 | Ideal:  -0.484810 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 242 (Input Angle Index: 242) ==== --------------------
+Angle: 4.223697 rad (~242.0 deg)
+Sin  :  -0.882934 | Ideal:  -0.882948 | [PASS] | Err: 0.0016%
+Cos  :  -0.469495 | Ideal:  -0.469472 | [PASS] | Err: 0.0050%
+
+-------------------- ==== TEST CASE 243 (Input Angle Index: 243) ==== --------------------
+Angle: 4.241150 rad (~243.0 deg)
+Sin  :  -0.890993 | Ideal:  -0.891006 | [PASS] | Err: 0.0015%
+Cos  :  -0.454014 | Ideal:  -0.453991 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 244 (Input Angle Index: 244) ==== --------------------
+Angle: 4.258604 rad (~244.0 deg)
+Sin  :  -0.898782 | Ideal:  -0.898794 | [PASS] | Err: 0.0013%
+Cos  :  -0.438392 | Ideal:  -0.438371 | [PASS] | Err: 0.0049%
+
+-------------------- ==== TEST CASE 245 (Input Angle Index: 245) ==== --------------------
+Angle: 4.276057 rad (~245.0 deg)
+Sin  :  -0.906316 | Ideal:  -0.906308 | [PASS] | Err: 0.0009%
+Cos  :  -0.422597 | Ideal:  -0.422618 | [PASS] | Err: 0.0049%
+
+-------------------- ==== TEST CASE 246 (Input Angle Index: 246) ==== --------------------
+Angle: 4.293510 rad (~246.0 deg)
+Sin  :  -0.913554 | Ideal:  -0.913545 | [PASS] | Err: 0.0010%
+Cos  :  -0.406713 | Ideal:  -0.406737 | [PASS] | Err: 0.0057%
+
+-------------------- ==== TEST CASE 247 (Input Angle Index: 247) ==== --------------------
+Angle: 4.310963 rad (~247.0 deg)
+Sin  :  -0.920514 | Ideal:  -0.920505 | [PASS] | Err: 0.0010%
+Cos  :  -0.390707 | Ideal:  -0.390731 | [PASS] | Err: 0.0062%
+
+-------------------- ==== TEST CASE 248 (Input Angle Index: 248) ==== --------------------
+Angle: 4.328416 rad (~248.0 deg)
+Sin  :  -0.927193 | Ideal:  -0.927184 | [PASS] | Err: 0.0010%
+Cos  :  -0.374580 | Ideal:  -0.374607 | [PASS] | Err: 0.0071%
+
+-------------------- ==== TEST CASE 249 (Input Angle Index: 249) ==== --------------------
+Angle: 4.345870 rad (~249.0 deg)
+Sin  :  -0.933584 | Ideal:  -0.933580 | [PASS] | Err: 0.0004%
+Cos  :  -0.358355 | Ideal:  -0.358368 | [PASS] | Err: 0.0035%
+
+-------------------- ==== TEST CASE 250 (Input Angle Index: 250) ==== --------------------
+Angle: 4.363323 rad (~250.0 deg)
+Sin  :  -0.939697 | Ideal:  -0.939693 | [PASS] | Err: 0.0004%
+Cos  :  -0.342005 | Ideal:  -0.342020 | [PASS] | Err: 0.0044%
+
+-------------------- ==== TEST CASE 251 (Input Angle Index: 251) ==== --------------------
+Angle: 4.380776 rad (~251.0 deg)
+Sin  :  -0.945523 | Ideal:  -0.945519 | [PASS] | Err: 0.0004%
+Cos  :  -0.325553 | Ideal:  -0.325568 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 252 (Input Angle Index: 252) ==== --------------------
+Angle: 4.398230 rad (~252.0 deg)
+Sin  :  -0.951054 | Ideal:  -0.951056 | [PASS] | Err: 0.0002%
+Cos  :  -0.309020 | Ideal:  -0.309017 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 253 (Input Angle Index: 253) ==== --------------------
+Angle: 4.415683 rad (~253.0 deg)
+Sin  :  -0.956303 | Ideal:  -0.956305 | [PASS] | Err: 0.0002%
+Cos  :  -0.292372 | Ideal:  -0.292372 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 254 (Input Angle Index: 254) ==== --------------------
+Angle: 4.433136 rad (~254.0 deg)
+Sin  :  -0.961260 | Ideal:  -0.961262 | [PASS] | Err: 0.0002%
+Cos  :  -0.275638 | Ideal:  -0.275637 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 255 (Input Angle Index: 255) ==== --------------------
+Angle: 4.450590 rad (~255.0 deg)
+Sin  :  -0.965921 | Ideal:  -0.965926 | [PASS] | Err: 0.0006%
+Cos  :  -0.258834 | Ideal:  -0.258819 | [PASS] | Err: 0.0057%
+
+-------------------- ==== TEST CASE 256 (Input Angle Index: 256) ==== --------------------
+Angle: 4.468043 rad (~256.0 deg)
+Sin  :  -0.970291 | Ideal:  -0.970296 | [PASS] | Err: 0.0004%
+Cos  :  -0.241934 | Ideal:  -0.241922 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 257 (Input Angle Index: 257) ==== --------------------
+Angle: 4.485496 rad (~257.0 deg)
+Sin  :  -0.974366 | Ideal:  -0.974370 | [PASS] | Err: 0.0004%
+Cos  :  -0.224963 | Ideal:  -0.224951 | [PASS] | Err: 0.0052%
+
+-------------------- ==== TEST CASE 258 (Input Angle Index: 258) ==== --------------------
+Angle: 4.502949 rad (~258.0 deg)
+Sin  :  -0.978144 | Ideal:  -0.978148 | [PASS] | Err: 0.0003%
+Cos  :  -0.207921 | Ideal:  -0.207912 | [PASS] | Err: 0.0045%
+
+-------------------- ==== TEST CASE 259 (Input Angle Index: 259) ==== --------------------
+Angle: 4.520403 rad (~259.0 deg)
+Sin  :  -0.981621 | Ideal:  -0.981627 | [PASS] | Err: 0.0006%
+Cos  :  -0.190833 | Ideal:  -0.190809 | [PASS] | Err: 0.0125%
+
+-------------------- ==== TEST CASE 260 (Input Angle Index: 260) ==== --------------------
+Angle: 4.537856 rad (~260.0 deg)
+Sin  :  -0.984803 | Ideal:  -0.984808 | [PASS] | Err: 0.0005%
+Cos  :  -0.173670 | Ideal:  -0.173648 | [PASS] | Err: 0.0124%
+
+-------------------- ==== TEST CASE 261 (Input Angle Index: 261) ==== --------------------
+Angle: 4.555309 rad (~261.0 deg)
+Sin  :  -0.987684 | Ideal:  -0.987688 | [PASS] | Err: 0.0005%
+Cos  :  -0.156455 | Ideal:  -0.156435 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 262 (Input Angle Index: 262) ==== --------------------
+Angle: 4.572762 rad (~262.0 deg)
+Sin  :  -0.990264 | Ideal:  -0.990268 | [PASS] | Err: 0.0004%
+Cos  :  -0.139192 | Ideal:  -0.139173 | [PASS] | Err: 0.0133%
+
+-------------------- ==== TEST CASE 263 (Input Angle Index: 263) ==== --------------------
+Angle: 4.590216 rad (~263.0 deg)
+Sin  :  -0.992548 | Ideal:  -0.992546 | [PASS] | Err: 0.0002%
+Cos  :  -0.121842 | Ideal:  -0.121869 | [PASS] | Err: 0.0219%
+
+-------------------- ==== TEST CASE 264 (Input Angle Index: 264) ==== --------------------
+Angle: 4.607669 rad (~264.0 deg)
+Sin  :  -0.994524 | Ideal:  -0.994522 | [PASS] | Err: 0.0002%
+Cos  :  -0.104501 | Ideal:  -0.104528 | [PASS] | Err: 0.0262%
+
+-------------------- ==== TEST CASE 265 (Input Angle Index: 265) ==== --------------------
+Angle: 4.625123 rad (~265.0 deg)
+Sin  :  -0.996196 | Ideal:  -0.996195 | [PASS] | Err: 0.0001%
+Cos  :  -0.087126 | Ideal:  -0.087156 | [PASS] | Err: 0.0344%
+
+-------------------- ==== TEST CASE 266 (Input Angle Index: 266) ==== --------------------
+Angle: 4.642576 rad (~266.0 deg)
+Sin  :  -0.997565 | Ideal:  -0.997564 | [PASS] | Err: 0.0001%
+Cos  :  -0.069730 | Ideal:  -0.069757 | [PASS] | Err: 0.0387%
+
+-------------------- ==== TEST CASE 267 (Input Angle Index: 267) ==== --------------------
+Angle: 4.660029 rad (~267.0 deg)
+Sin  :  -0.998630 | Ideal:  -0.998630 | [PASS] | Err: 0.0000%
+Cos  :  -0.052307 | Ideal:  -0.052336 | [PASS] | Err: 0.0564%
+
+-------------------- ==== TEST CASE 268 (Input Angle Index: 268) ==== --------------------
+Angle: 4.677483 rad (~268.0 deg)
+Sin  :  -0.999391 | Ideal:  -0.999391 | [PASS] | Err: 0.0000%
+Cos  :  -0.034870 | Ideal:  -0.034899 | [PASS] | Err: 0.0851%
+
+-------------------- ==== TEST CASE 269 (Input Angle Index: 269) ==== --------------------
+Angle: 4.694936 rad (~269.0 deg)
+Sin  :  -0.999846 | Ideal:  -0.999848 | [PASS] | Err: 0.0002%
+Cos  :  -0.017481 | Ideal:  -0.017452 | [PASS] | Err: 0.1651%
+
+-------------------- ==== TEST CASE 270 (Input Angle Index: 270) ==== --------------------
+Angle: 4.712389 rad (~270.0 deg)
+Sin  :  -1.000000 | Ideal:  -1.000000 | [PASS] | Err: 0.0000%
+Cos  :   0.000000 | Ideal:   0.000000 | [PASS] | Abs Diff: 0.000000 (Target < 0.0001)
+
+-------------------- ==== TEST CASE 271 (Input Angle Index: 271) ==== --------------------
+Angle: 4.729842 rad (~271.0 deg)
+Sin  :  -0.999846 | Ideal:  -0.999848 | [PASS] | Err: 0.0002%
+Cos  :   0.017481 | Ideal:   0.017452 | [PASS] | Err: 0.1649%
+
+-------------------- ==== TEST CASE 272 (Input Angle Index: 272) ==== --------------------
+Angle: 4.747295 rad (~272.0 deg)
+Sin  :  -0.999391 | Ideal:  -0.999391 | [PASS] | Err: 0.0000%
+Cos  :   0.034870 | Ideal:   0.034899 | [PASS] | Err: 0.0851%
+
+-------------------- ==== TEST CASE 273 (Input Angle Index: 273) ==== --------------------
+Angle: 4.764749 rad (~273.0 deg)
+Sin  :  -0.998630 | Ideal:  -0.998630 | [PASS] | Err: 0.0000%
+Cos  :   0.052307 | Ideal:   0.052336 | [PASS] | Err: 0.0565%
+
+-------------------- ==== TEST CASE 274 (Input Angle Index: 274) ==== --------------------
+Angle: 4.782202 rad (~274.0 deg)
+Sin  :  -0.997565 | Ideal:  -0.997564 | [PASS] | Err: 0.0001%
+Cos  :   0.069730 | Ideal:   0.069757 | [PASS] | Err: 0.0388%
+
+-------------------- ==== TEST CASE 275 (Input Angle Index: 275) ==== --------------------
+Angle: 4.799655 rad (~275.0 deg)
+Sin  :  -0.996196 | Ideal:  -0.996195 | [PASS] | Err: 0.0001%
+Cos  :   0.087126 | Ideal:   0.087156 | [PASS] | Err: 0.0344%
+
+-------------------- ==== TEST CASE 276 (Input Angle Index: 276) ==== --------------------
+Angle: 4.817109 rad (~276.0 deg)
+Sin  :  -0.994524 | Ideal:  -0.994522 | [PASS] | Err: 0.0002%
+Cos  :   0.104501 | Ideal:   0.104528 | [PASS] | Err: 0.0262%
+
+-------------------- ==== TEST CASE 277 (Input Angle Index: 277) ==== --------------------
+Angle: 4.834562 rad (~277.0 deg)
+Sin  :  -0.992548 | Ideal:  -0.992546 | [PASS] | Err: 0.0002%
+Cos  :   0.121842 | Ideal:   0.121869 | [PASS] | Err: 0.0219%
+
+-------------------- ==== TEST CASE 278 (Input Angle Index: 278) ==== --------------------
+Angle: 4.852015 rad (~278.0 deg)
+Sin  :  -0.990264 | Ideal:  -0.990268 | [PASS] | Err: 0.0004%
+Cos  :   0.139192 | Ideal:   0.139173 | [PASS] | Err: 0.0133%
+
+-------------------- ==== TEST CASE 279 (Input Angle Index: 279) ==== --------------------
+Angle: 4.869469 rad (~279.0 deg)
+Sin  :  -0.987684 | Ideal:  -0.987688 | [PASS] | Err: 0.0005%
+Cos  :   0.156455 | Ideal:   0.156435 | [PASS] | Err: 0.0134%
+
+-------------------- ==== TEST CASE 280 (Input Angle Index: 280) ==== --------------------
+Angle: 4.886922 rad (~280.0 deg)
+Sin  :  -0.984803 | Ideal:  -0.984808 | [PASS] | Err: 0.0005%
+Cos  :   0.173670 | Ideal:   0.173648 | [PASS] | Err: 0.0124%
+
+-------------------- ==== TEST CASE 281 (Input Angle Index: 281) ==== --------------------
+Angle: 4.904375 rad (~281.0 deg)
+Sin  :  -0.981621 | Ideal:  -0.981627 | [PASS] | Err: 0.0006%
+Cos  :   0.190833 | Ideal:   0.190809 | [PASS] | Err: 0.0125%
+
+-------------------- ==== TEST CASE 282 (Input Angle Index: 282) ==== --------------------
+Angle: 4.921828 rad (~282.0 deg)
+Sin  :  -0.978144 | Ideal:  -0.978148 | [PASS] | Err: 0.0003%
+Cos  :   0.207921 | Ideal:   0.207911 | [PASS] | Err: 0.0047%
+
+-------------------- ==== TEST CASE 283 (Input Angle Index: 283) ==== --------------------
+Angle: 4.939282 rad (~283.0 deg)
+Sin  :  -0.974366 | Ideal:  -0.974370 | [PASS] | Err: 0.0004%
+Cos  :   0.224963 | Ideal:   0.224951 | [PASS] | Err: 0.0052%
+
+-------------------- ==== TEST CASE 284 (Input Angle Index: 284) ==== --------------------
+Angle: 4.956735 rad (~284.0 deg)
+Sin  :  -0.970291 | Ideal:  -0.970296 | [PASS] | Err: 0.0004%
+Cos  :   0.241934 | Ideal:   0.241922 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 285 (Input Angle Index: 285) ==== --------------------
+Angle: 4.974188 rad (~285.0 deg)
+Sin  :  -0.965921 | Ideal:  -0.965926 | [PASS] | Err: 0.0006%
+Cos  :   0.258834 | Ideal:   0.258819 | [PASS] | Err: 0.0056%
+
+-------------------- ==== TEST CASE 286 (Input Angle Index: 286) ==== --------------------
+Angle: 4.991642 rad (~286.0 deg)
+Sin  :  -0.961260 | Ideal:  -0.961262 | [PASS] | Err: 0.0002%
+Cos  :   0.275638 | Ideal:   0.275637 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 287 (Input Angle Index: 287) ==== --------------------
+Angle: 5.009095 rad (~287.0 deg)
+Sin  :  -0.956303 | Ideal:  -0.956305 | [PASS] | Err: 0.0002%
+Cos  :   0.292372 | Ideal:   0.292371 | [PASS] | Err: 0.0003%
+
+-------------------- ==== TEST CASE 288 (Input Angle Index: 288) ==== --------------------
+Angle: 5.026548 rad (~288.0 deg)
+Sin  :  -0.951054 | Ideal:  -0.951056 | [PASS] | Err: 0.0002%
+Cos  :   0.309020 | Ideal:   0.309017 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 289 (Input Angle Index: 289) ==== --------------------
+Angle: 5.044002 rad (~289.0 deg)
+Sin  :  -0.945523 | Ideal:  -0.945519 | [PASS] | Err: 0.0004%
+Cos  :   0.325553 | Ideal:   0.325568 | [PASS] | Err: 0.0048%
+
+-------------------- ==== TEST CASE 290 (Input Angle Index: 290) ==== --------------------
+Angle: 5.061455 rad (~290.0 deg)
+Sin  :  -0.939697 | Ideal:  -0.939693 | [PASS] | Err: 0.0004%
+Cos  :   0.342005 | Ideal:   0.342020 | [PASS] | Err: 0.0044%
+
+-------------------- ==== TEST CASE 291 (Input Angle Index: 291) ==== --------------------
+Angle: 5.078908 rad (~291.0 deg)
+Sin  :  -0.933584 | Ideal:  -0.933580 | [PASS] | Err: 0.0004%
+Cos  :   0.358355 | Ideal:   0.358368 | [PASS] | Err: 0.0035%
+
+-------------------- ==== TEST CASE 292 (Input Angle Index: 292) ==== --------------------
+Angle: 5.096362 rad (~292.0 deg)
+Sin  :  -0.927193 | Ideal:  -0.927184 | [PASS] | Err: 0.0010%
+Cos  :   0.374580 | Ideal:   0.374607 | [PASS] | Err: 0.0071%
+
+-------------------- ==== TEST CASE 293 (Input Angle Index: 293) ==== --------------------
+Angle: 5.113815 rad (~293.0 deg)
+Sin  :  -0.920514 | Ideal:  -0.920505 | [PASS] | Err: 0.0010%
+Cos  :   0.390707 | Ideal:   0.390731 | [PASS] | Err: 0.0062%
+
+-------------------- ==== TEST CASE 294 (Input Angle Index: 294) ==== --------------------
+Angle: 5.131268 rad (~294.0 deg)
+Sin  :  -0.913554 | Ideal:  -0.913545 | [PASS] | Err: 0.0010%
+Cos  :   0.406713 | Ideal:   0.406737 | [PASS] | Err: 0.0058%
+
+-------------------- ==== TEST CASE 295 (Input Angle Index: 295) ==== --------------------
+Angle: 5.148721 rad (~295.0 deg)
+Sin  :  -0.906316 | Ideal:  -0.906308 | [PASS] | Err: 0.0009%
+Cos  :   0.422597 | Ideal:   0.422618 | [PASS] | Err: 0.0049%
+
+-------------------- ==== TEST CASE 296 (Input Angle Index: 296) ==== --------------------
+Angle: 5.166174 rad (~296.0 deg)
+Sin  :  -0.898782 | Ideal:  -0.898794 | [PASS] | Err: 0.0013%
+Cos  :   0.438392 | Ideal:   0.438371 | [PASS] | Err: 0.0049%
+
+-------------------- ==== TEST CASE 297 (Input Angle Index: 297) ==== --------------------
+Angle: 5.183628 rad (~297.0 deg)
+Sin  :  -0.890993 | Ideal:  -0.891006 | [PASS] | Err: 0.0015%
+Cos  :   0.454014 | Ideal:   0.453991 | [PASS] | Err: 0.0051%
+
+-------------------- ==== TEST CASE 298 (Input Angle Index: 298) ==== --------------------
+Angle: 5.201081 rad (~298.0 deg)
+Sin  :  -0.882934 | Ideal:  -0.882948 | [PASS] | Err: 0.0016%
+Cos  :   0.469495 | Ideal:   0.469472 | [PASS] | Err: 0.0050%
+
+-------------------- ==== TEST CASE 299 (Input Angle Index: 299) ==== --------------------
+Angle: 5.218534 rad (~299.0 deg)
+Sin  :  -0.874613 | Ideal:  -0.874620 | [PASS] | Err: 0.0008%
+Cos  :   0.484820 | Ideal:   0.484810 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 300 (Input Angle Index: 300) ==== --------------------
+Angle: 5.235988 rad (~300.0 deg)
+Sin  :  -0.866017 | Ideal:  -0.866025 | [PASS] | Err: 0.0010%
+Cos  :   0.500012 | Ideal:   0.500000 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 301 (Input Angle Index: 301) ==== --------------------
+Angle: 5.253441 rad (~301.0 deg)
+Sin  :  -0.857158 | Ideal:  -0.857167 | [PASS] | Err: 0.0011%
+Cos  :   0.515050 | Ideal:   0.515038 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 302 (Input Angle Index: 302) ==== --------------------
+Angle: 5.270895 rad (~302.0 deg)
+Sin  :  -0.848038 | Ideal:  -0.848048 | [PASS] | Err: 0.0012%
+Cos  :   0.529933 | Ideal:   0.529919 | [PASS] | Err: 0.0026%
+
+-------------------- ==== TEST CASE 303 (Input Angle Index: 303) ==== --------------------
+Angle: 5.288348 rad (~303.0 deg)
+Sin  :  -0.838662 | Ideal:  -0.838671 | [PASS] | Err: 0.0011%
+Cos  :   0.544650 | Ideal:   0.544639 | [PASS] | Err: 0.0021%
+
+-------------------- ==== TEST CASE 304 (Input Angle Index: 304) ==== --------------------
+Angle: 5.305801 rad (~304.0 deg)
+Sin  :  -0.829027 | Ideal:  -0.829038 | [PASS] | Err: 0.0013%
+Cos  :   0.559206 | Ideal:   0.559193 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 305 (Input Angle Index: 305) ==== --------------------
+Angle: 5.323254 rad (~305.0 deg)
+Sin  :  -0.819141 | Ideal:  -0.819152 | [PASS] | Err: 0.0014%
+Cos  :   0.573590 | Ideal:   0.573576 | [PASS] | Err: 0.0024%
+
+-------------------- ==== TEST CASE 306 (Input Angle Index: 306) ==== --------------------
+Angle: 5.340707 rad (~306.0 deg)
+Sin  :  -0.809004 | Ideal:  -0.809017 | [PASS] | Err: 0.0016%
+Cos  :   0.587801 | Ideal:   0.587785 | [PASS] | Err: 0.0026%
+
+-------------------- ==== TEST CASE 307 (Input Angle Index: 307) ==== --------------------
+Angle: 5.358161 rad (~307.0 deg)
+Sin  :  -0.798632 | Ideal:  -0.798635 | [PASS] | Err: 0.0005%
+Cos  :   0.601818 | Ideal:   0.601815 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 308 (Input Angle Index: 308) ==== --------------------
+Angle: 5.375614 rad (~308.0 deg)
+Sin  :  -0.788006 | Ideal:  -0.788011 | [PASS] | Err: 0.0005%
+Cos  :   0.615665 | Ideal:   0.615662 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 309 (Input Angle Index: 309) ==== --------------------
+Angle: 5.393067 rad (~309.0 deg)
+Sin  :  -0.777140 | Ideal:  -0.777146 | [PASS] | Err: 0.0008%
+Cos  :   0.629326 | Ideal:   0.629320 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 310 (Input Angle Index: 310) ==== --------------------
+Angle: 5.410521 rad (~310.0 deg)
+Sin  :  -0.766047 | Ideal:  -0.766045 | [PASS] | Err: 0.0004%
+Cos  :   0.642782 | Ideal:   0.642788 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 311 (Input Angle Index: 311) ==== --------------------
+Angle: 5.427974 rad (~311.0 deg)
+Sin  :  -0.754711 | Ideal:  -0.754710 | [PASS] | Err: 0.0002%
+Cos  :   0.656055 | Ideal:   0.656059 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 312 (Input Angle Index: 312) ==== --------------------
+Angle: 5.445427 rad (~312.0 deg)
+Sin  :  -0.743146 | Ideal:  -0.743145 | [PASS] | Err: 0.0002%
+Cos  :   0.669127 | Ideal:   0.669131 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 313 (Input Angle Index: 313) ==== --------------------
+Angle: 5.462881 rad (~313.0 deg)
+Sin  :  -0.731353 | Ideal:  -0.731354 | [PASS] | Err: 0.0000%
+Cos  :   0.681997 | Ideal:   0.681998 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 314 (Input Angle Index: 314) ==== --------------------
+Angle: 5.480334 rad (~314.0 deg)
+Sin  :  -0.719350 | Ideal:  -0.719340 | [PASS] | Err: 0.0014%
+Cos  :   0.694646 | Ideal:   0.694658 | [PASS] | Err: 0.0018%
+
+-------------------- ==== TEST CASE 315 (Input Angle Index: 315) ==== --------------------
+Angle: 5.497787 rad (~315.0 deg)
+Sin  :  -0.707117 | Ideal:  -0.707107 | [PASS] | Err: 0.0014%
+Cos  :   0.707095 | Ideal:   0.707107 | [PASS] | Err: 0.0017%
+
+-------------------- ==== TEST CASE 316 (Input Angle Index: 316) ==== --------------------
+Angle: 5.515241 rad (~316.0 deg)
+Sin  :  -0.694646 | Ideal:  -0.694658 | [PASS] | Err: 0.0018%
+Cos  :   0.719350 | Ideal:   0.719340 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 317 (Input Angle Index: 317) ==== --------------------
+Angle: 5.532694 rad (~317.0 deg)
+Sin  :  -0.681997 | Ideal:  -0.681998 | [PASS] | Err: 0.0002%
+Cos  :   0.731353 | Ideal:   0.731354 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 318 (Input Angle Index: 318) ==== --------------------
+Angle: 5.550147 rad (~318.0 deg)
+Sin  :  -0.669127 | Ideal:  -0.669131 | [PASS] | Err: 0.0005%
+Cos  :   0.743146 | Ideal:   0.743145 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 319 (Input Angle Index: 319) ==== --------------------
+Angle: 5.567600 rad (~319.0 deg)
+Sin  :  -0.656055 | Ideal:  -0.656059 | [PASS] | Err: 0.0006%
+Cos  :   0.754711 | Ideal:   0.754710 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 320 (Input Angle Index: 320) ==== --------------------
+Angle: 5.585053 rad (~320.0 deg)
+Sin  :  -0.642782 | Ideal:  -0.642788 | [PASS] | Err: 0.0009%
+Cos  :   0.766047 | Ideal:   0.766044 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 321 (Input Angle Index: 321) ==== --------------------
+Angle: 5.602507 rad (~321.0 deg)
+Sin  :  -0.629326 | Ideal:  -0.629320 | [PASS] | Err: 0.0008%
+Cos  :   0.777140 | Ideal:   0.777146 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 322 (Input Angle Index: 322) ==== --------------------
+Angle: 5.619960 rad (~322.0 deg)
+Sin  :  -0.615665 | Ideal:  -0.615661 | [PASS] | Err: 0.0005%
+Cos  :   0.788006 | Ideal:   0.788011 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 323 (Input Angle Index: 323) ==== --------------------
+Angle: 5.637414 rad (~323.0 deg)
+Sin  :  -0.601818 | Ideal:  -0.601815 | [PASS] | Err: 0.0005%
+Cos  :   0.798632 | Ideal:   0.798636 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 324 (Input Angle Index: 324) ==== --------------------
+Angle: 5.654867 rad (~324.0 deg)
+Sin  :  -0.587801 | Ideal:  -0.587785 | [PASS] | Err: 0.0026%
+Cos  :   0.809004 | Ideal:   0.809017 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 325 (Input Angle Index: 325) ==== --------------------
+Angle: 5.672320 rad (~325.0 deg)
+Sin  :  -0.573590 | Ideal:  -0.573577 | [PASS] | Err: 0.0023%
+Cos  :   0.819141 | Ideal:   0.819152 | [PASS] | Err: 0.0014%
+
+-------------------- ==== TEST CASE 326 (Input Angle Index: 326) ==== --------------------
+Angle: 5.689774 rad (~326.0 deg)
+Sin  :  -0.559206 | Ideal:  -0.559193 | [PASS] | Err: 0.0024%
+Cos  :   0.829027 | Ideal:   0.829038 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 327 (Input Angle Index: 327) ==== --------------------
+Angle: 5.707227 rad (~327.0 deg)
+Sin  :  -0.544650 | Ideal:  -0.544639 | [PASS] | Err: 0.0021%
+Cos  :   0.838662 | Ideal:   0.838671 | [PASS] | Err: 0.0011%
+
+-------------------- ==== TEST CASE 328 (Input Angle Index: 328) ==== --------------------
+Angle: 5.724680 rad (~328.0 deg)
+Sin  :  -0.529933 | Ideal:  -0.529919 | [PASS] | Err: 0.0027%
+Cos  :   0.848038 | Ideal:   0.848048 | [PASS] | Err: 0.0012%
+
+-------------------- ==== TEST CASE 329 (Input Angle Index: 329) ==== --------------------
+Angle: 5.742133 rad (~329.0 deg)
+Sin  :  -0.515050 | Ideal:  -0.515038 | [PASS] | Err: 0.0024%
+Cos  :   0.857158 | Ideal:   0.857167 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 330 (Input Angle Index: 330) ==== --------------------
+Angle: 5.759586 rad (~330.0 deg)
+Sin  :  -0.500012 | Ideal:  -0.500000 | [PASS] | Err: 0.0023%
+Cos  :   0.866017 | Ideal:   0.866025 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 331 (Input Angle Index: 331) ==== --------------------
+Angle: 5.777040 rad (~331.0 deg)
+Sin  :  -0.484820 | Ideal:  -0.484809 | [PASS] | Err: 0.0021%
+Cos  :   0.874613 | Ideal:   0.874620 | [PASS] | Err: 0.0008%
+
+-------------------- ==== TEST CASE 332 (Input Angle Index: 332) ==== --------------------
+Angle: 5.794493 rad (~332.0 deg)
+Sin  :  -0.469495 | Ideal:  -0.469471 | [PASS] | Err: 0.0050%
+Cos  :   0.882934 | Ideal:   0.882948 | [PASS] | Err: 0.0016%
+
+-------------------- ==== TEST CASE 333 (Input Angle Index: 333) ==== --------------------
+Angle: 5.811946 rad (~333.0 deg)
+Sin  :  -0.454014 | Ideal:  -0.453991 | [PASS] | Err: 0.0051%
+Cos  :   0.890993 | Ideal:   0.891007 | [PASS] | Err: 0.0015%
+
+-------------------- ==== TEST CASE 334 (Input Angle Index: 334) ==== --------------------
+Angle: 5.829400 rad (~334.0 deg)
+Sin  :  -0.438392 | Ideal:  -0.438371 | [PASS] | Err: 0.0048%
+Cos  :   0.898782 | Ideal:   0.898794 | [PASS] | Err: 0.0013%
+
+-------------------- ==== TEST CASE 335 (Input Angle Index: 335) ==== --------------------
+Angle: 5.846853 rad (~335.0 deg)
+Sin  :  -0.422597 | Ideal:  -0.422618 | [PASS] | Err: 0.0050%
+Cos  :   0.906316 | Ideal:   0.906308 | [PASS] | Err: 0.0009%
+
+-------------------- ==== TEST CASE 336 (Input Angle Index: 336) ==== --------------------
+Angle: 5.864306 rad (~336.0 deg)
+Sin  :  -0.406713 | Ideal:  -0.406736 | [PASS] | Err: 0.0057%
+Cos  :   0.913554 | Ideal:   0.913546 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 337 (Input Angle Index: 337) ==== --------------------
+Angle: 5.881760 rad (~337.0 deg)
+Sin  :  -0.390707 | Ideal:  -0.390731 | [PASS] | Err: 0.0061%
+Cos  :   0.920514 | Ideal:   0.920505 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 338 (Input Angle Index: 338) ==== --------------------
+Angle: 5.899213 rad (~338.0 deg)
+Sin  :  -0.374580 | Ideal:  -0.374607 | [PASS] | Err: 0.0071%
+Cos  :   0.927193 | Ideal:   0.927184 | [PASS] | Err: 0.0010%
+
+-------------------- ==== TEST CASE 339 (Input Angle Index: 339) ==== --------------------
+Angle: 5.916666 rad (~339.0 deg)
+Sin  :  -0.358355 | Ideal:  -0.358368 | [PASS] | Err: 0.0036%
+Cos  :   0.933584 | Ideal:   0.933580 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 340 (Input Angle Index: 340) ==== --------------------
+Angle: 5.934119 rad (~340.0 deg)
+Sin  :  -0.342005 | Ideal:  -0.342020 | [PASS] | Err: 0.0045%
+Cos  :   0.939697 | Ideal:   0.939693 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 341 (Input Angle Index: 341) ==== --------------------
+Angle: 5.951573 rad (~341.0 deg)
+Sin  :  -0.325553 | Ideal:  -0.325568 | [PASS] | Err: 0.0047%
+Cos  :   0.945523 | Ideal:   0.945519 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 342 (Input Angle Index: 342) ==== --------------------
+Angle: 5.969026 rad (~342.0 deg)
+Sin  :  -0.309020 | Ideal:  -0.309017 | [PASS] | Err: 0.0009%
+Cos  :   0.951054 | Ideal:   0.951057 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 343 (Input Angle Index: 343) ==== --------------------
+Angle: 5.986479 rad (~343.0 deg)
+Sin  :  -0.292372 | Ideal:  -0.292372 | [PASS] | Err: 0.0002%
+Cos  :   0.956303 | Ideal:   0.956305 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 344 (Input Angle Index: 344) ==== --------------------
+Angle: 6.003932 rad (~344.0 deg)
+Sin  :  -0.275638 | Ideal:  -0.275638 | [PASS] | Err: 0.0000%
+Cos  :   0.961260 | Ideal:   0.961262 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 345 (Input Angle Index: 345) ==== --------------------
+Angle: 6.021386 rad (~345.0 deg)
+Sin  :  -0.258834 | Ideal:  -0.258819 | [PASS] | Err: 0.0057%
+Cos  :   0.965921 | Ideal:   0.965926 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 346 (Input Angle Index: 346) ==== --------------------
+Angle: 6.038839 rad (~346.0 deg)
+Sin  :  -0.241934 | Ideal:  -0.241922 | [PASS] | Err: 0.0052%
+Cos  :   0.970291 | Ideal:   0.970296 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 347 (Input Angle Index: 347) ==== --------------------
+Angle: 6.056293 rad (~347.0 deg)
+Sin  :  -0.224963 | Ideal:  -0.224951 | [PASS] | Err: 0.0053%
+Cos  :   0.974366 | Ideal:   0.974370 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 348 (Input Angle Index: 348) ==== --------------------
+Angle: 6.073746 rad (~348.0 deg)
+Sin  :  -0.207921 | Ideal:  -0.207912 | [PASS] | Err: 0.0046%
+Cos  :   0.978144 | Ideal:   0.978148 | [PASS] | Err: 0.0003%
+
+-------------------- ==== TEST CASE 349 (Input Angle Index: 349) ==== --------------------
+Angle: 6.091199 rad (~349.0 deg)
+Sin  :  -0.190833 | Ideal:  -0.190809 | [PASS] | Err: 0.0124%
+Cos  :   0.981621 | Ideal:   0.981627 | [PASS] | Err: 0.0006%
+
+-------------------- ==== TEST CASE 350 (Input Angle Index: 350) ==== --------------------
+Angle: 6.108653 rad (~350.0 deg)
+Sin  :  -0.173670 | Ideal:  -0.173648 | [PASS] | Err: 0.0125%
+Cos  :   0.984803 | Ideal:   0.984808 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 351 (Input Angle Index: 351) ==== --------------------
+Angle: 6.126106 rad (~351.0 deg)
+Sin  :  -0.156455 | Ideal:  -0.156434 | [PASS] | Err: 0.0135%
+Cos  :   0.987684 | Ideal:   0.987688 | [PASS] | Err: 0.0005%
+
+-------------------- ==== TEST CASE 352 (Input Angle Index: 352) ==== --------------------
+Angle: 6.143559 rad (~352.0 deg)
+Sin  :  -0.139192 | Ideal:  -0.139173 | [PASS] | Err: 0.0134%
+Cos  :   0.990264 | Ideal:   0.990268 | [PASS] | Err: 0.0004%
+
+-------------------- ==== TEST CASE 353 (Input Angle Index: 353) ==== --------------------
+Angle: 6.161012 rad (~353.0 deg)
+Sin  :  -0.121842 | Ideal:  -0.121869 | [PASS] | Err: 0.0222%
+Cos  :   0.992548 | Ideal:   0.992546 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 354 (Input Angle Index: 354) ==== --------------------
+Angle: 6.178465 rad (~354.0 deg)
+Sin  :  -0.104501 | Ideal:  -0.104529 | [PASS] | Err: 0.0265%
+Cos  :   0.994524 | Ideal:   0.994522 | [PASS] | Err: 0.0002%
+
+-------------------- ==== TEST CASE 355 (Input Angle Index: 355) ==== --------------------
+Angle: 6.195919 rad (~355.0 deg)
+Sin  :  -0.087126 | Ideal:  -0.087156 | [PASS] | Err: 0.0342%
+Cos  :   0.996196 | Ideal:   0.996195 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 356 (Input Angle Index: 356) ==== --------------------
+Angle: 6.213372 rad (~356.0 deg)
+Sin  :  -0.069730 | Ideal:  -0.069756 | [PASS] | Err: 0.0385%
+Cos  :   0.997565 | Ideal:   0.997564 | [PASS] | Err: 0.0001%
+
+-------------------- ==== TEST CASE 357 (Input Angle Index: 357) ==== --------------------
+Angle: 6.230825 rad (~357.0 deg)
+Sin  :  -0.052307 | Ideal:  -0.052336 | [PASS] | Err: 0.0561%
+Cos  :   0.998630 | Ideal:   0.998630 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 358 (Input Angle Index: 358) ==== --------------------
+Angle: 6.248279 rad (~358.0 deg)
+Sin  :  -0.034870 | Ideal:  -0.034900 | [PASS] | Err: 0.0860%
+Cos  :   0.999391 | Ideal:   0.999391 | [PASS] | Err: 0.0000%
+
+-------------------- ==== TEST CASE 359 (Input Angle Index: 359) ==== --------------------
+Angle: 6.265732 rad (~359.0 deg)
+Sin  :  -0.017481 | Ideal:  -0.017453 | [PASS] | Err: 0.1633%
+Cos  :   0.999846 | Ideal:   0.999848 | [PASS] | Err: 0.0002%
+
+================================================================
+ SUMMARY REPORT
+================================================================
+ Total Checks : 720
+ Passed       : 720
+ Failed       : 0
+ Max % Error  : 0.16508%
+================================================================
+RESULT: SUCCESS ✅
