@@ -52,17 +52,5 @@ The design follows a **Pipelined Architecture** (Decimation-In-Time) consisting 
 ```text
 cordic-fft-fp/
 ├── rtl/                # Source Verilog/SystemVerilog files
-│   ├── fpu_add_sub.v   # Floating Point Adder/Subtractor
-│   ├── cordic_fp.v     # Floating Point CORDIC core
-│   ├── butterfly_fp.v  # Floating Point Butterfly Unit
-│   ├── fft_stage.v     # Generic stage wrapper
-│   ├── dual_port_ram.v # Memory modules (32-bit/64-bit)
-│   ├── agu.v           # Address Generation Unit
-│   └── fft_top.v       # Top-level module
 ├── tb/                 # Testbenches
-│   ├── tb_cordic.v     # Testbench for FP CORDIC
-│   ├── tb_butterfly.v  # Testbench for FP Butterfly
-│   └── tb_fft_top.v    # Full System Testbench
 ├── sim/                # Simulation scripts & waveforms
-├── scripts/            # Python scripts for Golden Reference (numpy)
-└── docs/               # Documentation
