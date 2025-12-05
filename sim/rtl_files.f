@@ -1,0 +1,16 @@
+../rtl/butterfly.sv
+../rtl/cordic.sv
+../rtl/dual_port_ram.sv
+../rtl/fpu_add_sub.sv
+../rtl/fullAdder32b.sv
+../rtl/inversion_sequence.sv
+../rtl/rom_stage_10.sv
+../rtl/rom_stage_2.sv
+../rtl/rom_stage_3.sv
+../rtl/rom_stage_4.sv
+../rtl/rom_stage_5.sv
+../rtl/rom_stage_6.sv
+../rtl/rom_stage_7.sv
+../rtl/rom_stage_8.sv
+../rtl/rom_stage_9.sv
+../rtl/stage_1.sv
