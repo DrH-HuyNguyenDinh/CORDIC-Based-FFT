@@ -1,9 +1,11 @@
 ../rtl/butterfly.sv
+../rtl/comparator.sv
 ../rtl/cordic.sv
 ../rtl/dual_port_ram.sv
 ../rtl/fpu_add_sub.sv
 ../rtl/fullAdder32b.sv
 ../rtl/inversion_sequence.sv
+../rtl/mux4to1.sv
 ../rtl/rom_stage_10.sv
 ../rtl/rom_stage_2.sv
 ../rtl/rom_stage_3.sv
