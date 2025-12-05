@@ -423,8 +423,8 @@ module tb_cordic;
                 i_y = 32'h00000000; 
                 i_z = test_angles[i];
 
-                // Chờ pipeline (ví dụ 17 cycles)
-                repeat (23) @(posedge i_clk);
+                // Chờ pipeline (ví dụ 24 cycles)
+                repeat (24) @(posedge i_clk);
 
                 $display("\n==== TEST CASE %0d ====", i);
                 // IN THEO ĐỊNH DẠNG: 1_8_23 bits
