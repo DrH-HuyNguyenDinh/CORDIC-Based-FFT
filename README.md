@@ -53,11 +53,13 @@ cordic-fft-fp/
 │   └── tb_cordic.sv
 ├── rtl
 │   ├── butterfly.sv
+│   ├── comparator.sv
 │   ├── cordic.sv
 │   ├── dual_port_ram.sv
 │   ├── fpu_add_sub.sv
 │   ├── fullAdder32b.sv
 │   ├── inversion_sequence.sv
+│   ├── mux4to1.sv
 │   ├── rom_stage_10.sv
 │   ├── rom_stage_2.sv
 │   ├── rom_stage_3.sv
