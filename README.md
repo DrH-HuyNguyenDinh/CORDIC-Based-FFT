@@ -54,32 +54,99 @@ The design follows a **Pipelined Architecture** (Decimation-In-Time) consisting 
 * **Pipeline Stages:** 10 stages.
 * **Optimization:** Multiplier-less complex rotation using CORDIC.
 
+Here is the detailed **Verification Strategy** section written in professional English. You can copy and paste this directly into your `README.md` file.
+
+It highlights the robustness of your testing method (Python Co-Simulation) and includes the specific technical details of the signal generation and automated checking process.
+
+---
+
 ## 🧪 Verification Strategy
 
-The project employs a Python-based verification flow to ensure the correctness of the complex Floating-Point arithmetic and addressing logic.
+This project employs a robust **Python-based Co-Verification flow** to ensure the algorithmic correctness and hardware integrity of the Floating-Point FFT processor. The verification process is divided into three main stages:
 
 ### 1. Stimulus Generation
 
-A Python script (`fft_gen.py`) generates realistic test signals, including:
+**Script:** `scripts/test_fft/fft_gen.py`
 
-* **Multi-tone signals:** Mixing 1MHz and 5MHz sine waves.
-* **Interference & Noise:** Adding 12.3MHz interference and White Gaussian Noise.
-* **Output:** The script exports quantization-ready data in **32-bit Hex (IEEE 754)** format for the Verilog testbench.
+To rigorously test the dynamic range and precision of the IEEE-754 Floating-Point units, we generate a **"chaotic" realistic signal** rather than simple pure sine waves.
+
+* **Configuration:** Sampling Frequency () = 50 MHz, 2048 sample points.
+* **Time-Variant Signal:**
+*  samples: 1 MHz Sine Wave.
+*  samples: 5 MHz Sine Wave.
+
+
+* **Interference:** Injected a high-frequency odd harmonic signal at **12.3 MHz**.
+* **Noise Injection:** Added White Gaussian Noise (Mean=0, ) to simulate real-world channel conditions.
+
+The generated data is quantized into **32-bit Hex (IEEE-754 Single Precision)** format and exported to a `.txt` file for memory initialization in the Verilog testbench.
+
+> *Note: The Python FFT analysis confirms that despite the time-domain chaos, the frequency components (1MHz, 5MHz, and 12.3MHz) are distinctly resolvable, validating the input quality.*
+
+<img width="1907" height="957" alt="fft" src="https://github.com/user-attachments/assets/c43f2433-9936-475e-b60d-223b93cfe119" />
 
 ### 2. Golden Reference Model
 
-For the **Input Reordering** block, a reference model (`find_bit_reverse_pairs.py`) calculates the expected bit-reversed indices for 1024 points.
+**Script:** `scripts/test_fft/find_bit_reverse_pairs.py`
 
-* **Logic:** Maps input index `00_0000_0001` (1)  `10_0000_0000` (512).
-* **Output:** A golden table mapping every input address to its expected data content.
+For the **Input Reordering** block, the data must be permuted according to the Radix-2 DIT Bit-Reversal algorithm. A dedicated Python model generates the "Golden" truth table:
+
+* **Logic:** For  (10-bit address width), input index  is bit-reversed to produce target index .
+* **Mapping:** The model maps the data at the original index to the expected data at the reversed index.
+
+**Example of the Golden Reference Table (`fft_bit_reversed_pairs.txt`):**
+
+```text
+IDX   | Bin (Original) | Hex Orig   <--> IDX Rev | Bin (Reversed) | Hex Rev   
+--------------------------------------------------------------------------------
+0     | 0000000000     | 3dcb7441   <--> 0       | 0000000000     | 3dcb7441  
+1     | 0000000001     | 3ecb9058   <--> 512     | 1000000000     | 3f5c72aa  
+2     | 0000000010     | 3ec95ebc   <--> 256     | 0100000000     | 3f649295  
+...
+
+```
 
 ### 3. Automated Checking
 
-The verification script (`check_reordering.py`) automatically compares the **RTL Simulation Output** against the **Golden Reference**.
+**Script:** `scripts/check_reordering.py`
 
-* Parses the simulation log (`output_input_reordering.txt`).
-* Validates data integrity line-by-line.
-* Reports PASS/FAIL status for all 1024 points.
+After running the SystemVerilog simulation, the RTL output is captured in a log file. The automated checking script performs a bit-exact comparison between the **Simulation Output** and the **Golden Reference**.
+
+**Process:**
+
+1. Loads the expected bit-reversed hex values from the Golden Model.
+2. Parses the simulation log (`output_input_reordering.txt`) to extract RTL output data.
+3. Performs a line-by-line comparison.
+
+**Verification Results Log:**
+
+```text
+========================================================
+       CHECKING INPUT REORDERING RESULT
+========================================================
+Loading Golden Data from: .../scripts/test_fft/fft_bit_reversed_pairs.txt
+-> Loaded 1024 golden values.
+Loading Verilog Output from: .../sim/output_input_reordering.txt
+-> Loaded 2121 verilog output values.
+
+------------------------------------------------------------
+INDEX    | GOLDEN          | VERILOG         | STATUS
+------------------------------------------------------------
+0        | 3dcb7441        | 3dcb7441        | PASS
+1        | 3f5c72aa        | 3f5c72aa        | PASS
+2        | 3f649295        | 3f649295        | PASS
+3        | 3f039487        | 3f039487        | PASS
+4        | bea6b48d        | bea6b48d        | PASS
+...      | ...             | ...             | ...
+1023     | 3eda0dac        | 3eda0dac        | PASS
+------------------------------------------------------------
+
+SUCCESS: All 1024 checked values MATCHED! ✅
+(Note: Verilog simulation ran longer than golden data, overlapping part is correct)
+
+```
+
+This successful validation confirms that the hardware implementation of the Input Reordering block handles the complex Floating-Point data addressing correctly.
 
 ## 🛠️ How to Run
 
