@@ -248,12 +248,9 @@ cordic-fft-fp/
     └── rtl_files.f
 ```
 
-## 📝 Future Work
+## 📝 Final Result
 
-* [ ] Complete integration of all 10 FFT stages.
-* [ ] Implement full automated checking for the final FFT output.
-* [ ] Synthesis and Timing Analysis on **Cyclone V FPGA**.
-* [ ] Error analysis (SQNR) between Floating-Point CORDIC and Ideal FFT.
+<img width="1400" height="700" alt="fft_peaks_analysis" src="https://github.com/user-attachments/assets/cbb656aa-ec90-4f77-a830-9693e363b226" />
 
 ---
 
