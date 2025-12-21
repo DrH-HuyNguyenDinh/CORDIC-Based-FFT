@@ -72,8 +72,8 @@ To rigorously test the dynamic range and precision of the IEEE-754 Floating-Poin
 
 * **Configuration:** Sampling Frequency () = 50 MHz, 2048 sample points.
 * **Time-Variant Signal:**
-*  samples: 1 MHz Sine Wave.
-*  samples: 5 MHz Sine Wave.
+*  samples: 2  kHz Sine Wave.
+*  samples: 10 kHz Sine Wave.
 
 
 * **Interference:** Injected a high-frequency odd harmonic signal at **12.3 MHz**.
