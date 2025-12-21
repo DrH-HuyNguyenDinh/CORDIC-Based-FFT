@@ -6,7 +6,7 @@ This repository contains the RTL implementation of a **1024-point Radix-2 Fast F
 
 Unlike traditional fixed-point implementations, this design provides a **high dynamic range** and eliminates common overflow issues. It utilizes a **Floating-Point CORDIC (COordinate Rotation DIgital Computer)** algorithm for twiddle factor multiplication, avoiding the need for massive floating-point hardware multipliers.
 
-This project is part of my **Capstone Project 2** at [University Name].
+This project is part of my **Capstone Project 2** at VIETNAM NATIONAL UNIVERSITY HO CHI MINH CITY HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY.
 
 ## 🏗 Architecture
 
@@ -34,9 +34,6 @@ The design follows a **Pipelined Architecture** (Decimation-In-Time) consisting 
 * **Configuration:** Standard **32-bit data width**.
 * *Note:* Real and Imaginary components are processed and stored separately (using parallel RAM instances) to fit within standard FPGA Block RAM configurations (M10K).
 
-
-5. **Address Generation Unit (AGU):**
-* Calculates read/write addresses and ROM lookup indices for rotation angles.
 
 
 
@@ -70,13 +67,13 @@ This project employs a robust **Python-based Co-Verification flow** to ensure th
 
 To rigorously test the dynamic range and precision of the IEEE-754 Floating-Point units, we generate a **"chaotic" realistic signal** rather than simple pure sine waves.
 
-* **Configuration:** Sampling Frequency () = 50 MHz, 2048 sample points.
+* **Configuration:** Sampling Frequency () = 100 kHz, 2048 sample points.
 * **Time-Variant Signal:**
 *  samples: 2  kHz Sine Wave.
 *  samples: 10 kHz Sine Wave.
 
 
-* **Interference:** Injected a high-frequency odd harmonic signal at **12.3 MHz**.
+* **Interference:** Injected a noise signal at **24.6 kHz**.
 * **Noise Injection:** Added White Gaussian Noise (Mean=0, ) to simulate real-world channel conditions.
 
 The generated data is quantized into **32-bit Hex (IEEE-754 Single Precision)** format and exported to a `.txt` file for memory initialization in the Verilog testbench.
