@@ -67,7 +67,7 @@ This project employs a robust **Python-based Co-Verification flow** to ensure th
 
 To rigorously test the dynamic range and precision of the IEEE-754 Floating-Point units, we generate a **"chaotic" realistic signal** rather than simple pure sine waves.
 
-* **Configuration:** Sampling Frequency () = 100 kHz, 2048 sample points.
+* **Configuration:** Sampling Frequency = 100 kHz, 2048 sample points.
 * **Time-Variant Signal:**
 *  samples: 2  kHz Sine Wave.
 *  samples: 10 kHz Sine Wave.
