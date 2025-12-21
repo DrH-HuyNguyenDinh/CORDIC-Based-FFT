@@ -14,10 +14,13 @@ module dual_port_ram (
 
 logic [31:0] ram [0:1023];
 
+initial begin
+    $readmemh("/home/nguyendinhhuy/rtl/cordic-based-fft/scripts/dmem_init_file.txt", ram);
+end
+
 always @(posedge i_clk) begin
     if (i_we_a) begin
-        ram[i_addr_a] <= i_data_a;
-        o_data_a <= i_data_a; 
+        ram[i_addr_a] <= i_data_a; 
     end
     else begin
         o_data_a <= ram[i_addr_a];
@@ -27,7 +30,6 @@ end
 always @(posedge i_clk) begin
     if (i_we_b) begin
         ram[i_addr_b] <= i_data_b;
-        o_data_b <= i_data_b; 
     end
     else begin
         o_data_b <= ram[i_addr_b];

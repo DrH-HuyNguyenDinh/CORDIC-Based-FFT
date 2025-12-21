@@ -44,6 +44,7 @@ logic [31:0] i_x_k_11, o_x_k_11, i_y_k_11, o_y_k_11;
 logic [31:0] i_x_k_14, o_x_k_14, i_y_k_14, o_y_k_14;
 
 logic [31:0] x, y;
+logic [31:0] delay23_x, delay23_y;
 logic [31:0] x1, y1;
 
 //         _                _           _       _  _           _                        _   
@@ -137,6 +138,16 @@ assign angle_270_90  = ( i_z[31] & ~i_z[30] &  i_z[29] &  i_z[28] &
 
 assign check_angle = {angle_270_90, angle_180_180, angle_90_270, angle_0_360};
 assign check = {check_angle, check7};
+
+delay_23 delay23x (.i_clk(i_clk), .i_reset(i_reset),
+						 .i_data(i_x),
+						
+						 .o_data(delay23_x));
+
+delay_23 delay23y (.i_clk(i_clk), .i_reset(i_reset),
+						 .i_data(i_x),
+						
+						 .o_data(delay23_y));
 
 always_ff @(posedge i_clk or negedge i_reset) begin
     if (~i_reset) begin
@@ -799,20 +810,20 @@ mux4to1 muxresulty (.i_data_0(y), .i_data_1({~y[31], y[30:0]}), .i_data_2(y), .i
 always @(*) begin
     case (o_check22[5:2])
         4'b0001: begin
-            o_x = 32'b00111111100000000000000000000000;
+            o_x = delay23_x;
             o_y = 32'b00000000000000000000000000000000;
         end
         4'b0010: begin
             o_x = 32'b00000000000000000000000000000000;
-            o_y = 32'b00111111100000000000000000000000;
+            o_y = delay23_y;
         end
         4'b0100: begin
-            o_x = 32'b10111111100000000000000000000000;
+            o_x = {~delay23_x[31], delay23_x[30:0]};
             o_y = 32'b00000000000000000000000000000000;
         end
         4'b1000: begin
             o_x = 32'b00000000000000000000000000000000;
-            o_y = 32'b10111111100000000000000000000000;
+            o_y = {~delay23_y[31], delay23_y[30:0]};
         end
         default: begin
             o_x = x1;

@@ -4,6 +4,7 @@ module fpu_add_sub (
 	output logic [31:0] o_result
 );
 
+logic [31:0] result;
 logic cout, addsub, compare_operand;
 logic [7:0] largerExponent;
 logic [8:0] shiftAmount;
@@ -14,7 +15,7 @@ logic [32:0] sumOperand;
 logic [31:0] shiftedOperand;
 logic compare1, compare2, compare;
 
-signComputation sign (.signA(i_a[31]), .signB(i_b[31]), .compare(compare), .cin(i_control), .addsub(addsub), .resultSign(o_result[31]));
+signComputation sign (.signA(i_a[31]), .signB(i_b[31]), .compare(compare), .cin(i_control), .addsub(addsub), .resultSign(result[31]));
 
 exponentDifference ExponentDiffernce (.a(i_a[30:23]), .b(i_b[30:23]), .cout(cout), .shiftAmount(shiftAmount));
 
@@ -94,7 +95,30 @@ always @(*) begin
 	endcase
 end
 
-normalized Normalized (.largerExponent(largerExponent), .sumOperand(sumOperand[32:1]), .resultExponent(o_result[30:23]), .resultOperand(o_result[22:0]));
+normalized Normalized (.largerExponent(largerExponent), .sumOperand(sumOperand[32:1]), .resultExponent(result[30:23]), .resultOperand(result[22:0]));
+
+always @(*) begin
+	if (((&i_a[30:23]) & (|i_a[22:0])) | 
+       ((&i_b[30:23]) & (|i_b[22:0])) |
+       (((&i_a[30:23]) & (~|i_a[22:0])) & ((&i_b[30:23]) & (~|i_b[22:0])) & ((i_a[31] ^ i_b[31]) ^ i_control))) 
+	begin
+		o_result = 32'h7FC00000; 
+	end else if ((&i_a[30:23]) & (~|i_a[22:0])) begin
+      o_result = i_a; 
+   end else if ((&i_b[30:23]) & (~|i_b[22:0])) begin
+      o_result = {i_b[31] ^ i_control, i_b[30:0]};
+   end else if ((~|i_a[30:0]) & (~|i_b[30:0])) begin
+      o_result = 32'b0;
+   end else if (~|i_b[30:0]) begin
+      o_result = i_a;
+   end else if (~|i_a[30:0]) begin
+      o_result = {i_b[31] ^ i_control, i_b[30:0]};
+   end else if ((~|(i_a ^ i_b)) & i_control) begin
+      o_result = 32'b0;
+   end else begin
+      o_result = result;
+   end
+end
 
 endmodule
 

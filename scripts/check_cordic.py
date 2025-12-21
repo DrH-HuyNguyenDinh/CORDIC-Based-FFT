@@ -11,7 +11,7 @@ DEFAULT_INPUT_FILE = "tb_cordic.txt"
 
 # Ngưỡng sai số cho phép (%): Ví dụ 0.1%
 # Nếu sai số nhỏ hơn mức này -> PASS
-MAX_PERCENT_ERROR = 0.5 
+MAX_PERCENT_ERROR = 0.2 
 
 # Ngưỡng xử lý số gần 0 (Absolute Tolerance)
 # Khi giá trị lý thuyết < 1e-6, ta không tính % mà tính sai số tuyệt đối

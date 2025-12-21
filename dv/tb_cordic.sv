@@ -54,7 +54,7 @@ module tb_cordic;
     task run_pipelined_test;
         integer k; // Biến chạy cho Driver
         integer m; // Biến chạy cho Monitor
-        reg [31:0] test_angles [0:359];
+        reg [31:0] test_angles [0:360];
         begin
             // --- NẠP DỮ LIỆU GÓC (GIỮ NGUYÊN DATA CỦA BẠN) ---
             test_angles[0] = 32'h00000000; // 0 degrees
@@ -417,11 +417,12 @@ module tb_cordic;
             test_angles[357] = 32'h40c762ec; // 357 degrees
             test_angles[358] = 32'h40c7f1e6; // 358 degrees
             test_angles[359] = 32'h40c880e0; // 359 degrees
+            test_angles[360] = 32'h40c90fdb; // 360 degrees
 
             fork
                 // === LUỒNG 1: DRIVER (NẠP DỮ LIỆU) ===
                 begin
-                    for (k = 0; k < 360; k = k + 1) begin
+                    for (k = 0; k < 361; k = k + 1) begin
                         @(posedge i_clk);
                         // Cấp dữ liệu vào
                         i_x <= 32'h3f800000; // 1.0
@@ -440,7 +441,7 @@ module tb_cordic;
                     repeat (23) @(posedge i_clk);
 
                     // Bước 2: Bắt đầu thu thập liên tục
-                    for (m = 0; m < 360; m = m + 1) begin
+                    for (m = 0; m < 361; m = m + 1) begin
                         @(posedge i_clk);
                         
                         // Delay nhỏ #0.1 để đảm bảo lấy được giá trị sau cạnh lên
