@@ -207,20 +207,21 @@ cordic-fft-fp/
 .
 ├── dv
 │   ├── tb_cordic.sv
-│   └── tb_input_reordering.sv
+│   └── tb_fft.sv
 ├── rtl
 │   ├── butterfly.sv
 │   ├── comparator.sv
 │   ├── cordic.sv
+│   ├── cordic.sv:Zone.Identifier
 │   ├── delay_23.sv
 │   ├── dual_port_ram.sv
+│   ├── fft.sv
 │   ├── fpu_add_sub.sv
 │   ├── fullAdder32b.sv
 │   ├── input_reordering.sv
 │   ├── inversion_sequence.sv
 │   ├── mux4to1.sv
 │   ├── rom_stage_10.sv
-│   ├── rom_stage_2.sv
 │   ├── rom_stage_3.sv
 │   ├── rom_stage_4.sv
 │   ├── rom_stage_5.sv
@@ -228,23 +229,34 @@ cordic-fft-fp/
 │   ├── rom_stage_7.sv
 │   ├── rom_stage_8.sv
 │   ├── rom_stage_9.sv
-│   └── stage_1.sv
+│   ├── stage_1.sv
+│   ├── stage_10.sv
+│   ├── stage_2.sv
+│   ├── stage_3.sv
+│   ├── stage_4.sv
+│   ├── stage_5.sv
+│   ├── stage_6.sv
+│   ├── stage_7.sv
+│   ├── stage_8.sv
+│   └── stage_9.sv
 ├── scripts
 │   ├── check_cordic.py
 │   ├── check_reordering.py
 │   ├── dmem_init_file.txt
+│   ├── output_fft.txt:Zone.Identifier
+│   ├── output_fft_stage1.txt
 │   └── test_fft
-│       ├── fft.png
 │       ├── fft.py
-│       ├── fft_bit_reversed_pairs.txt
-│       ├── fft_raw_2048.txt
-│       ├── fft_table_2048.txt
+│       ├── fft_final.py
+│       ├── fft_input_2frames_1024.txt
+│       ├── fft_peaks_analysis.png
+│       ├── fft_python.png
 │       └── find_bit_reverse_pairs.py
 └── sim
     ├── Makefile
-    ├── input_reordering_sim
-    ├── input_reordering_wave.vcd
-    ├── output_input_reordering.txt
+    ├── fft_sim
+    ├── fft_wave_2frames.vcd
+    ├── output_fft.txt
     └── rtl_files.f
 ```
 
