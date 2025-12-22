@@ -23,9 +23,21 @@ This project was developed as a Capstone Project 2 at **Ho Chi Minh City Univers
 The system is designed with a **Fully Pipelined** architecture to maximize throughput:
 
 1.  **Input Buffer:** Implements a Ping-Pong RAM mechanism with a Bit-Reversal address generator to handle continuous input data reordering.
-2.  **Butterfly Unit:** Executes standard floating-point addition and subtraction operations.
-3.  **CORDIC Rotator:** Replaces complex multipliers by performing vector rotation based on coordinates `(x, y)` and angle `z`.
-4.  **Pipeline Storage:** Dual-Port RAMs are placed between stages to store intermediate calculation results.
+
+<img width="2179" height="1123" alt="image" src="https://github.com/user-attachments/assets/3bacdd10-ee76-4294-94e9-b83460e5546f" />
+
+3.  **Butterfly Unit:** Executes standard floating-point addition and subtraction operations.
+5.  **CORDIC Rotator:** Replaces complex multipliers by performing vector rotation based on coordinates `(x, y)` and angle `z`.
+
+<img width="3950" height="1645" alt="image" src="https://github.com/user-attachments/assets/c375d195-3350-49ed-adc4-d16a952d7365" />
+
+6.  **Pipeline Storage:** Dual-Port RAMs are placed between stages to store intermediate calculation results.
+
+<img width="3250" height="1210" alt="image" src="https://github.com/user-attachments/assets/99732430-b8e4-40ac-ac0f-59e7b650796b" />
+
+<img width="3091" height="1251" alt="image" src="https://github.com/user-attachments/assets/6ee1c84c-77b3-48cc-a54c-d512440b1a7b" />
+
+<img width="2996" height="1431" alt="image" src="https://github.com/user-attachments/assets/b3fc49b7-8f67-4841-a6a0-df31c28f9a17" />
 
 ## 🧪 Verification & Experimental Results
 
