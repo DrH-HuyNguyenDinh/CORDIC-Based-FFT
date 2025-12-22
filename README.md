@@ -117,3 +117,5 @@ cordic-based-fft/
     ├── fft_wave_2frames.vcd
     ├── output_fft.txt
     └── rtl_files.f
+```
+**Note:** Simulation may takes over an hour.
