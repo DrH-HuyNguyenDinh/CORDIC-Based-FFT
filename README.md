@@ -99,9 +99,13 @@ cordic-based-fft/
 │   └── stage_9.sv
 ├── scripts
 │   ├── check_cordic.py
+│   ├── check_fft.py
 │   ├── check_reordering.py
 │   ├── dmem_init_file.txt
-│   ├── output_fft_stage1.txt
+│   ├── fft_comparison_result.txt
+│   ├── golden_data
+│   │   ├── fft_final_output.txt
+│   │   └── golden_data.py
 │   └── test_fft
 │       ├── fft.py
 │       ├── fft_final.py
@@ -112,7 +116,7 @@ cordic-based-fft/
 └── sim
     ├── Makefile
     ├── fft_sim
-    ├── fft_wave_2frames.vcd
+    ├── fft_wave.vcd
     ├── output_fft.txt
     └── rtl_files.f
 ```
