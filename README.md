@@ -1,5 +1,4 @@
-# 32-bit Floating-Point and Fixed-Point CORDIC-Based 1024-Point FFT Processor <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" /> # <img width="39.6065574" height="40" alt="image" src="https://github.com/user-attachments/assets/1c6d938b-55cf-4f6e-b5e5-4482c5753911" /> 
-
+# <img width="39.6065574" height="40" alt="image" src="https://github.com/user-attachments/assets/1c6d938b-55cf-4f6e-b5e5-4482c5753911" /> 32-bit Floating-Point and Fixed-Point CORDIC-Based 1024-Point FFT Processor <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" />
 
 ## 📌 Overview
 
