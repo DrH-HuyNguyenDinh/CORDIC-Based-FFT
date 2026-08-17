@@ -28,6 +28,8 @@ The system is designed with a **Fully Pipelined** architecture to maximize throu
 3.  **Butterfly Unit:** Executes standard floating-point addition and subtraction operations.
 5.  **CORDIC Rotator:** Replaces complex multipliers by performing vector rotation based on coordinates `(x, y)` and angle `z`.
 
+<img width="1097" height="570" alt="image" src="https://github.com/user-attachments/assets/d6410d93-96e5-409e-b3c2-d34bccbaa6d9" />
+
 <img width="3950" height="1645" alt="image" src="https://github.com/user-attachments/assets/c375d195-3350-49ed-adc4-d16a952d7365" />
 
 6.  **Pipeline Storage:** Dual-Port RAMs are placed between stages to store intermediate calculation results.
